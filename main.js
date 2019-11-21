@@ -1,1 +1,1 @@
-alert("JS is working");
+console.log("JS is working");

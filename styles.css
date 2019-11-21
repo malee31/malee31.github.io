@@ -1,4 +1,22 @@
 body
 {
-	background-color: blue;
+	background-color: rgb(32, 32, 127);
+	margin: 0;
+	padding: 0;
+}
+
+#nav
+{
+	width: 100vw;
+	height: 10vh;
+	background: rgba(255, 255, 255, 0.7);
+}
+
+#footer
+{
+	width: 100vw;
+	height: 10vh;
+	background: rgba(255, 255, 255, 0.7);
+	position: absolute;
+	bottom: 0;
 }
