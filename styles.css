@@ -1,10 +1,3 @@
-/*Testing styles*/
-.space{
-	height: 50vh;
-	width: 100vw;
-}
-
-
 body
 {
 	background-color: rgb(7, 11, 52);
@@ -12,31 +5,64 @@ body
 	padding: 0;
 }
 
+/*Classes*/
+.row
+{
+	display: flex;
+	flex-direction: row;
+}
+
+.column
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.center
+{
+	align-content: center;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.screenCover
+{
+	width: 100vw;
+	height: 100vh;
+}
+
+.verticalCenter
+{
+	vertical-align: center;
+}
+
+.slightPadding
+{
+	padding: .5vh 20px;
+}
+
+.logoLink
+{
+	width: 25%;
+}
+
 #nav
 {
 	width: 100vw;
 	height: 10vh;
-	background: rgba(255, 255, 255, 0.7);
+	background: rgba(255, 255, 255, .7);
 	position: fixed;
 	top: 0;
 }
 
-#nav > *
+#nav *
 {
-	width: 0;
-	height: 100%;
-	padding-right: 100%; 
-}
-
-#main
-{
-	
+	max-height: 9vh;
+	padding: 0 5px;
 }
 
 #firstView
 {
-	width: 100vw;
-	height: 100vh;
 	background-image: url("https://apod.nasa.gov/apod/image/1910/MilkyWaySaltFlat_Huerta_2048.jpg");
 	background-size: cover;
 	position: fixed;
@@ -46,6 +72,18 @@ body
 #footer
 {
 	width: 100vw;
-	height: 10vh;
-	background: rgba(255, 255, 255, 0.7);
+	min-height: 10vh;
+	height: auto;
+	background: rgba(255, 255, 255, .7);
+}
+
+#footer  *
+{
+	max-height: 9vh
+}
+
+/*Testing styles*/
+.space{
+	height: 50vh;
+	width: 100vw;
 }
