@@ -1,8 +1,12 @@
 body
 {
-	background-color: rgb(7, 11, 52);
+	background-image: url("https://apod.nasa.gov/apod/image/1910/MilkyWaySaltFlat_Huerta_2048.jpg");
+	background-attachment: fixed;
+	background-size: cover;
 	margin: 0;
 	padding: 0;
+	font-family: Roboto, Arial;
+	font-size: 2em;
 }
 
 /*Classes*/
@@ -27,8 +31,9 @@ body
 
 .screenCover
 {
-	width: 100vw;
 	height: 100vh;
+	width: 100vw;
+	padding: 10vh 0 0;
 }
 
 .verticalCenter
@@ -63,10 +68,13 @@ body
 
 #firstView
 {
-	background-image: url("https://apod.nasa.gov/apod/image/1910/MilkyWaySaltFlat_Huerta_2048.jpg");
-	background-size: cover;
-	position: fixed;
-	z-index: -1;
+	padding: 10.5vh 20px 0.5vh;
+}
+
+#about
+{
+	background-color: rgb(7, 11, 52);
+	color: white;
 }
 
 #footer
@@ -74,7 +82,7 @@ body
 	width: 100vw;
 	min-height: 10vh;
 	height: auto;
-	background: rgba(255, 255, 255, .7);
+	background: rgba(200, 200, 200);
 }
 
 #footer  *
@@ -86,4 +94,5 @@ body
 .space{
 	height: 50vh;
 	width: 100vw;
+	background-color: #ffffff;
 }
