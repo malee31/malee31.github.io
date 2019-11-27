@@ -7,6 +7,7 @@ body
 	padding: 0;
 	font-family: Roboto, Arial;
 	font-size: 2em;
+	color: #333;
 }
 
 /*Classes*/
@@ -25,7 +26,6 @@ body
 .center
 {
 	align-content: center;
-	vertical-align: middle;
 	text-align: center;
 }
 
@@ -39,6 +39,8 @@ body
 .verticalCenter
 {
 	vertical-align: center;
+	position: absolute;
+	top: 50%;
 }
 
 .slightPadding
@@ -68,12 +70,26 @@ body
 
 #firstView
 {
+	color: #333;
 	padding: 10.5vh 20px 0.5vh;
+}
+
+#nameHeading
+{
+	position: relative;
+	font-size: 3em;
+	top: calc(50% - 1.5em);
+}
+
+#role
+{
+	position: relative;
+	top: calc(50% - 8.5em);
 }
 
 #about
 {
-	background-color: rgb(7, 11, 52);
+	background-color: #0080FF;
 	color: white;
 }
 
@@ -82,7 +98,7 @@ body
 	width: 100vw;
 	min-height: 10vh;
 	height: auto;
-	background: rgba(200, 200, 200);
+	background: #C8C8C8;
 }
 
 #footer  *
@@ -94,5 +110,5 @@ body
 .space{
 	height: 50vh;
 	width: 100vw;
-	background-color: #ffffff;
+	background-color: #DDD;
 }
