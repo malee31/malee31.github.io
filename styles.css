@@ -38,9 +38,8 @@ body
 
 .verticalCenter
 {
-	vertical-align: center;
-	position: absolute;
-	top: 50%;
+	display: flex;
+	align-items: center;
 }
 
 .slightPadding
@@ -67,17 +66,37 @@ body
 
 #nav
 {
-	width: 100vw;
+	width: 100%;
 	height: 10vh;
 	background: rgba(255, 255, 255, .7);
 	position: fixed;
 	top: 0;
+	padding: 3px 0;
 }
 
 #nav *
 {
 	max-height: 9vh;
 	padding: 0 5px;
+	opacity: .9;
+}
+
+#homeLink
+{
+	-webkit-animation-name: reversion;
+	-webkit-animation-duration: 0.5s;
+	animation-name: reversion;
+	animation-duration: 0.5s;
+	filter: invert(0);
+}
+
+#homeLink:hover
+{
+	-webkit-animation-name: inversion;
+	-webkit-animation-duration: 0.5s;
+	animation-name: inversion;
+	animation-duration: 0.5s;
+	filter: invert(1);
 }
 
 #firstView
@@ -135,6 +154,30 @@ body
 #socials
 {
 
+}
+
+@keyframes inversion
+{
+	from
+	{
+		filter: invert(0);
+	}
+	to
+	{
+		filter: invert(1);
+	}
+}
+
+@keyframes reversion
+{
+	from
+	{
+		filter: invert(1);
+	}
+	to
+	{
+		filter: invert(0);
+	}
 }
 
 /*Testing styles*/
