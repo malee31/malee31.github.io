@@ -83,20 +83,15 @@ body
 
 #homeLink
 {
-	-webkit-animation-name: reversion;
-	-webkit-animation-duration: 0.5s;
-	animation-name: reversion;
-	animation-duration: 0.5s;
-	filter: invert(0);
+	transition: .5s;
+	filter: invert(0.9);
+	/*filter: invert(0);*/
 }
 
 #homeLink:hover
 {
-	-webkit-animation-name: inversion;
-	-webkit-animation-duration: 0.5s;
-	animation-name: inversion;
-	animation-duration: 0.5s;
-	filter: invert(1);
+	/*filter: invert(0.9);*/
+	filter: invert(0);
 }
 
 #firstView
@@ -154,30 +149,6 @@ body
 #socials
 {
 
-}
-
-@keyframes inversion
-{
-	from
-	{
-		filter: invert(0);
-	}
-	to
-	{
-		filter: invert(1);
-	}
-}
-
-@keyframes reversion
-{
-	from
-	{
-		filter: invert(1);
-	}
-	to
-	{
-		filter: invert(0);
-	}
 }
 
 /*Testing styles*/
