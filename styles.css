@@ -61,7 +61,9 @@ body
 
 .logoLink
 {
-	width: 25%;
+	height: 3em;
+	width: 3em;
+	padding: 5px;
 }
 
 #nav
@@ -79,6 +81,14 @@ body
 	max-height: 9vh;
 	padding: 0 5px;
 	opacity: .9;
+}
+
+@media only screen and (max-width: 760px)
+{
+	#nav * + *
+	{
+		display: none;
+	}
 }
 
 #homeLink
