@@ -80,20 +80,38 @@ body
 {
 	max-height: 9vh;
 	padding: 0 5px;
+	margin-right: 10px;
 	opacity: .9;
+	transition: .5s;
+}
+
+#navLinks a
+{
+	height: 100%;
+	line-height: 9vh;
+	text-decoration: none;
+	color: #333;
+	font-size: 0.8em;
+}
+
+#navLinks a:hover
+{
+	text-shadow: 0 0 8px #344177;
+	font-weight: 510;
+	color: #000;
 }
 
 @media only screen and (max-width: 760px)
 {
-	#nav * + *
+	#navLinks
 	{
 		display: none;
 	}
 }
 
+/*Can add border-radius to make it better*/
 #homeLink
 {
-	transition: .5s;
 	filter: invert(0.9);
 	/*filter: invert(0);*/
 }
