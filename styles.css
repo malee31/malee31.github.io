@@ -9,6 +9,11 @@ body
 	font-size: 2em;
 }
 
+header
+{
+	font-size: 1em;
+}
+
 /*Classes*/
 .row
 {
@@ -60,6 +65,12 @@ body
 body, #navLinks a, .gray, .grey, .colorGray, .colorGrey
 {
 	color: #333;
+}
+
+.content
+{
+	font-size: 0.7em;
+	margin: 5px 0;
 }
 
 .logoLink
