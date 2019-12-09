@@ -11,6 +11,7 @@ body
 
 header
 {
+	padding: 0 20px 10px;
 	font-size: 1em;
 }
 
@@ -49,6 +50,11 @@ header
 .slightPadding
 {
 	padding: .5vh 20px;
+}
+
+.heavyPadding
+{
+	padding: 50px 40px;
 }
 
 .blue
@@ -102,6 +108,7 @@ body, #navLinks a, .gray, .grey, .colorGray, .colorGrey
 
 #navLinks a
 {
+	display: none;
 	height: 100%;
 	line-height: 9vh;
 	text-decoration: none;
