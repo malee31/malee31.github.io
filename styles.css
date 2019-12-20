@@ -9,6 +9,26 @@ body
 	font-size: 2em;
 }
 
+nav
+{
+	width: 100%;
+	height: 10vh;
+	background: rgba(255, 255, 255, .7);
+	position: fixed;
+	top: 0;
+	padding: 3px 0;
+	z-index: 1;
+}
+
+nav *
+{
+	max-height: 9vh;
+	padding: 0 5px;
+	margin-right: 10px;
+	opacity: .9;
+	transition: .5s;
+}
+
 header
 {
 	padding: 0 20px 10px;
@@ -54,7 +74,7 @@ header
 
 .heavyPadding
 {
-	padding: 50px 40px;
+	padding: 20px 40px;
 }
 
 .blue
@@ -75,7 +95,7 @@ body, #navLinks a, .gray, .grey, .colorGray, .colorGrey
 
 .content
 {
-	font-size: 0.7em;
+	font-size: .7em;
 	margin: 5px 0;
 }
 
@@ -86,33 +106,13 @@ body, #navLinks a, .gray, .grey, .colorGray, .colorGrey
 	padding: 5px;
 }
 
-#nav
-{
-	width: 100%;
-	height: 10vh;
-	background: rgba(255, 255, 255, .7);
-	position: fixed;
-	top: 0;
-	padding: 3px 0;
-	z-index: 1;
-}
-
-#nav *
-{
-	max-height: 9vh;
-	padding: 0 5px;
-	margin-right: 10px;
-	opacity: .9;
-	transition: .5s;
-}
-
 #navLinks a
 {
 	display: none;
 	height: 100%;
 	line-height: 9vh;
 	text-decoration: none;
-	font-size: 0.8em;
+	font-size: .8em;
 }
 
 #navLinks a:hover
@@ -133,19 +133,19 @@ body, #navLinks a, .gray, .grey, .colorGray, .colorGrey
 /*Can add border-radius to make it better*/
 #homeLink
 {
-	filter: invert(0.9);
+	filter: invert(.9);
 	/*filter: invert(0);*/
 }
 
 #homeLink:hover
 {
-	/*filter: invert(0.9);*/
+	/*filter: invert(.9);*/
 	filter: invert(0);
 }
 
 #firstView
 {
-	padding: 10.5vh 20px 0.5vh;
+	padding: 10.5vh 20px .5vh;
 }
 
 #nameHeading
@@ -172,7 +172,7 @@ body, #navLinks a, .gray, .grey, .colorGray, .colorGrey
 	height: auto;
 	min-height: 10vh;
 	background: #C8C8C8;
-	font-size: 0.75em;
+	font-size: .75em;
 }
 
 #footer  *
@@ -183,13 +183,13 @@ body, #navLinks a, .gray, .grey, .colorGray, .colorGrey
 
 #footer a
 {
-	font-size: 0.5em;
+	font-size: .5em;
 	text-decoration: none;
 }
 
 #footer a:hover
 {
-	font-size: 0.5em;
+	font-size: .5em;
 	text-decoration: underline;
 	font-style: italic;
 	color: blue;
