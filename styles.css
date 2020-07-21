@@ -14,7 +14,6 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: Roboto, Arial;
-	font-size: 2rem;
 }
 
 nav {
@@ -24,15 +23,34 @@ nav {
 	background: rgba(255, 255, 255, .7);
 	position: fixed;
 	top: 0;
-	padding: 3px 0;
+	padding: 0 .6rem;
+	margin: 0;
 	z-index: 1;
 }
 
 nav * {
+	width: 100%;
 	max-height: var(--nav-height);
-	padding: 0 5px;
-	margin-right: 10px;
+	text-align: center;
 	transition: .5s;
+}
+
+nav span {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/*line-height: 20px;*/
+}
+
+nav a:first-child {
+	max-height: var(--nav-height);
+	width: auto;
+	filter: invert(.15);
+}
+
+nav a:first-child:hover {
+	filter: invert(0);
 }
 
 header {
@@ -47,6 +65,11 @@ header {
 
 h2, h4 {
 	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #00E;
 }
 
 /* Most browsers don't support this but Chrome does. CUSTOM SCROLL BARS!!! */
@@ -98,6 +121,34 @@ h2, h4 {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
+}
+
+.rowspace {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.columnspace {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.rowbetween{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.columnbetween{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .screenCover {
@@ -175,21 +226,6 @@ body, #navLinks a, .gray, .grey, .colorGray, .colorGrey {
 	}
 }
 
-/*Can add border-radius to make it better*/
-#homeLink {
-	filter: invert(.9);
-	/*filter: invert(0);*/
-}
-
-#homeLink:hover {
-	/*filter: invert(.9);*/
-	filter: invert(0);
-}
-
-#about {
-	
-}
-
 #repoList {
 	min-width: 100%;
 	overflow: hidden;
@@ -221,8 +257,4 @@ footer a:hover {
 	text-decoration: underline;
 	font-style: italic;
 	color: blue;
-}
-
-#socials {
-	justify-content: center;
 }
