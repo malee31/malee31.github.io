@@ -21,19 +21,50 @@ nav {
 	width: 100vw;
 	height: 7vh;
 	height: var(--nav-height);
-	background: rgba(255, 255, 255, .7);
+	background-color: #67B0ACF0;
 	position: fixed;
 	top: 0;
 	padding: 0 .6rem;
 	margin: 0;
-	z-index: 1;
+	z-index: 2;
 }
 
 nav * {
 	width: 100%;
 	max-height: var(--nav-height);
 	text-align: center;
-	transition: .5s;
+	transition: .2s;
+}
+
+nav > a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+nav > a:hover {
+	color: #E4E3EA;
+	background-color: #0AA9A7;
+	border-radius: 5px;
+}
+
+nav > a:first-child {
+	max-width: var(--nav-height);
+	max-height: 100%;
+	padding: 5px 0;
+	filter: invert(.15);
+}
+
+nav > a:first-child:hover {
+	filter: invert(0);
+}
+
+nav > a:first-child img {
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
 }
 
 nav span {
@@ -42,20 +73,6 @@ nav span {
 	justify-content: center;
 	align-items: center;
 	/*line-height: 20px;*/
-}
-
-nav a {
-	background-color: #67B0AC;
-}
-
-nav a:first-child {
-	max-height: var(--nav-height);
-	width: auto;
-	filter: invert(.15);
-}
-
-nav a:first-child:hover {
-	filter: invert(0);
 }
 
 header {
@@ -74,7 +91,7 @@ h2, h4 {
 
 a {
 	text-decoration: none;
-	color: #00E;
+	color: #222;
 }
 
 /* Most browsers don't support this but Chrome does. CUSTOM SCROLL BARS!!! */
@@ -183,7 +200,7 @@ a {
 	border-radius: 0.2rem;
 	padding: .2rem 5%;
 	margin: 0 .2rem;
-	min-width: 50%;
+	max-width: 30vw;
 	height: 100%;
 }
 
@@ -241,8 +258,6 @@ footer {
 	width: 100%;
 	height: auto;
 	min-height: 10vh;
-	padding-left: 0;
-	padding-right: 0;
 	background: #C8C8C8;
 	font-size: .75rem;
 }
