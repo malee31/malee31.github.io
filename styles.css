@@ -49,6 +49,26 @@ h2, h4 {
 	margin: 0;
 }
 
+/* Most browsers don't support this but Chrome does. CUSTOM SCROLL BARS!!! */
+::-webkit-scrollbar {
+	width: .7rem;
+}
+
+::-webkit-scrollbar-track {
+	background: #EEE;
+	box-shadow: inset -.2rem 0 .1rem #DDD;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #BBB;
+	border-radius: .35rem;
+	box-shadow: inset -.2rem -.1rem #AEAEAE;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #AAA;
+}
+
 /*Classes*/
 .rowcenter, .rowalign {
 	display: flex;
