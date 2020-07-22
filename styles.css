@@ -1,6 +1,7 @@
 :root {
 	--nav-height: 7vh;
 	font-size: 100%;
+	height: 100%;
 }
 
 * {
@@ -8,20 +9,27 @@
 }
 
 body {
-	background-image: url("/static/images/background.jpg");
+	background-image: url("./static/images/background.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center center;
+	color: #333;
 	margin: 0;
 	padding: 0;
+	height: 100%;
 	font-family: Roboto, Arial;
+}
+
+a {
+	text-decoration: none;
+	color: #222;
 }
 
 nav {
 	width: 100vw;
 	height: 7vh;
 	height: var(--nav-height);
-	background-color: #67B0ACF0;
+	background-color: #EEEEEEDB;
 	position: fixed;
 	top: 0;
 	padding: 0 .6rem;
@@ -33,10 +41,11 @@ nav * {
 	width: 100%;
 	max-height: var(--nav-height);
 	text-align: center;
-	transition: .2s;
+	transition: border-radius .3s;
 }
 
 nav > a {
+	color: #66667C;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -45,9 +54,9 @@ nav > a {
 }
 
 nav > a:hover {
-	color: #E4E3EA;
-	background-color: #0AA9A7;
-	border-radius: 5px;
+	color: #222;
+	background-color: #F7EFE4;
+	border-radius: 10px;
 }
 
 nav > a:first-child {
@@ -85,13 +94,20 @@ header {
 	text-shadow: 2px 2px #666;
 }
 
-h2, h4 {
+header h2, header h4 {
 	margin: 0;
 }
 
-a {
-	text-decoration: none;
-	color: #222;
+section {
+	background-color: #F3E3E3;
+}
+
+section h1 {
+	text-align: center;
+}
+
+section p {
+	font-size: 1.2rem;
 }
 
 /* Most browsers don't support this but Chrome does. CUSTOM SCROLL BARS!!! */
@@ -186,21 +202,12 @@ a {
 	padding: 20px 40px;
 }
 
-.blue {
-	background-color: #0080FF;
-	color: white;
-}
-
-.gray, .grey {
-	background-color: #DDD;
-}
-
 .repo {
 	background-color: #BBB;
-	border-radius: 0.2rem;
-	padding: .2rem 5%;
+	border-radius: .2rem;
+	padding: .5rem 1rem;
 	margin: 0 .2rem;
-	max-width: 30vw;
+	width: 30vw;
 	height: 100%;
 }
 
@@ -212,46 +219,10 @@ a {
 	font-size: 1rem;
 }
 
-body, #navLinks a, .gray, .grey, .colorGray, .colorGrey {
-	color: #333;
-}
-
-.content {
-	width: 100%;
-	font-size: .7rem;
-	margin: 5px 0;
-}
-
 .logoLink {
 	height: 3rem;
 	width: 3rem;
 	padding: 5px;
-}
-
-#navLinks a {
-	display: none;
-	height: 100%;
-	line-height: 9vh;
-	text-decoration: none;
-	font-size: .8rem;
-}
-
-#navLinks a:hover {
-	text-shadow: 0 0 8px #344177;
-	font-weight: 510;
-	color: #000;
-}
-
-@media only screen and (max-width: 760px) {
-	#navLinks {
-		display: none;
-	}
-}
-
-#repoList {
-	min-width: 100%;
-	overflow: hidden;
-	overflow-x: auto;
 }
 
 footer {
@@ -262,7 +233,7 @@ footer {
 	font-size: .75rem;
 }
 
-footer  * {
+footer * {
 	max-height: 9vh;
 	margin: 0;
 }
@@ -277,4 +248,11 @@ footer a:hover {
 	text-decoration: underline;
 	font-style: italic;
 	color: blue;
+}
+
+/* Media Styles */
+@media only screen and (max-width: 450px) {
+	nav > a:not(:first-child){
+		display: none;
+	}
 }

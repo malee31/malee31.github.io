@@ -1,111 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>
 			Home
 		</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="apple-touch-icon" type="image/png" href="/static/images/favicons/apple-touch-icon.png" sizes="180x180">
-		<link rel="icon" type="image/png" href="/static/images/favicons/favicon-16x16.png" sizes="16x16">
-		<link rel="icon" type="image/png" href="/static/images/favicons/favicon-32x32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="/static/images/favicons/android-chrome-192x192.png" sizes="192x192">
-		<link rel="icon" type="image/png" href="/static/images/favicons/android-chrome-512x512.png" sizes="512x512">
-		<link rel="icon" type="image/png" href="/static/images/favicons/favicon.ico">
-		<link rel="manifest" href="/static/images/favicons/manifest.webmanifest">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="description" content="Marvin's Personal Website">
+		<meta name="robots" content= "index, nofollow">
+		<link rel="apple-touch-icon" type="image/png" href="./static/images/favicons/apple-touch-icon.png" sizes="180x180">
+		<link rel="icon" type="image/png" href="./static/images/favicons/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="./static/images/favicons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="./static/images/favicons/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="./static/images/favicons/android-chrome-512x512.png" sizes="512x512">
+		<link rel="icon" type="image/png" href="./static/images/favicons/favicon.ico">
+		<link rel="manifest" href="./static/images/favicons/manifest.webmanifest">
 		<link rel="stylesheet" type="text/css" href="./styles.css">
 	</head>
+
 	<body>
 		<nav id="nav" class="rowbetween">
-			<a href="./index.html" id="homeLink"> <img src="/static/images/favicons/android-chrome-192x192.png"/> </a>
+			<a href="./index.html" id="homeLink"> <img src="./static/images/favicons/android-chrome-192x192.png"> </a>
 			<a href="./index.html"> <span>Test Links</a> </span>
 			<a href="./index.html"> <span>Test Links</a> </span>
 			<a href="./index.html"> <span>Test Links</a> </span>
 			<a href="./index.html"> <span>Test Links</a> </span>
 		</nav>
+
+		<header class="columnalign">
+			<h2>
+				Marvin Lee
+			</h2>
+			<h4>
+				Student
+			</h4>
+		</header>
+
 		<main>
-			<header class="columnalign">
-				<h2 id="nameHeading">
-					Marvin Lee
-				</h2>
-				<h4 id="role">
-					Student
-				</h4>
-			</header>
-			<span id="Overview">
-				<section id="about" class="heavyPadding center column gray">
-					<header>
-						About me
-					</header>
-					<p class="content">
-						I am a student interested in Computer Science. I have learned HTML, CSS, JavaScript, and Java.
-					</p>
-				</section>
-				<section id="more" class="heavyPadding center column blue space">
-					<header>
-						More
-					</header>
-					<p class="content">
-						Testing content
-					</p>
-				</section>
-				<section id="end" class="heavyPadding center column gray space">
-					<div class="center column content">
-						<header>
-							Favorite Github Repositories
-						</header>
-						<div id="repoList" class="rowstack">
-							<div class="repo center column">
-								<a href="https://github.com/malee31/AsteroidsGameProcessing" class="logoLink">
-									<img src="/static/images/github.svg">
-								</a>
-								<p class="repoTitle">
-									Asteroids Game
-								</p>
-								<p class="repoDesc">
-									Description
-								</p>
-							</div>
-							<div class="repo center column">
-								<a href="https://github.com/malee31/DataVisualizationProcessing" class="logoLink">
-									<img src="/static/images/github.svg">
-								</a>
-								<p class="repoTitle">
-									Data Visualization
-								</p>
-								<p class="repoDesc">
-									Description
-								</p>
-							</div>
-							<div class="repo center column">
-								<a href="https://github.com/malee31/StarfieldProcessing" class="logoLink">
-									<img src="/static/images/github.svg">
-								</a>
-								<p class="repoTitle">
-									Starfield
-								</p>
-								<p class="repoDesc">
-									Description
-								</p>
-							</div>
-						</div>
+			<section id="about" class="heavyPadding">
+				<h1>
+					About me
+				</h1>
+				<p class="content">
+					I am a student interested in Computer Science. I have learned HTML, CSS, JavaScript, and Java.
+				</p>
+			</section>
+
+			<section id="more" class="heavyPadding">
+				<h1>
+					More
+				</h1>
+				<p class="content">
+					Testing content
+				</p>
+			</section>
+
+			<section id="end" class="heavyPadding columnstack">
+				<h1>
+					Favorite Github Repositories
+				</h1>
+				<div id="repoList" class="rowstack">
+					<div class="repo">
+						<a href="https://github.com/malee31/AsteroidsGameProcessing" class="logoLink">
+							<img src="./static/images/github.svg">
+						</a>
+						<p class="repoTitle">
+							Asteroids Game
+						</p>
+						<p class="repoDesc">
+							Description
+						</p>
 					</div>
-				</section>
-			</span>
+					<div class="repo">
+						<a href="https://github.com/malee31/DataVisualizationProcessing" class="logoLink">
+							<img src="./static/images/github.svg">
+						</a>
+						<p class="repoTitle">
+							Data Visualization
+						</p>
+						<p class="repoDesc">
+							Description
+						</p>
+					</div>
+					<div class="repo">
+						<a href="https://github.com/malee31/StarfieldProcessing" class="logoLink">
+							<img src="./static/images/github.svg">
+						</a>
+						<p class="repoTitle">
+							Starfield
+						</p>
+						<p class="repoDesc">
+							Description
+						</p>
+					</div>
+				</div>
+			</section>
 		</main>
+
 		<footer class="slightPadding columnalign">
 			<h3 id="lowerName">
 				Marvin Lee
 			</h3>
 			<div id="socials" class="rowcenter">
 				<a href="https://github.com/malee31" class="logoLink">
-					<img src="/static/images/github.svg"/>
+					<img src="./static/images/github.svg">
 				</a>
 				<a href="https://linkedin.com/in/marvin-lee~" class="logoLink">
-					<img src="/static/images/linkedIn.svg"/>
+					<img src="./static/images/linkedIn.svg">
 				</a>
 			</div>
 		</footer>
-		<script src="./main.js">
-		</script>
+		<script src="./main.js"></script>
 	</body>
 </html>
