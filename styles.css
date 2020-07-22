@@ -202,49 +202,59 @@ section p {
 	padding: 20px 40px;
 }
 
+#github {
+	background-color: #24292E;
+	color: #EEE;
+}
+
 #repoList {
 	position: relative;
 	width: 100%;
-	min-height: 70vmin;
+	min-height: 80vmin;
 	height: 100%;
+	margin: 0 0 2rem;
 }
 
 .repo {
-	background-color: #BBB;
+	background-color: #000;
 	border-radius: .2rem;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	padding: .5rem 1rem;
-	margin: 0 .2rem;
+	padding: 0;
+	margin: 0;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
 }
 
-.repo a {
-	width: 100%;
-	height: 50%;
+.showrepo {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 0;
 }
 
 .repo img {
-	max-width: 100%;
 	height: 100%;
-}
-
-.repoTitle {
-	font-size: 1.2rem;
+	z-index: 1;
+	filter: grayscale(70%);
 }
 
 .repoDesc {
+	background-color: #FFFFFF6B;
 	font-size: 1rem;
+	z-index: 2;
+	position: absolute;
+	padding: 0.2rem;
+	bottom: 1rem;
+	left: 1rem;
+	border-radius: 0.3rem;
+}
+
+.repoDesc * {
+	margin: 0;
 }
 
 .logoLink {
