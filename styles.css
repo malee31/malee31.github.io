@@ -213,6 +213,7 @@ section p {
 	min-height: 80vmin;
 	height: 100%;
 	margin: 0 0 2rem;
+	overflow: hidden;
 }
 
 #nextrepo, #prevrepo {
@@ -256,18 +257,25 @@ section p {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	padding: 0;
-	margin: 0;
 	position: absolute;
 	top: 0;
-	left: 0;
 	width: 100%;
 	height: 100%;
+	padding: 0;
+	margin: 0;
 	overflow: hidden;
+	animation-duration: .5s;
+	animation-fill-mode: both;
 }
 
 .showrepo {
 	display: flex;
+	animation-name: slideIn;
+}
+
+.hiderepo {
+	display: flex;
+	animation-name: slideOut;
 }
 
 .repo img {
@@ -330,5 +338,24 @@ footer a:hover {
 @media only screen and (max-width: 450px) {
 	nav > a:not(:first-child){
 		display: none;
+	}
+}
+
+/* Keyframes */
+@keyframes slideIn {
+	from {
+		left: 100vw;
+	}
+	to {
+		left: 0;
+	}
+}
+
+@keyframes slideOut {
+	from {
+		left: 0vw;
+	}
+	to {
+		left: -100vw;
 	}
 }
