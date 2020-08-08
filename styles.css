@@ -29,7 +29,7 @@ nav {
 	width: 100vw;
 	height: 7vh;
 	height: var(--nav-height);
-	background-color: #EEEEEEDB;
+	background-color: ##0D1716;
 	position: fixed;
 	top: 0;
 	padding: 0 .6rem;
@@ -45,7 +45,7 @@ nav * {
 }
 
 nav > a {
-	color: #66667C;
+	color: #BEB2A4;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
