@@ -281,7 +281,7 @@ section p {
 .repo img {
 	height: 100%;
 	z-index: 1;
-	filter: grayscale(70%);
+	/*filter: grayscale(70%);*/
 }
 
 .repoDesc {
