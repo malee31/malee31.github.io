@@ -19,15 +19,16 @@
 	</head>
 
 	<body>
-		<nav id="nav" class="rowbetween">
-			<a href="./index.html" id="homeLink"> <img src="./static/images/menu.svg"> </a>
-			<!--<a href="./index.html"> <span>Test Links</a> </span>-->
-			<!--<a href="./index.html"> <span>Test Links</a> </span>-->
-			<!--<a href="./index.html"> <span>Test Links</a> </span>-->
-			<!--<a href="./index.html"> <span>Test Links</a> </span>-->
+		<label id="menuicon" for="menutoggle"><img src="./static/images/menu.svg"></label>
+		<input id="menutoggle" class="hidden" type="checkbox">
+		<nav>
+			<a href="#home"><span>Home</span></a>
+			<a href="#about"><span>About Me</span></a>
+			<a href="#more"><span>More</span></a>
+			<a href="#github"><span>Github</span></a>
 		</nav>
 
-		<header class="columnalign">
+		<header id="home" class="columnalign">
 			<h2>
 				Marvin Lee
 			</h2>
