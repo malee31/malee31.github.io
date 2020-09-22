@@ -1,5 +1,5 @@
 :root {
-	--nav-width: 20vw;
+	--nav-width: min(max(20vw, 20rem), 300px);
 	font-size: 100%;
 	height: 100%;
 }
@@ -35,11 +35,7 @@ a {
 	left: 1.1rem;
 	z-index: 15;
 	transition: border-radius .7s;
-}
-
-#menuicon:hover{
-	background-color: #F7EFE4;
-	border-radius: 5px;
+	filter: drop-shadow(0px 0px 1px black);
 }
 
 #menuicon > img {
@@ -49,7 +45,7 @@ a {
 }
 
 #menuicon:hover > img {
-	filter: invert(0);
+	filter: invert(.3);
 }
 
 #menutoggle:checked + nav{
@@ -76,20 +72,21 @@ nav > * {
 	max-width: var(--nav-width);
 	height: auto;
 	min-height: 2rem;
-	padding: 0 1rem;
+	padding: .2rem 1rem;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
 	color: #BEB2A4;
 	text-align: center;
+	font-size: 1.4rem;
 	transition: border-radius .3s;
 }
 
 nav > *:hover {
 	color: #222;
 	background-color: #F7EFE4;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 
 
@@ -150,6 +147,7 @@ section p {
 /*Classes*/
 .hidden {
 	visibility: hidden;
+	position: absolute;
 	width: 0;
 	height: 0;
 }
