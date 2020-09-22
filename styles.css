@@ -355,13 +355,6 @@ footer a:hover {
 	color: blue;
 }
 
-/* Media Styles */
-@media only screen and (max-width: 450px) {
-	nav > a:not(:first-child){
-		display: none;
-	}
-}
-
 /* Keyframes */
 @keyframes slideIn {
 	from {
