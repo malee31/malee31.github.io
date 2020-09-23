@@ -55,6 +55,7 @@ a {
 nav {
 	width: var(--nav-width);
 	height: 100vh;
+	overflow-y: auto;
 	background-color: #0D1716;
 	display: flex;
 	flex-direction: column;
@@ -72,14 +73,14 @@ nav > * {
 	max-width: var(--nav-width);
 	height: auto;
 	min-height: 2rem;
-	padding: .2rem 1rem;
+	padding: .5rem 1rem;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
 	color: #BEB2A4;
 	text-align: center;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	transition: border-radius .3s;
 }
 
