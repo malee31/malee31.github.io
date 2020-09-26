@@ -6,6 +6,7 @@
 
 * {
 	box-sizing: border-box;
+	z-index: 10;
 }
 
 body {
@@ -33,7 +34,7 @@ a {
 	position: fixed;
 	top: .6rem;
 	left: 1.1rem;
-	z-index: 15;
+	z-index: 100;
 	transition: border-radius .7s;
 	filter: drop-shadow(0px 0px 1px black);
 }
@@ -62,7 +63,7 @@ nav {
 	left: calc(var(--nav-width) * -1);
 	margin: 0;
 	padding: 4.2rem 0 .6rem;
-	z-index: 10;
+	z-index: 99;
 	transition: left 1s;
 }
 
@@ -235,6 +236,7 @@ section p {
 
 #github {
 	background-color: #24292E;
+	height: 100vh;
 	color: #EEE;
 }
 
@@ -243,7 +245,7 @@ section p {
 	width: 100%;
 	min-height: 80vmin;
 	height: 100%;
-	margin: 0 0 2rem;
+	margin: 0;
 	overflow: hidden;
 }
 
@@ -254,7 +256,7 @@ section p {
 	height: 3rem;
 	transform: translateY(-50%);
 	background-color: #FFFFFF6B;
-	z-index: 3;
+	z-index: 15;
 	border-radius: 0.1rem;
 	transition: background-color .7s;
 }
@@ -275,10 +277,12 @@ section p {
 
 #prevrepo {
 	left: .5rem;
+	z-index: 25;
 }
 
 #nextrepo {
 	right: .5rem;
+	z-index: 25;
 }
 
 .repo {
@@ -296,7 +300,6 @@ section p {
 	background-color: #000;
 	border-radius: .2rem;
 	overflow: hidden;
-	z-index: 0;
 }
 
 .leftrepo {
@@ -305,7 +308,7 @@ section p {
 
 .showrepo {
 	left: 0 !important;
-	z-index: 1;
+	z-index: 20;
 	transition: .5s left;
 }
 
@@ -319,13 +322,12 @@ section p {
 
 .repo img {
 	height: 100%;
-	z-index: 1;
 }
 
 .repoDesc {
 	background-color: #FFFFFF6B;
 	font-size: 1rem;
-	z-index: 2;
+	z-index: 15;
 	position: absolute;
 	padding: 0.2rem;
 	bottom: 1rem;

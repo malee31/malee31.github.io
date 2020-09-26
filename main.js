@@ -2,6 +2,10 @@ const repos = document.querySelectorAll(".repo");
 const reposize = repos.length;
 var currentRepoSlide = 0;
 
+window.onload = () => {
+	repoTransition(0);
+};
+
 function repoTransition(change) {
 	let increment = change % reposize + reposize;
 
@@ -15,8 +19,10 @@ function repoTransition(change) {
 	if(hidden) hidden.classList.remove("hiderepo");
 
 	let shown = document.querySelector(".showrepo");
-	shown.classList.remove("showrepo");
-	shown.classList.add("hiderepo");
+	if(shown) {
+		shown.classList.remove("showrepo");
+		shown.classList.add("hiderepo");
+	}
 
 	if(change >= 1) {
 		let selected = document.querySelector(".leftrepo");
