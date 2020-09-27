@@ -322,7 +322,7 @@ section p {
 	margin: 0 2%;
 	padding: 2%;
 	border-radius: 2px;
-	font-size: 1rem;
+	font-size: 4vmax;
 	z-index: 15;
 }
 
