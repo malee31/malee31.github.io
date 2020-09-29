@@ -124,7 +124,7 @@ header h2, header h4 {
 }
 
 section {
-	background-color: #F3E3E3;
+	background-color: #BBAF9D;
 }
 
 section h1 {
@@ -313,6 +313,7 @@ section p {
 
 .repo h2 {
 	margin: .5rem 0;
+	text-align: center;
 }
 
 .repo p {
