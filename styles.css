@@ -106,7 +106,6 @@ nav span {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/*line-height: 20px;*/
 }
 
 header {
@@ -132,105 +131,6 @@ section h1 {
 
 section p {
 	font-size: 1.2rem;
-}
-
-/* Most browsers don't support this but Chrome does. CUSTOM SCROLL BARS!!! */
-::-webkit-scrollbar {
-	width: .7rem;
-}
-
-::-webkit-scrollbar-track {
-	background: #EEE;
-	box-shadow: inset -.2rem 0 .1rem #DDD;
-}
-
-::-webkit-scrollbar-thumb {
-	background: #BBB;
-	border-radius: .35rem;
-	box-shadow: inset -.2rem -.1rem #AEAEAE;
-}
-
-::-webkit-scrollbar-thumb:hover {
-	background: #AAA;
-}
-
-/*Classes*/
-.hidden {
-	visibility: hidden;
-	position: absolute;
-	width: 0;
-	height: 0;
-}
-
-.rowcenter, .rowalign {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
-.columncenter, .columnalign {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.columnalign, .rowalign {
-	align-items: center;
-}
-
-.rowstack {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-}
-
-.columnstack {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-}
-
-.rowspace {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-around;
-}
-
-.columnspace {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
-}
-
-.rowbetween{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.columnbetween{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.screenCover {
-	height: 100vh;
-	width: 100vw;
-}
-
-.slightPadding {
-	padding: .5vh 20px;
-}
-
-.heavyPadding {
-	padding: 20px 40px;
 }
 
 #github {
@@ -372,6 +272,106 @@ section p {
 	height: 3rem;
 	width: 3rem;
 	padding: 5px;
+}
+
+
+/* Most browsers don't support this but Chrome does. CUSTOM SCROLL BARS!!! */
+::-webkit-scrollbar {
+	width: .7rem;
+}
+
+::-webkit-scrollbar-track {
+	background: #EEE;
+	box-shadow: inset -.2rem 0 .1rem #DDD;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #BBB;
+	border-radius: .35rem;
+	box-shadow: inset -.2rem -.1rem #AEAEAE;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #AAA;
+}
+
+/*Classes*/
+.hidden {
+	visibility: hidden;
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+
+.rowcenter, .rowalign {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.columncenter, .columnalign {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.columnalign, .rowalign {
+	align-items: center;
+}
+
+.rowstack {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.columnstack {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.rowspace {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.columnspace {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.rowbetween{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.columnbetween{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.screenCover {
+	height: 100vh;
+	width: 100vw;
+}
+
+.slightPadding {
+	padding: .5vh 20px;
+}
+
+.heavyPadding {
+	padding: 20px 40px;
 }
 
 footer {
