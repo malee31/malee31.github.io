@@ -219,15 +219,38 @@ section p {
 	text-align: center;
 }
 
-.repo p {
+.repo .desc {
 	background-color: #FFFFFF6B;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
 	width: 100%;
 	height: 100%;
 	margin: 0 0 0 2%;
 	padding: 2%;
 	border-radius: 2px;
-	font-size: 4vmax;
 	z-index: 15;
+}
+
+.repo .desc p {
+	margin: 0;
+	font-size: 4vmax;
+}
+
+.repo .desc a {
+	background-color: #BBB;
+	font-weight: bold;
+	text-align: center;
+	padding: .6rem .3rem;
+	border-radius: 5px;
+	transition: .2s;
+}
+
+.repo .desc a:hover {
+	background-color: #CCC;
+	color: #194F8A;
+	font-weight: bold;
 }
 
 .repo a {
@@ -392,12 +415,10 @@ footer a {
 	text-decoration: none;
 }
 
-footer a:hover, footer a:hover img {
-	font-size: .5rem;
+footer a:hover {
 	text-decoration: underline;
 	font-style: italic;
 	color: blue;
-	filter: invert
 }
 
 @media only screen and (max-width: 600px) {
@@ -413,8 +434,11 @@ footer a:hover, footer a:hover img {
 		width: 100%;
 	}
 
-	.repo p {
+	.repo .desc {
+		flex-direction: column-reverse;
+		align-items: center;
 		margin: 0 2%;
-		font-size: 3vmax;
+		font-size: 2.5vmax;
+		text-align: center;
 	}
 }
