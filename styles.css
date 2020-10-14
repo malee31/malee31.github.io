@@ -130,7 +130,12 @@ section h1 {
 }
 
 section p {
-	font-size: 1.2rem;
+	font-size: 4vmin;
+}
+
+#about p {
+	width: 65vw;
+	margin-top: 0;
 }
 
 #github {
