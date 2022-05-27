@@ -10,11 +10,11 @@
 }
 
 body {
-	background-image: url("./static/images/background.jpg");
+	background-image: url("../images/background.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center center;
-	color: #333;
+	color: #191816;
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -23,20 +23,61 @@ body {
 
 a {
 	text-decoration: none;
-	color: #222;
+	color: #222222;
 }
 
 #menuicon {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 3rem;
 	height: 3rem;
 	padding: .2rem;
-	text-align: center;
 	position: fixed;
 	top: .6rem;
 	left: 1.1rem;
+	cursor: pointer;
 	z-index: 100;
-	transition: border-radius .7s;
-	filter: drop-shadow(0px 0px 1px black);
+}
+
+#menuiconcontainer {
+	width: 80%;
+	height: 4px;
+	position: relative;
+	filter: drop-shadow(0 0 2px gray);
+}
+
+.menuicondiv {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: .2rem;
+	background-color: white;
+	transition: opacity .25s, transform .5s, top .25s;
+}
+
+.menuicondiv:first-child {
+	top: -10px;
+}
+
+.menuicondiv:last-child {
+	top: 10px;
+}
+
+#menutoggle:checked ~ #menuicon .menuicondiv {
+	display: none;
+	top: 0;
+}
+
+#menutoggle:checked ~ #menuicon .menuicondiv:first-child {
+	display: block;
+	transform: rotate(45deg);
+}
+
+#menutoggle:checked ~ #menuicon .menuicondiv:last-child {
+	display: block;
+	transform: rotate(-45deg);
 }
 
 #menuicon > img {
@@ -49,7 +90,7 @@ a {
 	filter: invert(.3);
 }
 
-#menutoggle:checked + nav{
+#menutoggle:checked ~ nav {
 	left: 0;
 }
 
@@ -95,7 +136,7 @@ nav a {
 }
 
 nav a:hover {
-	color: #222;
+	color: #222222;
 	background-color: #F7EFE4;
 	border-radius: 5px;
 }
@@ -113,8 +154,8 @@ header {
 	padding: 0;
 	height: 100vh;
 	font-size: 2rem;
-	color: #F3E3E3;
-	text-shadow: 2px 2px #666;
+	color: #333333;
+	text-shadow: #F3E3E3 0 0 3px;
 }
 
 header h2, header h4 {
@@ -122,7 +163,7 @@ header h2, header h4 {
 }
 
 section {
-	background-color: #BBAF9D;
+	background-color: #FDFDFB;
 }
 
 section h1 {
@@ -141,7 +182,7 @@ section p {
 #github {
 	background-color: #24292E;
 	height: 100vh;
-	color: #EEE;
+	color: #EEEEEE;
 }
 
 #repoList {
@@ -164,8 +205,9 @@ section p {
 	height: 3rem;
 	transform: translateY(-50%);
 	background-color: #FFFFFF6B;
-	z-index: 15;
 	border-radius: 50%;
+	z-index: 15;
+	user-select: none;
 	transition: background-color .7s;
 }
 
@@ -196,19 +238,36 @@ section p {
 .repo {
 	width: 100%;
 	height: 100%;
-	background-color: #000;
-	color: #EEE;
+	background-color: #000000;
+	color: #EEEEEE;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	position: absolute;
 	top: 0;
-	left: -100vw;
+	left: 0;
 	padding: 0 2rem;
 	margin: 0;
 	border-radius: .2rem;
 	overflow: hidden;
+}
+
+.repo-left {
+	left: -100vw;
+}
+
+.repo-display,
+.hide-repo {
+	transition: .5s left;
+}
+
+.repo-display {
+	z-index: 11;
+}
+
+.repo-right {
+	left: 100vw;
 }
 
 .repo .repomain {
@@ -244,7 +303,7 @@ section p {
 }
 
 .repo .desc a {
-	background-color: #BBB;
+	background-color: #BBBBBB;
 	font-weight: bold;
 	text-align: center;
 	padding: .6rem .3rem;
@@ -253,7 +312,7 @@ section p {
 }
 
 .repo .desc a:hover {
-	background-color: #CCC;
+	background-color: #CCCCCC;
 	color: #194F8A;
 	font-weight: bold;
 }
@@ -262,7 +321,7 @@ section p {
 	position: relative;
 }
 
-.repo a img {
+.repo-img {
 	width: min(45vw, 70vmin);
 	border: 1px solid white;
 	border-radius: 1rem;
@@ -278,25 +337,11 @@ section p {
 	border-right: 1px solid white;
 }
 
-.leftrepo {
-	left: -100vw;
-}
-
-.showrepo {
-	left: 0 !important;
-	z-index: 20;
-	transition: .5s left;
-}
-
-.hiderepo {
-	transition: .5s left;
-}
-
-.rightrepo {
-	left: 100vw;
-}
-
 .logoLink {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	height: 3rem;
 	width: 3rem;
 	padding: 5px;
@@ -309,18 +354,18 @@ section p {
 }
 
 ::-webkit-scrollbar-track {
-	background: #EEE;
-	box-shadow: inset -.2rem 0 .1rem #DDD;
+	background: #EEEEEE;
+	box-shadow: inset -.2rem 0 .1rem #DDDDDD;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #BBB;
+	background: #BBBBBB;
 	border-radius: .35rem;
 	box-shadow: inset -.2rem -.1rem #AEAEAE;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: #AAA;
+	background: #AAAAAA;
 }
 
 /*Classes*/
@@ -375,14 +420,14 @@ section p {
 	justify-content: space-around;
 }
 
-.rowbetween{
+.rowbetween {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 }
 
-.columnbetween{
+.columnbetween {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -435,12 +480,12 @@ footer a:hover {
 		width: 90%;
 	}
 
-	.repo a img {
+	.repo-img {
 		width: 100%;
 	}
 
 	.repo .desc {
-		flex-direction: column-reverse;
+		flex-direction: column;
 		align-items: center;
 		margin: 0 2%;
 		font-size: 2.5vmax;
