@@ -1,19 +1,15 @@
 import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
 import Navbar from "../components/molecules/Navbar";
+import Splash from "../components/molecules/Splash";
 import RepoList from "../components/organisms/RepoList";
+import Footer from "../components/molecules/Footer.js";
 import "./styles.css";
 
 export default function Home(data) {
 	return (
 		<>
 			<Navbar navigation={data.navigation}/>
-
-			<header id="home" className="columnalign">
-				<h2>Marvin Lee</h2>
-				<h4>Student</h4>
-			</header>
-
+			<Splash/>
 			<main>
 				<section id="about" className="heavyPadding columncenter columnalign">
 					<h1>
@@ -31,20 +27,7 @@ export default function Home(data) {
 					<RepoList data={data}/>
 				</section>
 			</main>
-
-			<footer className="slightPadding columnalign">
-				<h2 id="lowerName">
-					Marvin Lee
-				</h2>
-				<div id="socials" className="rowcenter">
-					<a href="https://github.com/malee31" className="logoLink">
-						<StaticImage src="../images/github.svg" alt="Github"/>
-					</a>
-					<a href="https://linkedin.com/in/marvin-lee~" className="logoLink">
-						<StaticImage src="../images/linkedIn.svg" alt="LinkedIn"/>
-					</a>
-				</div>
-			</footer>
+			<Footer/>
 		</>
 	);
 }

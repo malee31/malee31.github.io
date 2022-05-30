@@ -1,4 +1,6 @@
-# WELCOME
-###### to the repository for my home page
+# Home
+Welcome to the repository for my home page!
 ---
-### This page is intended to be server-less and deployed to GitHub Pages
+### Intent
+This page is intended to be serverless and deployed to GitHub Pages.  
+This project was once written in VanillaJS but has been rewritten with Gatsby/React.js!

@@ -1,7 +1,7 @@
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 import "./RepoSlide.css";
-import "../../pages/octocat.css";
+import "../organisms/octocat.css";
 
 // Display position of <=-1, ==0, >=1 for left, center, right
 export default function RepoSlide({ title, description, repoLink, demoLink, image, displayPosition, hideState }) {
