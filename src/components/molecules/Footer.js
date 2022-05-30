@@ -10,10 +10,10 @@ export default function Footer() {
 			</h2>
 			<div id="socials" className="rowcenter">
 				<a href="https://github.com/malee31" className="logoLink">
-					<StaticImage src="../images/github.svg" alt="Github"/>
+					<StaticImage src="../../images/github.svg" alt="Github"/>
 				</a>
 				<a href="https://linkedin.com/in/marvin-lee~" className="logoLink">
-					<StaticImage src="../images/linkedIn.svg" alt="LinkedIn"/>
+					<StaticImage src="../../images/linkedIn.svg" alt="LinkedIn"/>
 				</a>
 			</div>
 		</footer>

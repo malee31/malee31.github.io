@@ -82,10 +82,10 @@ export default function RepoList() {
 				);
 			})}
 			<div id="prevrepo" role="button" tabIndex={0} onClick={() => offsetSlide(-1)} onKeyUp={() => offsetSlide(-1)}>
-				<StaticImage src="../images/nextArrow.svg" alt="Previous"/>
+				<StaticImage src="../../images/nextArrow.svg" alt="Previous"/>
 			</div>
 			<div id="nextrepo" role="button" tabIndex={0} onClick={() => offsetSlide(1)} onKeyUp={() => offsetSlide(1)}>
-				<StaticImage src="../images/nextArrow.svg" alt="Next"/>
+				<StaticImage src="../../images/nextArrow.svg" alt="Next"/>
 			</div>
 		</div>
 	);
