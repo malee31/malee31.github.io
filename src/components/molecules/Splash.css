@@ -1,12 +1,14 @@
-header {
+#splash {
+	width: 100%;
+	height: 100vh;
+	position: relative;
 	margin: 0;
 	padding: 0;
-	height: 100vh;
 	font-size: 2rem;
 	color: #333333;
 	text-shadow: #F3E3E3 0 0 3px;
 }
 
-header h2, header h4 {
+#splash * {
 	margin: 0;
 }

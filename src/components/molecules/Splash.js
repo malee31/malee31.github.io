@@ -1,11 +1,16 @@
-import * as React from "react";
+import React, {Suspense} from "react";
+import SplashTextLayer from "./SplashTextLayer";
 import "./Splash.css";
+
+// const ThreeSplash = React.lazy(() => import("../organisms/ThreeSplash"));
 
 export default function Splash() {
 	return (
-		<header id="home" className="columnalign">
-			<h2>Marvin Lee</h2>
-			<h4>Student</h4>
+		<header id="splash" className="columnalign">
+			<Suspense fallback={null}>
+				{/*<ThreeSplash/>*/}
+			</Suspense>
+			<SplashTextLayer/>
 		</header>
 	);
 }
