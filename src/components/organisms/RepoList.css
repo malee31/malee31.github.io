@@ -15,9 +15,9 @@
 	transform: translateY(-50%);
 	background-color: #FFFFFF6B;
 	border-radius: 50%;
+	transition: background-color .7s;
 	z-index: 15;
 	user-select: none;
-	transition: background-color .7s;
 }
 
 #nextrepo:hover, #prevrepo:hover {

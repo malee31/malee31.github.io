@@ -15,9 +15,13 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@loadable/component": "^5.15.2",
+    "@react-spring/three": "^9.4.5",
+    "@react-three/drei": "^8.20.2",
     "@react-three/fiber": "^7.0.29",
     "gatsby": "^4.15.0",
     "gatsby-plugin-image": "^2.15.0",
+    "gatsby-plugin-loadable-components-ssr": "^4.2.0",
     "gatsby-plugin-manifest": "^4.15.0",
     "gatsby-plugin-react-helmet": "^5.15.0",
     "gatsby-plugin-sharp": "^4.15.0",
