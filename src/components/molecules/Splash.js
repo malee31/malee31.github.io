@@ -1,4 +1,5 @@
-import React, {Suspense} from "react";
+import React, { Suspense } from "react";
+import ScreenSection from "../atoms/FullScreenSection";
 import SplashTextLayer from "./SplashTextLayer";
 import "./Splash.css";
 
@@ -6,11 +7,11 @@ import "./Splash.css";
 
 export default function Splash() {
 	return (
-		<header id="splash" className="columnalign">
+		<ScreenSection id="splash" className="columncenter columnalign">
 			<Suspense fallback={null}>
 				{/*<ThreeSplash/>*/}
 			</Suspense>
 			<SplashTextLayer/>
-		</header>
+		</ScreenSection>
 	);
 }

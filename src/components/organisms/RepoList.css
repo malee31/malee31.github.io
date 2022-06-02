@@ -1,9 +1,5 @@
 #repoList {
-	position: relative;
-	width: 100%;
 	min-height: 80vmin;
-	height: 100%;
-	margin: 0;
 	overflow: hidden;
 }
 

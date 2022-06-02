@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import { getImage, StaticImage } from "gatsby-plugin-image";
 import RepoSlide from "../molecules/RepoSlide";
 import "./RepoList.css";
+import ScreenSection from "../atoms/FullScreenSection";
 
 const REPO_DATA = [
 	{
@@ -41,10 +42,12 @@ export default function RepoList() {
 			allFile {
 				edges {
 					node {
-						relativePath
 						childImageSharp {
 							gatsbyImageData
 						}
+						publicURL
+						id
+						relativePath
 					}
 				}
 			}
@@ -60,7 +63,7 @@ export default function RepoList() {
 	}
 
 	return (
-		<div id="repoList" className="rowstack">
+		<ScreenSection id="repoList" className="rowstack">
 			{REPO_DATA.map((repoData, repoIndex) => {
 				let position = repoIndex - slideNumber;
 				if(REPO_DATA.length === slideNumber + 1 && repoIndex === 0) {
@@ -87,6 +90,6 @@ export default function RepoList() {
 			<div id="nextrepo" role="button" tabIndex={0} onClick={() => offsetSlide(1)} onKeyUp={() => offsetSlide(1)}>
 				<StaticImage src="../../images/nextArrow.svg" alt="Next"/>
 			</div>
-		</div>
+		</ScreenSection>
 	);
 }

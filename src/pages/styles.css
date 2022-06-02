@@ -26,16 +26,16 @@ a {
 	color: #222222;
 }
 
-section {
-	background-color: #FDFDFB;
-}
-
 section h1 {
 	text-align: center;
 }
 
 section p {
 	font-size: 4vmin;
+}
+
+#about {
+	background-color: #FDFDFB;
 }
 
 #about p {
