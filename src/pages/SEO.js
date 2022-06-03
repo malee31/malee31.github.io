@@ -5,6 +5,7 @@ export default function SEO() {
 	return (
 		<Helmet>
 			<title>Home</title>
+			<html lang="en"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
 			<meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
 			<meta name="description" content="Marvin's Personal Website"/>

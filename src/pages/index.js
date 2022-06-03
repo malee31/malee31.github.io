@@ -1,14 +1,14 @@
-import * as React from "react";
+import React from "react";
+import "./styles.css";
 import Navbar from "../components/molecules/Navbar";
 import Splash from "../components/molecules/Splash";
-import RepoList from "../components/organisms/RepoList";
 import Footer from "../components/molecules/Footer.js";
-import "./styles.css";
+import Featured from "../components/organisms/Featured";
 
-export default function Home(data) {
+export default function Home() {
 	return (
 		<>
-			<Navbar navigation={data.navigation}/>
+			<Navbar/>
 			<Splash/>
 			<main>
 				<section id="about" className="heavyPadding columncenter columnalign">
@@ -16,15 +16,14 @@ export default function Home(data) {
 						About Me
 					</h1>
 					<p className="content">
-						I have been programming ever since I learned about it in the beginning of middle school. I mostly work on the server-side with NodeJS using HTML, CSS, and JavaScript as the front-end. Although my language of choice is JavaScript, I am also familiar with Java and basic Python.
+						I have been an avid programmer ever since I learned that devices can turn lines of text into interactive and stunning games and websites in my first year of middle school.
+						Currently, I write most of my projects using NodeJS on the backend and HTML, CSS, and Javascript on the front-end.
+						Although my language of choice is JavaScript, I am also familiar with C, C++, Java, and Python.
 					</p>
 				</section>
 
-				<section id="github" className="columnstack">
-					<h1>
-						Checkout my GitHub Repositories
-					</h1>
-					<RepoList data={data}/>
+				<section id="github">
+					<Featured/>
 				</section>
 			</main>
 			<Footer/>

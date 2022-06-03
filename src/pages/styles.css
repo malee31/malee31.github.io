@@ -6,7 +6,6 @@
 
 * {
 	box-sizing: border-box;
-	z-index: 10;
 }
 
 body {
@@ -41,12 +40,6 @@ section p {
 #about p {
 	width: 65vw;
 	margin-top: 0;
-}
-
-#github {
-	background-color: #24292E;
-	height: 100vh;
-	color: #EEEEEE;
 }
 
 .logoLink {
