@@ -1,6 +1,6 @@
 {
   "name": "build-javascript",
-  "hash": "ef57a01ca0acf2948bcc",
+  "hash": "db8c583dae3069f518ed",
   "publicPath": "/home/",
   "outputPath": "/home/runner/work/home/home/public",
   "assetsByChunkName": {
@@ -8,7 +8,7 @@
       "polyfill-a6b01a9c044f767c6766.js"
     ],
     "app": [
-      "app-56fa61a1ec6823091bd5.js"
+      "app-f7d55d227e5637949382.js"
     ],
     "webpack-runtime": [
       "webpack-runtime-549079e254f4ff3e21f3.js"
@@ -181,19 +181,19 @@
     },
     {
       "type": "asset",
-      "name": "app-56fa61a1ec6823091bd5.js",
-      "size": 76215,
+      "name": "app-f7d55d227e5637949382.js",
+      "size": 76836,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "56fa61a1ec6823091bd5",
+        "contenthash": "f7d55d227e5637949382",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "license": "app-56fa61a1ec6823091bd5.js.LICENSE.txt",
-          "sourceMap": "app-56fa61a1ec6823091bd5.js.map"
+          "license": "app-f7d55d227e5637949382.js.LICENSE.txt",
+          "sourceMap": "app-f7d55d227e5637949382.js.map"
         }
       },
       "chunkNames": [
@@ -436,7 +436,7 @@
           "name": "framework-ed1c7a620fba2ef93270.js"
         },
         {
-          "name": "app-56fa61a1ec6823091bd5.js"
+          "name": "app-f7d55d227e5637949382.js"
         }
       ],
       "filteredAssets": 0,
@@ -534,7 +534,7 @@
     {
       "id": 143,
       "files": [
-        "app-56fa61a1ec6823091bd5.js"
+        "app-f7d55d227e5637949382.js"
       ]
     },
     {
