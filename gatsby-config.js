@@ -24,6 +24,22 @@ module.exports = {
 			},
 			__key: "images"
 		},
-		"gatsby-plugin-loadable-components-ssr"
+		"gatsby-plugin-loadable-components-ssr",
+		{
+			resolve: `gatsby-plugin-google-gtag`,
+			options: {
+				trackingIds: [
+					"G-1QJGJWN7RH"
+				],
+				gtagConfig: {
+					anonymize_ip: true,
+					cookie_expires: 0
+				},
+				pluginConfig: {
+					head: false,
+					respectDNT: true
+				},
+			},
+		},
 	]
 };
