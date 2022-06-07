@@ -13,7 +13,7 @@ html {
 }
 
 body {
-	background-image: url("../images/background.jpg");
+	background-image: url("images/background.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center center;
@@ -140,10 +140,6 @@ section p {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-}
-
-.slight-padding {
-	padding: .5vh 20px;
 }
 
 .heavy-padding {

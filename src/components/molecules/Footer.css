@@ -2,6 +2,7 @@ footer {
 	width: 100%;
 	height: auto;
 	min-height: 10vh;
+	padding: .5vh 20px;
 	background: #C8C8C8;
 	font-size: .75rem;
 }

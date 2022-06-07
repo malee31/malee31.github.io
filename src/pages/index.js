@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "../styles.css";
 import Navbar from "../components/molecules/Navbar";
 import Splash from "../components/molecules/Splash";
 import Footer from "../components/molecules/Footer.js";

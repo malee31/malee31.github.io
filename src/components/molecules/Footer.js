@@ -4,8 +4,8 @@ import { StaticImage } from "gatsby-plugin-image";
 
 export default function Footer() {
 	return (
-		<footer className="slight-padding column-align">
-			<h2 id="lowerName">
+		<footer className="column-align">
+			<h2 id="lower-name">
 				Marvin Lee
 			</h2>
 			<div id="socials" className="row-center">
