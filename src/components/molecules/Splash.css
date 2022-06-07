@@ -1,9 +1,9 @@
-#splash {
+#home {
 	font-size: 2rem;
 	color: #333333;
 	text-shadow: #F3E3E3 0 0 3px;
 }
 
-#splash * {
+#home * {
 	margin: 0;
 }

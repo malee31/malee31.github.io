@@ -5,8 +5,8 @@ import "./FeaturedCard.css";
 
 export default function FeaturedCard({ title, description, repoLink, demoLink, image }) {
 	return (
-		<div className="rowbetween featured-card">
-			<div className="columncenter featured-card-left">
+		<div className="row-between featured-card">
+			<div className="column-center featured-card-left">
 				<a href={repoLink} aria-label="View source on GitHub">
 					<div className="github-corner featured-card-image">
 						<GatsbyImage className="featured-card-img" alt={`${title} Demo Image`} image={image}/>
@@ -19,7 +19,7 @@ export default function FeaturedCard({ title, description, repoLink, demoLink, i
 				</a>
 				<a className="featured-card-demo-link" href={demoLink}>Try it out! &gt;</a>
 			</div>
-			<div className="columnstack featured-card-text">
+			<div className="column-stack featured-card-text">
 				<h2 className="featured-card-main-title">{title}</h2>
 				<p className="featured-card-main-text">{description}</p>
 			</div>

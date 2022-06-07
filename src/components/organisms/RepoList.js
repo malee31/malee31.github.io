@@ -63,7 +63,7 @@ export default function RepoList() {
 	}
 
 	return (
-		<ScreenSection id="repoList" className="rowstack">
+		<ScreenSection id="repoList" className="row-stack">
 			{REPO_DATA.map((repoData, repoIndex) => {
 				let position = repoIndex - slideNumber;
 				if(REPO_DATA.length === slideNumber + 1 && repoIndex === 0) {

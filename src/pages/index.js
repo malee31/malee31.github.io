@@ -11,7 +11,7 @@ export default function Home() {
 			<Navbar/>
 			<Splash/>
 			<main>
-				<section id="about" className="heavyPadding columncenter columnalign">
+				<section id="about" className="heavy-padding column-center column-align">
 					<h1>
 						About Me
 					</h1>

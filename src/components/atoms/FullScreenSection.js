@@ -10,7 +10,7 @@ import "./FullScreenSection.css";
 export default function ScreenSection(props) {
 	const {children, className, ...passProps} = props;
 	return (
-		<section className={`screen-section columncenter ${className || ""}`} {...passProps}>
+		<section className={`screen-section column-center ${className || ""}`} {...passProps}>
 			{children}
 		</section>
 	);

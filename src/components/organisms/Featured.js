@@ -55,7 +55,7 @@ export default function Featured() {
 	`);
 
 	return (
-		<div id="featured" className="columnstack">
+		<div id="featured" className="column-stack">
 			<h1>Featured Projects</h1>
 			{FEATURED_DATA.map(featuredData => {
 				const imageData = data.allFile.edges.find(edge => edge.node.relativePath === featuredData.imageSrc)?.node;

@@ -8,7 +8,7 @@ const ThreeSplash = loadable(() => import("../organisms/ThreeSplash"));
 
 export default function Splash() {
 	return (
-		<ScreenSection id="splash" className="columncenter columnalign">
+		<ScreenSection id="home" className="column-center column-align">
 			<ThreeSplash fallback={null}/>
 			<SplashTextLayer/>
 		</ScreenSection>

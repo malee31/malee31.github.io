@@ -3,7 +3,7 @@
 	background-color: #AAAAAAAA;
 	width: 100%;
 	height: 100%;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	opacity: 0;
@@ -11,7 +11,7 @@
 	transition: opacity .5s;
 }
 
-#menuicon {
+#menu-icon {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -26,14 +26,14 @@
 	z-index: 100;
 }
 
-#menuiconcontainer {
+#menu-icon-container {
 	width: 80%;
 	height: 4px;
 	position: relative;
 	filter: drop-shadow(0 0 2px gray);
 }
 
-.menuicondiv {
+.menu-icon-div {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -42,45 +42,45 @@
 	transition: opacity .25s, transform .5s, top .25s;
 }
 
-.menuicondiv:first-child {
+.menu-icon-div:first-child {
 	top: -10px;
 }
 
-.menuicondiv:last-child {
+.menu-icon-div:last-child {
 	top: 10px;
 }
 
-#menutoggle:checked ~ #menuicon .menuicondiv {
+#menu-toggle:checked ~ #menu-icon .menu-icon-div {
 	display: none;
 	top: 0;
 }
 
-#menutoggle:checked ~ #nav-underlay {
+#menu-toggle:checked ~ #nav-underlay {
 	display: block;
 	opacity: 1;
 }
 
-#menutoggle:checked ~ #menuicon .menuicondiv:first-child {
+#menu-toggle:checked ~ #menu-icon .menu-icon-div:first-child {
 	display: block;
 	transform: rotate(45deg);
 }
 
-#menutoggle:checked ~ #menuicon .menuicondiv:last-child {
+#menu-toggle:checked ~ #menu-icon .menu-icon-div:last-child {
 	display: block;
 	transform: rotate(-45deg);
 }
 
-#menuicon > img {
+#menu-icon > img {
 	filter: invert(1);
 	transition: .5s;
 	height: 100%;
 }
 
-#menuicon:hover > img {
+#menu-icon:hover > img {
 	filter: invert(.3);
 }
 
-#menutoggle:checked ~ nav {
+#menu-toggle:checked ~ nav {
 	left: 0;
 }
 
@@ -98,7 +98,7 @@ nav {
 	transition: left 1s;
 }
 
-nav > #navpadding {
+nav > #nav-padding {
 	overflow-y: auto;
 	width: 100%;
 	height: 100%;
