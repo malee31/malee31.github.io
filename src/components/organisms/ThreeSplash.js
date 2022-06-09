@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Box } from "@react-three/drei";
+import { Box, PerspectiveCamera } from "@react-three/drei";
 
 function ThreeContent() {
 	const boxRef = useRef();
@@ -12,12 +12,16 @@ function ThreeContent() {
 
 	return (
 		<>
+			<PerspectiveCamera makeDefault={true} position={[0, 0, 10]}/>
+			<ambientLight intensity={0.5}/>
+			<pointLight position={[-5, -5, 15]}/>
+			<spotLight position={[10, 10, 10]} angle={0.9} penumbra={1}/>
 			<Box
 				ref={boxRef}
 				position={[0, 0, -10]}
 				args={[10, 10, 10]}
 			>
-				<meshPhongMaterial color="#f3f3f3" wireframe={true}/>
+				<meshPhongMaterial color="#067DDC" wireframe={false}/>
 			</Box>
 		</>
 	);
