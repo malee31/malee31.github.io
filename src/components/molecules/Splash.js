@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ScreenSection from "../atoms/FullScreenSection";
 import SplashTextLayer from "./SplashTextLayer";
 import loadable from "@loadable/component";
@@ -7,10 +7,13 @@ import "./Splash.css";
 const ThreeSplash = loadable(() => import("../organisms/ThreeSplash"));
 
 export default function Splash() {
+	const [splashTextCentered, setSplashTextCentered] = useState(true);
+	ThreeSplash.load().then(() => setSplashTextCentered(false));
+
 	return (
 		<ScreenSection id="home" className="column-center column-align">
 			<ThreeSplash fallback={null}/>
-			<SplashTextLayer/>
+			<SplashTextLayer centered={splashTextCentered}/>
 		</ScreenSection>
 	);
 }

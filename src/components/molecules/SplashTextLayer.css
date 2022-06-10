@@ -5,10 +5,23 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	position: relative;
+	position: absolute;
 	top: 0;
 	left: 0;
 	user-select: none;
 	pointer-events: none;
-	text-shadow: 0 0 3px #EEEEEE;
+	/* Why is it so hard to make text outlines in CSS */
+	text-shadow: -1px -1px 2px #CCC, 0 -1px 2px #CCC, 1px -1px 2px #CCC, 1px 0 2px #CCC, 1px 1px 2px #CCC, 0 1px 2px #CCC, -1px 1px 2px #CCC, -1px 0 2px #CCC;
+}
+
+.splash-text-layer-content {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: top 2s, transform 2s;
+}
+
+.splash-text-layer-content-top {
+	top: 4rem;
+	transform: none;
 }

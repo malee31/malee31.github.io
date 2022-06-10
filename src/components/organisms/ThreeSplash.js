@@ -1,8 +1,12 @@
-import React, { useRef } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import React, { useEffect, useRef } from "react";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Box, PerspectiveCamera } from "@react-three/drei";
 
 function ThreeContent() {
+	// For debugging
+	const Three = useThree();
+	useEffect(() => console.log(Three), [Three]);
+
 	const boxRef = useRef();
 	useFrame(() => {
 		boxRef.current.rotation.x += 0.01;
@@ -12,7 +16,7 @@ function ThreeContent() {
 
 	return (
 		<>
-			<PerspectiveCamera makeDefault={true} position={[0, 0, 10]}/>
+			<PerspectiveCamera makeDefault={true} position={[0, 0, 100]}/>
 			<ambientLight intensity={0.5}/>
 			<pointLight position={[-5, -5, 15]}/>
 			<spotLight position={[10, 10, 10]} angle={0.9} penumbra={1}/>
@@ -29,7 +33,7 @@ function ThreeContent() {
 
 export default function ThreeSplash() {
 	return (
-		<div style={{ position: "absolute" }}>
+		<div style={{ position: "absolute", width: "100%", height: "100%" }}>
 			<Canvas>
 				<ThreeContent/>
 			</Canvas>
