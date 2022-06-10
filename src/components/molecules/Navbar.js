@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 
+const NAV_LINKS = [
+	{ label: "Home", href: "#home" },
+	{ label: "About Me", href: "#about" },
+	{ label: "Featured Projects", href: "#github" }
+];
+
 export default function Navbar() {
 	const [checked, setChecked] = useState(false);
 	const toggleCheck = () => setChecked(!checked);
+	const close = () => setChecked(false);
 
 	return (
 		<>
@@ -18,7 +25,7 @@ export default function Navbar() {
 			<div
 				id="nav-underlay"
 				aria-hidden="true"
-				onClick={() => setChecked(false)}
+				onClick={close}
 			/>
 			<label id="menu-icon" htmlFor="menu-toggle">
 				<div id="menu-icon-container">
@@ -29,9 +36,11 @@ export default function Navbar() {
 			</label>
 			<nav>
 				<div id="nav-padding">
-					<a href="#home"><span>Home</span></a>
-					<a href="#about"><span>About Me</span></a>
-					<a href="#github"><span>Github</span></a>
+					{
+						NAV_LINKS.map(({ label, href }) => (
+							<a href={href} onClick={close} key={label}><span>{label}</span></a>
+						))
+					}
 				</div>
 			</nav>
 		</>
