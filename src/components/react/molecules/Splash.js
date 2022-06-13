@@ -4,7 +4,7 @@ import SplashTextLayer from "./SplashTextLayer";
 import loadable from "@loadable/component";
 import "./Splash.css";
 
-const ThreeSplash = loadable(() => import("../organisms/ThreeSplash"));
+const ThreeSplash = loadable(() => import("../../three/organisms/ThreeSplash"));
 
 export default function Splash() {
 	const [splashTextCentered, setSplashTextCentered] = useState(true);

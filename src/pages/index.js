@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles.css";
-import Navbar from "../components/molecules/Navbar";
-import Splash from "../components/molecules/Splash";
-import Footer from "../components/molecules/Footer.js";
-import Featured from "../components/organisms/Featured";
+import Navbar from "../components/react/molecules/Navbar";
+import Splash from "../components/react/molecules/Splash";
+import Footer from "../components/react/molecules/Footer.js";
+import Featured from "../components/react/organisms/Featured";
 
 export default function Home() {
 	return (
