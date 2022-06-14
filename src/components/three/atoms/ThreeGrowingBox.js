@@ -16,10 +16,6 @@ function calculateChangedScale(current, rate = 0) {
  */
 export default function GrowingBox(props) {
 	const { scaleRate, color, ...boxProps } = props;
-	const fixedScaleRates = [0, 0, 0]
-		.map((val, index) => {
-			return typeof scaleRate[index] === "number" ? scaleRate[index] : val;
-		})
 	const boxRef = useRef();
 
 	useFrame(() => {
