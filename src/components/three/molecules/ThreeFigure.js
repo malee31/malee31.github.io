@@ -1,29 +1,18 @@
 import React, { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Box, OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import GrowingBox from "../atoms/ThreeGrowingBox";
 
 export default function ThreeFigure() {
+	const camRef = useRef();
 	const groupRef = useRef();
-	const topRef = useRef();
 	const bottomRef = useRef();
 
 	// TODO: Simplify with another library like spring
 	useFrame(() => {
 		groupRef.current.rotation.x += 0.01;
-		const top = topRef.current;
-		const bottom = bottomRef.current;
-		const newScaleChange = Math.min(1 - top.scale.x, 0.01);
-		top.scale.x += newScaleChange;
-		bottom.scale.z += newScaleChange;
-
-		if(!newScaleChange) {
-			const newHeightScale = Math.min(1 - top.scale.y, 0.02);
-			top.scale.y += newHeightScale;
-			bottom.scale.y += newHeightScale;
-		}
 	});
 
-	const camRef = useRef();
 
 	return (
 		<>
@@ -34,28 +23,26 @@ export default function ThreeFigure() {
 				position={[0, 0, 0]}
 				rotation={[Math.PI / 6, Math.PI / 6, 0]}
 			>
-				<Box
-					ref={topRef}
+				<GrowingBox
+					color="#067DDC"
 					position={[0, 3, 0]}
 					args={[12, 6, 12]}
 					scale={[0.25, 0.3, 1]}
-				>
-					<meshPhongMaterial color="#067DDC" wireframe={false}/>
-				</Box>
+					scaleRate={[0.01, 0, 0]}
+				/>
 				<Box
 					position={[0, 0, 0]}
 					args={[10, 9.95, 10]}
 				>
 					<meshPhongMaterial color="#EEEEEE" wireframe={false}/>
 				</Box>
-				<Box
-					ref={bottomRef}
+				<GrowingBox
+					color="#067DDC"
 					position={[0, -3, 0]}
 					args={[12, 6, 12]}
 					scale={[1, 0.3, 0.25]}
-				>
-					<meshPhongMaterial color="#067DDC" wireframe={false}/>
-				</Box>
+					scaleRate={[0, 0, 0.01]}
+				/>
 			</group>
 		</>
 	);
