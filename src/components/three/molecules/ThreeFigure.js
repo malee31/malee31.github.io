@@ -10,14 +10,14 @@ export default function ThreeFigure() {
 
 	// TODO: Simplify with another library like spring
 	useFrame(() => {
-		groupRef.current.rotation.x += 0.01;
+		groupRef.current.rotation.x -= 0.005;
+		groupRef.current.rotation.y += 0.01;
 	});
-
 
 	return (
 		<>
 			<PerspectiveCamera ref={camRef} position={[0, 0, 50]}/>
-			<OrbitControls camera={camRef.current} position={[0, 0, 10]}/>
+			<OrbitControls camera={camRef.current} position={[0, 0, 10]} enableZoom={false}/>
 			<group
 				ref={groupRef}
 				position={[0, 0, 0]}

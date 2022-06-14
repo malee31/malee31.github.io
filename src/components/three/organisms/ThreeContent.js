@@ -1,5 +1,5 @@
 import React from "react";
-import { PerspectiveCamera, Plane } from "@react-three/drei";
+import { PerspectiveCamera } from "@react-three/drei";
 import ThreeLighting from "../molecules/ThreeLighting";
 import ThreeFigure from "../molecules/ThreeFigure";
 import Backdrop from "../molecules/ThreeBackdrop";
