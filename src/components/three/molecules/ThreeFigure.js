@@ -6,7 +6,6 @@ import GrowingBox from "../atoms/ThreeGrowingBox";
 export default function ThreeFigure() {
 	const camRef = useRef();
 	const groupRef = useRef();
-	const bottomRef = useRef();
 
 	// TODO: Simplify with another library like spring
 	useFrame(() => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
-import FeaturedCard from "../molecules/FeaturedCard";
+import RepoCard from "../molecules/RepoCard";
 import "./Featured.css";
 
 const FEATURED_DATA = [
@@ -34,8 +34,7 @@ const FEATURED_DATA = [
 		imageSrc: "repositories/DataVisualization.png"
 	}
 ];
-
-export default function Featured() {
+export default function Experimental() {
 	const data = useStaticQuery(graphql`
 		query RepoQuery {
 			allFile(filter: {relativeDirectory: {eq: "repositories"}}) {
@@ -55,20 +54,18 @@ export default function Featured() {
 	`);
 
 	return (
-		<div id="featured" className="column-stack">
+		<div id="featured">
 			<h1>Featured Projects</h1>
-			{FEATURED_DATA.map(featuredData => {
-				const imageData = data.allFile.edges.find(edge => edge.node.relativePath === featuredData.imageSrc)?.node;
-				const image = getImage(imageData);
+			<div id="featured-container" role="list">
+				{FEATURED_DATA.map(featuredData => {
+					const imageData = data.allFile.edges.find(edge => edge.node.relativePath === featuredData.imageSrc)?.node;
+					const image = getImage(imageData);
 
-				return (
-					<FeaturedCard
-						key={imageData.id}
-						{...featuredData}
-						image={image}
-					/>
-				);
-			})}
+					return (
+						<RepoCard key={featuredData.title} {...featuredData} image={image}/>
+					);
+				})}
+			</div>
 		</div>
-	);
+	)
 }
