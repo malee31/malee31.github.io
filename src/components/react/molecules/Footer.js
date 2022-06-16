@@ -1,6 +1,7 @@
 import React from "react";
+import GitHubIcon from "../../../images/github.svg";
+import LinkedInIcon from "../../../images/linkedIn.svg";
 import "./Footer.css";
-import { StaticImage } from "gatsby-plugin-image";
 
 export default function Footer() {
 	return (
@@ -10,10 +11,10 @@ export default function Footer() {
 			</h2>
 			<div id="socials" className="row-center">
 				<a href="https://github.com/malee31" className="logoLink">
-					<StaticImage src="../../../images/github.svg" alt="Github"/>
+					<img src={GitHubIcon} alt="Github"/>
 				</a>
 				<a href="https://linkedin.com/in/marvin-lee~" className="logoLink">
-					<StaticImage src="../../../images/linkedIn.svg" alt="LinkedIn"/>
+					<img src={LinkedInIcon} alt="LinkedIn"/>
 				</a>
 			</div>
 		</footer>
