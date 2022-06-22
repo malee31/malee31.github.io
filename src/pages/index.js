@@ -4,10 +4,12 @@ import Navbar from "../components/react/molecules/Navbar";
 import Splash from "../components/react/molecules/Splash";
 import Footer from "../components/react/molecules/Footer.js";
 import Featured from "../components/react/organisms/Featured";
+import Seo from "../components/react/atoms/SEO";
 
 export default function Home() {
 	return (
 		<>
+			<Seo/>
 			<Navbar/>
 			<Splash/>
 			<main>

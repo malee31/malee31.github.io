@@ -1,10 +1,10 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-export default function SEO() {
+export default function Seo() {
 	return (
 		<Helmet>
-			<title>Home</title>
+			<title>Marvin Lee | Home</title>
 			<html lang="en"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
 			<meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
