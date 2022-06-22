@@ -15,22 +15,22 @@ const FEATURED_DATA = [
 	{
 		title: "Asteroids Game",
 		description: "A recreation of Asteroids from 1979! Controls are listed in the footer below so enjoy!",
-		repoLink: "https://github.com/malee31/AsteroidsGameProcessing",
-		demoLink: "https://malee31.github.io/AsteroidsGameProcessing",
+		repoLink: "https://github.com/malee31/Processing-Java-Projects/tree/AsteroidsGame",
+		demoLink: "https://malee31.github.io/Processing-Java-Projects/AsteroidsGame",
 		imageSrc: "repositories/AsteroidsGame.png"
 	},
 	{
 		title: "Starfield",
 		description: "A mesmerizing canvas with a calming sea of stars",
-		repoLink: "https://github.com/malee31/StarfieldProcessing",
-		demoLink: "https://malee31.github.io/StarfieldProcessing",
+		repoLink: "https://github.com/malee31/Processing-Java-Projects/tree/Starfield",
+		demoLink: "https://malee31.github.io/Processing-Java-Projects/Starfield",
 		imageSrc: "repositories/Starfield.png"
 	},
 	{
 		title: "Data Visualization",
 		description: "A nice animated chart for random data that can be changed and adapted for different data sets",
-		repoLink: "https://github.com/malee31/DataVisualization",
-		demoLink: "https://malee31.github.io/DataVisualization",
+		repoLink: "https://github.com/malee31/Processing-Java-Projects/tree/DataVisualization",
+		demoLink: "https://malee31.github.io/Processing-Java-Projects/DataVisualization",
 		imageSrc: "repositories/DataVisualization.png"
 	}
 ];
