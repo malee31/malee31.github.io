@@ -3,6 +3,7 @@ import ScreenSection from "../atoms/FullScreenSection";
 import SplashTextLayer from "./SplashTextLayer";
 import loadable from "@loadable/component";
 import "./Splash.css";
+import ScrollBanner from "../atoms/ScrollBanner";
 
 const ThreeSplash = loadable(() => import("../../three/organisms/ThreeSplash"));
 
@@ -17,6 +18,9 @@ export default function Splash() {
 		<ScreenSection id="home" className="column-center column-align">
 			<ThreeSplash fallback={null}/>
 			<SplashTextLayer centered={splashTextCentered}/>
+			<ScrollBanner to="#about">
+				▼
+			</ScrollBanner>
 		</ScreenSection>
 	);
 }
