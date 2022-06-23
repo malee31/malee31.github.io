@@ -22,7 +22,7 @@
 	top: .6rem;
 	left: 1.1rem;
 	cursor: pointer;
-	z-index: 100;
+	z-index: 2;
 }
 
 #menu-icon-container {
@@ -55,7 +55,7 @@
 }
 
 #menu-toggle:checked ~ #nav-underlay {
-	z-index: 99;
+	z-index: 1;
 	opacity: 1;
 }
 
@@ -93,7 +93,7 @@ nav {
 	left: calc(var(--nav-width) * -1);
 	margin: 0;
 	padding: 4.2rem 0 .6rem;
-	z-index: 99;
+	z-index: 1;
 	transition: left .5s;
 }
 
