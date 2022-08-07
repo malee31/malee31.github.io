@@ -6,9 +6,8 @@
 #featured-container {
 	display: grid;
 	justify-content: center;
-	/* TODO: Decrease minimum pixel size and padding after increasing number of featured projects */
 	grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
 	column-count: auto;
-	grid-gap: .25rem;
-	padding: .25rem min(1%, 2rem);
+	grid-gap: .1rem;
+	padding: .2rem min(1%, 2rem);
 }

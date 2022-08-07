@@ -3,7 +3,7 @@
 	width: 100%;
 	height: fit-content;
 	border-radius: .75rem;
-	border: 2px solid transparent;
+	border: 2px solid #0000000F;
 	background-color: transparent;
 	transform: none;
 	cursor: pointer;
