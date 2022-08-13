@@ -99,5 +99,5 @@
 }
 
 .repo-card-links a:hover {
-	background-color: #CCCCCC;
+	backdrop-filter: brightness(1.2);
 }
