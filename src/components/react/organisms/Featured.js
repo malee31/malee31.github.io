@@ -37,14 +37,12 @@ const FEATURED_DATA = [
 		title: "Slack to Discord Bridge",
 		description: "Creates a Discord archive by forwarding Slack messages and files to a Discord Server of your choosing",
 		repoLink: "https://github.com/malee31/Slack-to-Discord-Bridge",
-		demoLink: "https://malee31.github.io/Slack-to-Discord-Bridge",
 		imageSrc: "repositories/SlackToDiscordBridge.png"
 	},
 	{
 		title: "Canvas Helpers",
 		description: "Python CLI tool for automatically creating study groups on Canvas based on student preferences (See other contributors on GitHub)",
 		repoLink: "https://github.com/malee31/CanvasHelpers/tree/better-study-groups",
-		demoLink: "https://github.com/mfbutner/CanvasHelpers",
 		imageSrc: "repositories/CanvasHelpers.png"
 	},
 	{
@@ -64,7 +62,6 @@ const FEATURED_DATA = [
 	{
 		title: "Cube Color Picker",
 		description: "A color picker that uses WebGL to allow you to better choose from hues of the same color by presenting it as a lit cube",
-		repoLink: "https://github.com/malee31/CubeColorPicker",
 		demoLink: "https://malee31.github.io/CubeColorPicker",
 		imageSrc: "repositories/CubeColorPicker.png"
 	},
@@ -72,7 +69,6 @@ const FEATURED_DATA = [
 		title: "Halloween Discord Bot",
 		description: "A Discord Bot I made for a one-off Halloween Event on a specific Discord Server!",
 		repoLink: "https://github.com/malee31/HalloweenDiscordBot",
-		demoLink: "https://github.com/malee31/HalloweenDiscordBot",
 		imageSrc: "repositories/HalloweenBot.png"
 	},
 	{

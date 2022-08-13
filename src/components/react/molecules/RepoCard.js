@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 import "./RepoCard.css";
 
@@ -24,8 +24,8 @@ export default function RepoCard({ image, title, description, repoLink, demoLink
 				<h3 className="repo-card-title">{title}</h3>
 				<p className="repo-card-description">{description}</p>
 				<div className="repo-card-links">
-					<a href={repoLink} tabIndex={flipped ? 0 : -1}>Open in GitHub</a>
-					<a href={demoLink} tabIndex={flipped ? 0 : -1}>Try Demo</a>
+					{repoLink && <a href={repoLink} tabIndex={flipped ? 0 : -1}>Open in GitHub</a>}
+					{demoLink && <a href={demoLink} tabIndex={flipped ? 0 : -1}>Try Demo</a>}
 				</div>
 			</div>
 		</div>

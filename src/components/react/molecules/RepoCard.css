@@ -71,8 +71,8 @@
 }
 
 .repo-card-links {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
+	flex-direction: row;
 	justify-content: center;
 	margin: 0;
 	background-color: #AAAAAA;
@@ -81,6 +81,7 @@
 
 .repo-card-links a {
 	height: 100%;
+	flex: 1 1 0;
 	padding: .5rem 0;
 	border-color: #888888;
 	border-width: 0;
