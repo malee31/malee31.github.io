@@ -141,3 +141,12 @@ section h1 {
 .heavy-padding {
 	padding: 20px 40px;
 }
+
+.fade {
+	animation: fade-in .25s ease-in-out 1;
+}
+
+@keyframes fade-in {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}

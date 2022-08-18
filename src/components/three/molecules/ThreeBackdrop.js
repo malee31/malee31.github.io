@@ -31,6 +31,8 @@ export default function Backdrop() {
 					position={[0, 0, -100]}
 					color="#F0F0F0"
 					toneMapped={false}
+					transparent={true}
+					opacity={0.95}
 				/>
 			</Plane>
 		</>,
