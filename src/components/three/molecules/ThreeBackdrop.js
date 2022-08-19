@@ -4,7 +4,13 @@ import { OrthographicCamera, Plane } from "@react-three/drei";
 import { Scene } from "three";
 
 export default function Backdrop() {
-	const { gl, scene, camera, size } = useThree();
+	const {
+		gl,
+		scene,
+		camera,
+		size
+	} = useThree();
+
 	const backgroundScene = useMemo(() => new Scene(), []);
 	const backgroundCamRef = useRef();
 

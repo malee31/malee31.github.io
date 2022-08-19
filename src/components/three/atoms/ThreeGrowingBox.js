@@ -15,7 +15,12 @@ function calculateChangedScale(current, rate = 0) {
  * @constructor
  */
 export default function GrowingBox(props) {
-	const { scaleRate, color, ...boxProps } = props;
+	const {
+		scaleRate,
+		color,
+		...boxProps
+	} = props;
+
 	const boxRef = useRef();
 
 	useFrame(() => {

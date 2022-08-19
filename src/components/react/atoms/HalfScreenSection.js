@@ -1,13 +1,13 @@
 import React from "react";
-import "./FullScreenSection.css";
+import "./HalfScreenSection.css";
 
 /**
- * Creates a section element that takes up 100% of the width and height
+ * Creates a section element that takes up 100% of the width and half the height of the screen
  * @param props Properties to pass through to the section component. Some properties are merged with internal properties
  * @returns {JSX.Element}
  * @constructor
  */
-export default function ScreenSection(props) {
+export default function HalfScreenSection(props) {
 	const {
 		className = "",
 		children,
@@ -15,7 +15,7 @@ export default function ScreenSection(props) {
 	} = props;
 
 	return (
-		<section className={`screen-section column-center ${className}`} {...extraProps}>
+		<section className={`half-screen-section column-center ${className}`} {...extraProps}>
 			{children}
 		</section>
 	);

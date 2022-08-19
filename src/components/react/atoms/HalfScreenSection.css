@@ -1,0 +1,8 @@
+.half-screen-section {
+	position: relative;
+	width: 100%;
+	height: 50vh;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}

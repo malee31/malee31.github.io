@@ -11,7 +11,8 @@ export default function RepoCard(props) {
 		demoLink,
 		backgroundColor = "#AAAAAA",
 		textColor = "#191816",
-		...args
+		className = "",
+		...extraProps
 	} = props;
 
 	const [flipped, setFlipped] = useState(false);
@@ -19,7 +20,7 @@ export default function RepoCard(props) {
 
 	return (
 		<div
-			className={`repo-card-container ${flipped ? "repo-card-container-force-flip" : ""}`}
+			className={`repo-card-container ${className} ${flipped ? "repo-card-container-force-flip" : ""}`}
 			role="menuitem"
 			tabIndex="0"
 			onClick={toggleFlip}
@@ -27,7 +28,7 @@ export default function RepoCard(props) {
 				if(code !== "Space") return;
 				toggleFlip();
 			}}
-			{...args}
+			{...extraProps}
 		>
 			<div className="repo-card repo-card-front" aria-hidden={flipped}>
 				<GatsbyImage className="featured-card-img" alt={`${title} Demo Image`} image={image}/>
