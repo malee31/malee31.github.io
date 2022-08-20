@@ -125,11 +125,15 @@ export default function Experimental() {
 			<h1>Featured Projects</h1>
 			<div id="featured-container" role="list">
 				{FEATURED_DATA.map(featuredData => {
-					const imageData = data.allFile.edges.find(edge => edge.node.relativePath === featuredData.imageSrc)?.node;
+					const {
+						imageSrc,
+						...cardData
+					} = featuredData;
+					const imageData = data.allFile.edges.find(edge => edge.node.relativePath === imageSrc)?.node;
 					const image = getImage(imageData);
 
 					return (
-						<RepoCard key={featuredData.title} {...featuredData} image={image}/>
+						<RepoCard key={cardData.title} {...cardData} image={image}/>
 					);
 				})}
 			</div>

@@ -4,7 +4,8 @@ import "./AboutMe.css";
 
 export default function AboutMe() {
 	return (
-		<HalfScreenSection id="about" className="heavy-padding column-align">
+		<HalfScreenSection id="about-main" className="heavy-padding column-align">
+			<div id="about">{/* The scroll target for #about */}</div>
 			<h1>About Me</h1>
 			<p className="content">
 				I have been an avid programmer ever since I learned that devices can turn lines of text into interactive and stunning games and websites in my first year of middle school.

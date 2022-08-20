@@ -1,0 +1,16 @@
+#about {
+	position: absolute;
+	top: -50%;
+	pointer-events: none;
+	z-index: -1;
+	visibility: hidden;
+}
+
+#about-main {
+	background-color: #FDFDFB;
+}
+
+#about-main p {
+	width: 65vw;
+	margin-top: 0;
+}

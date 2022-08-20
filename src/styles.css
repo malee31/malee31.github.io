@@ -33,15 +33,6 @@ section h1 {
 	text-align: center;
 }
 
-#about {
-	background-color: #FDFDFB;
-}
-
-#about p {
-	width: 65vw;
-	margin-top: 0;
-}
-
 .logoLink {
 	display: flex;
 	flex-direction: column;
@@ -143,7 +134,7 @@ section h1 {
 }
 
 .fade {
-	animation: fade-in .25s ease-in-out 1;
+	animation: fade-in 1.5 ease-in-out;
 }
 
 @keyframes fade-in {
