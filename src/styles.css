@@ -30,6 +30,8 @@ a {
 }
 
 section h1 {
+	margin: .8rem 0;
+	font-size: 1.8rem;
 	text-align: center;
 }
 

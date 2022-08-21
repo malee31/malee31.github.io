@@ -9,6 +9,7 @@ import "./HalfScreenSection.css";
  */
 export default function HalfScreenSection(props) {
 	const {
+		scrollId,
 		className = "",
 		children,
 		...extraProps
@@ -16,6 +17,9 @@ export default function HalfScreenSection(props) {
 
 	return (
 		<section className={`half-screen-section column-center ${className}`} {...extraProps}>
+			{scrollId && (
+				<div id={scrollId} className="half-screen-scroll-target">{/* Optional Scroll Target (So that the screen section is centered when scrolled to) */}</div>
+			)}
 			{children}
 		</section>
 	);

@@ -4,13 +4,19 @@ import "./AboutMe.css";
 
 export default function AboutMe() {
 	return (
-		<HalfScreenSection id="about-main" className="heavy-padding column-align">
-			<div id="about">{/* The scroll target for #about */}</div>
+		<HalfScreenSection
+			scrollId="about"
+			className="column-align about-container"
+		>
 			<h1>About Me</h1>
-			<p className="content">
-				I have been an avid programmer ever since I learned that devices can turn lines of text into interactive and stunning games and websites in my first year of middle school.
-				Currently, I write most of my projects using NodeJS on the backend and HTML, CSS, and Javascript on the front-end.
-				Although my language of choice is JavaScript, I am also familiar with C, C++, Java, and Python.
+			<p className="about-desc">
+				I have been dedicated to programming ever since I learned that I could make the devices in my hands turn lines of text into visually appealing interactive games and websites in 6th grade.
+				Ever since then, I have been diving into the world of web development and learning multiple languages and frameworks.
+				<br/>
+				<br/>
+				I currently write most of my web projects in Nodejs with various React frameworks like Gatsby, React Native, or NextJS.
+				<br/>
+				Although my language of choice is JavaScript, I am also very familiar with C, C++, Java, and Python.
 			</p>
 		</HalfScreenSection>
 	);

@@ -1,16 +1,11 @@
-#about {
-	position: absolute;
-	top: -50%;
-	pointer-events: none;
-	z-index: -1;
-	visibility: hidden;
-}
-
-#about-main {
+.about-container {
 	background-color: #FDFDFB;
+	padding: 2rem;
 }
 
-#about-main p {
-	width: 65vw;
+.about-desc {
+	width: min(100%, 800px);
 	margin-top: 0;
+	font-size: min(1.4rem, 3vw);
+	text-align: justify;
 }

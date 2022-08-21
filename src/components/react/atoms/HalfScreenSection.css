@@ -6,3 +6,11 @@
 	padding: 0;
 	border: 0;
 }
+
+.half-screen-scroll-target {
+	position: absolute;
+	top: -50%;
+	pointer-events: none;
+	z-index: -1;
+	visibility: hidden;
+}

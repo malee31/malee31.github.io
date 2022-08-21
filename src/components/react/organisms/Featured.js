@@ -30,7 +30,7 @@ const FEATURED_DATA = [
 		demoLink: "https://malee31.github.io/Processing-Java-Projects/AsteroidsGame",
 		imageSrc: "repositories/AsteroidsGame.png",
 		backgroundColor: "#262626",
-		textColor: "#969696"
+		textColor: "#D6D6D6"
 	},
 	{
 		title: "Starfield",
