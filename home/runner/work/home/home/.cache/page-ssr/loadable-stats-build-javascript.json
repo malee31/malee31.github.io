@@ -1,6 +1,6 @@
 {
   "name": "build-javascript",
-  "hash": "5086fc03ac145d80da32",
+  "hash": "092e323712f07e5e6761",
   "publicPath": "/home/",
   "outputPath": "/home/runner/work/home/home/public",
   "assetsByChunkName": {
@@ -8,16 +8,16 @@
       "polyfill-a3c92de79839ad9be01c.js"
     ],
     "app": [
-      "app-cc598cdf6640a288ce17.js"
+      "app-c52df4410471f667a6f2.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-98e774202da58c78fee8.js"
+      "webpack-runtime-d7a3671809f6d3cb953a.js"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-54a2a560ff415376f4e8.js"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-a258f7b31936001edde7.js"
+      "component---src-pages-index-js-7cdbbfe53171057a3905.js"
     ],
     "three-organisms-ThreeSplash": [
       "three-organisms-ThreeSplash-3fae24c0ca26ff9dfaf7.js"
@@ -26,7 +26,7 @@
       "framework-943e686571cf002f1771.js"
     ],
     "styles": [
-      "styles.a60ac9706248b9666b18.css"
+      "styles.d493a51a4b1a10f2d138.css"
     ],
     "fb7d5399": [
       "fb7d5399-9ba37a1c4023efe6f767.js"
@@ -150,19 +150,41 @@
     },
     {
       "type": "asset",
-      "name": "app-cc598cdf6640a288ce17.js",
-      "size": 90416,
+      "name": "static/marvin-portfolio-38787bd818412d7c6b77b9b8da304c74.png",
+      "size": 91849,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "cc598cdf6640a288ce17",
+        "sourceFilename": "src/images/marvin-portfolio.png"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "component---src-pages-index-js"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        678
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "app-c52df4410471f667a6f2.js",
+      "size": 90586,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "contenthash": "c52df4410471f667a6f2",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "license": "app-cc598cdf6640a288ce17.js.LICENSE.txt",
-          "sourceMap": "app-cc598cdf6640a288ce17.js.map"
+          "license": "app-c52df4410471f667a6f2.js.LICENSE.txt",
+          "sourceMap": "app-c52df4410471f667a6f2.js.map"
         }
       },
       "chunkNames": [
@@ -207,18 +229,18 @@
     },
     {
       "type": "asset",
-      "name": "component---src-pages-index-js-a258f7b31936001edde7.js",
-      "size": 38478,
+      "name": "component---src-pages-index-js-7cdbbfe53171057a3905.js",
+      "size": 58513,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "a258f7b31936001edde7",
+        "contenthash": "7cdbbfe53171057a3905",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "component---src-pages-index-js-a258f7b31936001edde7.js.map"
+          "sourceMap": "component---src-pages-index-js-7cdbbfe53171057a3905.js.map"
         }
       },
       "chunkNames": [
@@ -232,6 +254,50 @@
         678
       ],
       "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/android-chrome-512x512-7396bc52e19490e03e24983d4fb80fb2.png",
+      "size": 21196,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/images/favicons/android-chrome-512x512.png"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "component---src-pages-index-js"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        678
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/favicon-dc02d15046a4b38795810eb3bd3a74cd.ico",
+      "size": 15406,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/images/favicons/favicon.ico"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "component---src-pages-index-js"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        678
+      ]
     },
     {
       "type": "asset",
@@ -262,14 +328,14 @@
     },
     {
       "type": "asset",
-      "name": "styles.a60ac9706248b9666b18.css",
-      "size": 7733,
+      "name": "styles.d493a51a4b1a10f2d138.css",
+      "size": 7857,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "a60ac9706248b9666b18",
+        "contenthash": "d493a51a4b1a10f2d138",
         "minimized": true
       },
       "chunkNames": [
@@ -287,18 +353,18 @@
     },
     {
       "type": "asset",
-      "name": "webpack-runtime-98e774202da58c78fee8.js",
+      "name": "webpack-runtime-d7a3671809f6d3cb953a.js",
       "size": 5041,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "98e774202da58c78fee8",
+        "contenthash": "d7a3671809f6d3cb953a",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "webpack-runtime-98e774202da58c78fee8.js.map"
+          "sourceMap": "webpack-runtime-d7a3671809f6d3cb953a.js.map"
         }
       },
       "chunkNames": [
@@ -377,7 +443,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-98e774202da58c78fee8.js"
+          "name": "webpack-runtime-d7a3671809f6d3cb953a.js"
         },
         {
           "name": "polyfill-a3c92de79839ad9be01c.js"
@@ -399,13 +465,13 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-98e774202da58c78fee8.js"
+          "name": "webpack-runtime-d7a3671809f6d3cb953a.js"
         },
         {
           "name": "framework-943e686571cf002f1771.js"
         },
         {
-          "name": "app-cc598cdf6640a288ce17.js"
+          "name": "app-c52df4410471f667a6f2.js"
         }
       ],
       "filteredAssets": 0,
@@ -440,15 +506,15 @@
       ],
       "assets": [
         {
-          "name": "styles.a60ac9706248b9666b18.css"
+          "name": "styles.d493a51a4b1a10f2d138.css"
         },
         {
-          "name": "component---src-pages-index-js-a258f7b31936001edde7.js"
+          "name": "component---src-pages-index-js-7cdbbfe53171057a3905.js"
         }
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 2,
+      "filteredAuxiliaryAssets": 5,
       "auxiliaryAssetsSize": null,
       "children": {},
       "childAssets": {}
@@ -486,13 +552,13 @@
     {
       "id": 143,
       "files": [
-        "app-cc598cdf6640a288ce17.js"
+        "app-c52df4410471f667a6f2.js"
       ]
     },
     {
       "id": 658,
       "files": [
-        "webpack-runtime-98e774202da58c78fee8.js"
+        "webpack-runtime-d7a3671809f6d3cb953a.js"
       ]
     },
     {
@@ -504,7 +570,7 @@
     {
       "id": 678,
       "files": [
-        "component---src-pages-index-js-a258f7b31936001edde7.js"
+        "component---src-pages-index-js-7cdbbfe53171057a3905.js"
       ]
     },
     {
@@ -534,7 +600,7 @@
     {
       "id": 532,
       "files": [
-        "styles.a60ac9706248b9666b18.css"
+        "styles.d493a51a4b1a10f2d138.css"
       ]
     },
     {
