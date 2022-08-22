@@ -101,22 +101,30 @@ const FEATURED_DATA = [
 		textColor: "#FFFFFF"
 	}
 ];
+
 export default function Experimental() {
 	const data = useStaticQuery(graphql`
 		query RepoQuery {
-			allFile(filter: {relativeDirectory: {eq: "repositories"}}) {
-				edges {
-					node {
-						publicURL
-						relativePath
-						id
-						name
-						childImageSharp {
-							gatsbyImageData(placeholder: TRACED_SVG)
-						}
-					}
+		  allFile(filter: {relativeDirectory: {eq: "repositories"}}) {
+			edges {
+			  node {
+				publicURL
+				relativePath
+				id
+				name
+				childImageSharp {
+				  gatsbyImageData(
+					placeholder: TRACED_SVG
+					tracedSVGOptions: {}
+					webpOptions: {quality: 25}
+					formats: [AUTO, WEBP]
+					breakpoints: [100, 150, 200, 250, 300, 400, 600, 800, 960, 1280, 1920]
+					sizes: "(min-width: 1275px) 25vw, (min-width: 667px) 33vw, (min-width: 660px) 50vw, 100vw"
+				  )
 				}
+			  }
 			}
+		  }
 		}
 	`);
 
@@ -138,5 +146,5 @@ export default function Experimental() {
 				})}
 			</div>
 		</div>
-	)
+	);
 }

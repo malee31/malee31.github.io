@@ -44,5 +44,5 @@ export default function GrowingBox(props) {
 		>
 			<meshPhongMaterial color={color} wireframe={false}/>
 		</Box>
-	)
+	);
 }

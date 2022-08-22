@@ -48,7 +48,7 @@ const NotFoundPage = () => {
 				<Link to="/">Go home</Link>.
 			</p>
 		</main>
-	)
+	);
 }
 
 export default NotFoundPage
