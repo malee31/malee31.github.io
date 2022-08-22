@@ -1,26 +1,42 @@
 import React, { useRef } from "react";
-import { useFrame } from "@react-three/fiber";
-import { Box, OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import { Box, TrackballControls, PerspectiveCamera } from "@react-three/drei";
 import GrowingBox from "../atoms/ThreeGrowingBox";
+import { animated, useSpring } from "@react-spring/three";
 
 export default function ThreeFigure() {
 	const camRef = useRef();
 	const groupRef = useRef();
 
-	// TODO: Simplify with another library like spring
-	useFrame(() => {
-		groupRef.current.rotation.x -= 0.005;
-		groupRef.current.rotation.y += 0.01;
+	const { rotateX, rotateY } = useSpring({
+		from: {
+			rotateX: Math.PI / 6,
+			rotateY: Math.PI / 6,
+		},
+		to: {
+			rotateX: 2 * Math.PI + Math.PI / 6,
+			rotateY: 10 * Math.PI + Math.PI / 6
+		},
+		config: {
+			duration: 20000,
+		},
+		loop: true
 	});
 
 	return (
 		<>
 			<PerspectiveCamera ref={camRef} position={[0, 0, 50]}/>
-			<OrbitControls camera={camRef.current} position={[0, 0, 10]} enableZoom={false}/>
-			<group
+			<TrackballControls
+				camera={camRef.current}
+				position={[0, 0, 10]}
+				noZoom={true}
+				noPan={true}
+				rotateSpeed={2.5}
+			/>
+			<animated.group
 				ref={groupRef}
 				position={[0, 0, 0]}
-				rotation={[Math.PI / 6, Math.PI / 6, 0]}
+				rotation-x={rotateX}
+				rotation-y={rotateY}
 			>
 				<GrowingBox
 					color="#067DDC"
@@ -42,7 +58,7 @@ export default function ThreeFigure() {
 					scale={[1, 0.3, 0.25]}
 					scaleRate={[0, 0, 0.01]}
 				/>
-			</group>
+			</animated.group>
 		</>
 	);
 }
