@@ -11,8 +11,8 @@ export default function SplashTextLayer(props) {
 	return (
 		<header className={`column-align splash-text-layer ${className}`} {...extraProps}>
 			<div className={`column-align splash-text-layer-content ${!centered ? "splash-text-layer-content-top" : ""}`}>
-				<h2>Marvin Lee</h2>
-				<h4>Full Stack Developer</h4>
+				<h1 className="splash-title">Marvin Lee</h1>
+				<h2 className="splash-subtitle">Full Stack Developer</h2>
 			</div>
 		</header>
 	);

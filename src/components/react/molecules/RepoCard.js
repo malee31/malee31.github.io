@@ -24,8 +24,9 @@ export default function RepoCard(props) {
 			role="menuitem"
 			tabIndex="0"
 			onClick={toggleFlip}
-			onKeyUp={({ code }) => {
-				if(code !== "Space") return;
+			onKeyUp={(e) => {
+				if(e.code !== "Space" && e.code !== "Enter") return;
+				e.preventDefault();
 				toggleFlip();
 			}}
 			{...extraProps}

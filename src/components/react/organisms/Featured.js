@@ -123,7 +123,7 @@ export default function Experimental() {
 	return (
 		<div id="featured">
 			<h1>Featured Projects</h1>
-			<div id="featured-container" role="list">
+			<div id="featured-container" role="menu">
 				{FEATURED_DATA.map(featuredData => {
 					const {
 						imageSrc,

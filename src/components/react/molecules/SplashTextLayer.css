@@ -22,6 +22,14 @@
 }
 
 .splash-text-layer-content-top {
-	top: 15%;
+	top: 10%;
 	transform: none;
+}
+
+.splash-title {
+	font-size: 3rem;
+}
+
+.splash-subtitle {
+	font-size: 2rem;
 }
