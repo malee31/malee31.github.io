@@ -1,6 +1,6 @@
 {
   "name": "build-javascript",
-  "hash": "092e323712f07e5e6761",
+  "hash": "cdd1f88fd301c1738919",
   "publicPath": "/home/",
   "outputPath": "/home/runner/work/home/home/public",
   "assetsByChunkName": {
@@ -11,16 +11,16 @@
       "app-c52df4410471f667a6f2.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-d7a3671809f6d3cb953a.js"
+      "webpack-runtime-d3aa724ed960644426a4.js"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-54a2a560ff415376f4e8.js"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-7cdbbfe53171057a3905.js"
+      "component---src-pages-index-js-6212965b8a97817790df.js"
     ],
     "three-organisms-ThreeSplash": [
-      "three-organisms-ThreeSplash-3fae24c0ca26ff9dfaf7.js"
+      "three-organisms-ThreeSplash-a1473927094be0cee992.js"
     ],
     "framework": [
       "framework-943e686571cf002f1771.js"
@@ -90,6 +90,35 @@
     },
     {
       "type": "asset",
+      "name": "three-organisms-ThreeSplash-a1473927094be0cee992.js",
+      "size": 224575,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "contenthash": "a1473927094be0cee992",
+        "javascriptModule": false,
+        "minimized": true,
+        "related": {
+          "license": "three-organisms-ThreeSplash-a1473927094be0cee992.js.LICENSE.txt",
+          "sourceMap": "three-organisms-ThreeSplash-a1473927094be0cee992.js.map"
+        }
+      },
+      "chunkNames": [
+        "three-organisms-ThreeSplash"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 2,
+      "chunks": [
+        253
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
       "name": "framework-943e686571cf002f1771.js",
       "size": 210239,
       "emitted": false,
@@ -116,35 +145,6 @@
       "filteredRelated": 2,
       "chunks": [
         774
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "three-organisms-ThreeSplash-3fae24c0ca26ff9dfaf7.js",
-      "size": 172811,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "immutable": true,
-        "contenthash": "3fae24c0ca26ff9dfaf7",
-        "javascriptModule": false,
-        "minimized": true,
-        "related": {
-          "license": "three-organisms-ThreeSplash-3fae24c0ca26ff9dfaf7.js.LICENSE.txt",
-          "sourceMap": "three-organisms-ThreeSplash-3fae24c0ca26ff9dfaf7.js.map"
-        }
-      },
-      "chunkNames": [
-        "three-organisms-ThreeSplash"
-      ],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 2,
-      "chunks": [
-        253
       ],
       "auxiliaryChunks": []
     },
@@ -229,18 +229,18 @@
     },
     {
       "type": "asset",
-      "name": "component---src-pages-index-js-7cdbbfe53171057a3905.js",
-      "size": 58513,
+      "name": "component---src-pages-index-js-6212965b8a97817790df.js",
+      "size": 58511,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "7cdbbfe53171057a3905",
+        "contenthash": "6212965b8a97817790df",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "component---src-pages-index-js-7cdbbfe53171057a3905.js.map"
+          "sourceMap": "component---src-pages-index-js-6212965b8a97817790df.js.map"
         }
       },
       "chunkNames": [
@@ -353,18 +353,18 @@
     },
     {
       "type": "asset",
-      "name": "webpack-runtime-d7a3671809f6d3cb953a.js",
+      "name": "webpack-runtime-d3aa724ed960644426a4.js",
       "size": 5041,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "d7a3671809f6d3cb953a",
+        "contenthash": "d3aa724ed960644426a4",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "webpack-runtime-d7a3671809f6d3cb953a.js.map"
+          "sourceMap": "webpack-runtime-d3aa724ed960644426a4.js.map"
         }
       },
       "chunkNames": [
@@ -443,7 +443,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-d7a3671809f6d3cb953a.js"
+          "name": "webpack-runtime-d3aa724ed960644426a4.js"
         },
         {
           "name": "polyfill-a3c92de79839ad9be01c.js"
@@ -465,7 +465,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-d7a3671809f6d3cb953a.js"
+          "name": "webpack-runtime-d3aa724ed960644426a4.js"
         },
         {
           "name": "framework-943e686571cf002f1771.js"
@@ -509,7 +509,7 @@
           "name": "styles.d493a51a4b1a10f2d138.css"
         },
         {
-          "name": "component---src-pages-index-js-7cdbbfe53171057a3905.js"
+          "name": "component---src-pages-index-js-6212965b8a97817790df.js"
         }
       ],
       "filteredAssets": 0,
@@ -530,7 +530,7 @@
           "name": "fb7d5399-9ba37a1c4023efe6f767.js"
         },
         {
-          "name": "three-organisms-ThreeSplash-3fae24c0ca26ff9dfaf7.js"
+          "name": "three-organisms-ThreeSplash-a1473927094be0cee992.js"
         }
       ],
       "filteredAssets": 0,
@@ -558,7 +558,7 @@
     {
       "id": 658,
       "files": [
-        "webpack-runtime-d7a3671809f6d3cb953a.js"
+        "webpack-runtime-d3aa724ed960644426a4.js"
       ]
     },
     {
@@ -570,13 +570,13 @@
     {
       "id": 678,
       "files": [
-        "component---src-pages-index-js-7cdbbfe53171057a3905.js"
+        "component---src-pages-index-js-6212965b8a97817790df.js"
       ]
     },
     {
       "id": 253,
       "files": [
-        "three-organisms-ThreeSplash-3fae24c0ca26ff9dfaf7.js"
+        "three-organisms-ThreeSplash-a1473927094be0cee992.js"
       ]
     },
     {
