@@ -1,11 +1,35 @@
 .about-container {
-	background-color: #FDFDFB;
+	background-color: #F8F8FA;
 	padding: 2rem;
+}
+
+.about-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	overflow: auto;
+}
+
+.about-profile-picture {
+	shape-outside: url("../../../images/profile.svg");
+	width: 30%;
+	min-width: min(100%, 300px);
 }
 
 .about-desc {
 	width: min(100%, 800px);
-	margin-top: 0;
 	font-size: min(1.4rem, 3vw);
 	text-align: justify;
+}
+
+@media screen and (max-width: 900px) {
+	.about-heading {
+		margin-bottom: 0;
+	}
+
+	.about-content {
+		flex-direction: column;
+	}
 }
