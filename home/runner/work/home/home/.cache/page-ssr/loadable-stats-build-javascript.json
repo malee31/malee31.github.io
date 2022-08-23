@@ -1,6 +1,6 @@
 {
   "name": "build-javascript",
-  "hash": "1f7f7f4078cdefc3cef1",
+  "hash": "d5b15d7270b1bcb7e2bc",
   "publicPath": "/home/",
   "outputPath": "/home/runner/work/home/home/public",
   "assetsByChunkName": {
@@ -11,13 +11,13 @@
       "app-f7c35eaeccfe10b13eb4.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-62d4c59659ad53237be8.js"
+      "webpack-runtime-4b8643513bce4cf2e4b2.js"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-54a2a560ff415376f4e8.js"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-070cf859aa8e2e472fe5.js"
+      "component---src-pages-index-js-429429611aacce2722e7.js"
     ],
     "components-react-organisms-Featured": [
       "components-react-organisms-Featured-031b0e59c80211986fea.js"
@@ -29,7 +29,7 @@
       "framework-943e686571cf002f1771.js"
     ],
     "styles": [
-      "styles.5bae246c08abd11ac9e8.css"
+      "styles.3074b9f9ca6a5af48084.css"
     ],
     "fb7d5399": [
       "fb7d5399-9ba37a1c4023efe6f767.js"
@@ -232,18 +232,18 @@
     },
     {
       "type": "asset",
-      "name": "component---src-pages-index-js-070cf859aa8e2e472fe5.js",
-      "size": 44614,
+      "name": "component---src-pages-index-js-429429611aacce2722e7.js",
+      "size": 44527,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "070cf859aa8e2e472fe5",
+        "contenthash": "429429611aacce2722e7",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "component---src-pages-index-js-070cf859aa8e2e472fe5.js.map"
+          "sourceMap": "component---src-pages-index-js-429429611aacce2722e7.js.map"
         }
       },
       "chunkNames": [
@@ -359,14 +359,40 @@
     },
     {
       "type": "asset",
-      "name": "styles.5bae246c08abd11ac9e8.css",
-      "size": 7936,
+      "name": "static/profile-65dafb995f0fcb096951cc18d4c957d0.svg",
+      "size": 10559,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "5bae246c08abd11ac9e8",
+        "sourceFilename": "src/images/profile.svg"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "component---src-pages-index-js",
+        "styles"
+      ],
+      "auxiliaryChunkIdHints": [
+        "styles"
+      ],
+      "chunks": [],
+      "auxiliaryChunks": [
+        532,
+        678
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "styles.3074b9f9ca6a5af48084.css",
+      "size": 8085,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "contenthash": "3074b9f9ca6a5af48084",
         "minimized": true
       },
       "chunkNames": [
@@ -384,18 +410,18 @@
     },
     {
       "type": "asset",
-      "name": "webpack-runtime-62d4c59659ad53237be8.js",
+      "name": "webpack-runtime-4b8643513bce4cf2e4b2.js",
       "size": 5110,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "62d4c59659ad53237be8",
+        "contenthash": "4b8643513bce4cf2e4b2",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "webpack-runtime-62d4c59659ad53237be8.js.map"
+          "sourceMap": "webpack-runtime-4b8643513bce4cf2e4b2.js.map"
         }
       },
       "chunkNames": [
@@ -474,7 +500,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-62d4c59659ad53237be8.js"
+          "name": "webpack-runtime-4b8643513bce4cf2e4b2.js"
         },
         {
           "name": "polyfill-a3c92de79839ad9be01c.js"
@@ -496,7 +522,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-62d4c59659ad53237be8.js"
+          "name": "webpack-runtime-4b8643513bce4cf2e4b2.js"
         },
         {
           "name": "framework-943e686571cf002f1771.js"
@@ -537,15 +563,15 @@
       ],
       "assets": [
         {
-          "name": "styles.5bae246c08abd11ac9e8.css"
+          "name": "styles.3074b9f9ca6a5af48084.css"
         },
         {
-          "name": "component---src-pages-index-js-070cf859aa8e2e472fe5.js"
+          "name": "component---src-pages-index-js-429429611aacce2722e7.js"
         }
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 5,
+      "filteredAuxiliaryAssets": 6,
       "auxiliaryAssetsSize": null,
       "children": {},
       "childAssets": {}
@@ -558,7 +584,7 @@
       ],
       "assets": [
         {
-          "name": "styles.5bae246c08abd11ac9e8.css"
+          "name": "styles.3074b9f9ca6a5af48084.css"
         },
         {
           "name": "components-react-organisms-Featured-031b0e59c80211986fea.js"
@@ -566,7 +592,7 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 2,
+      "filteredAuxiliaryAssets": 3,
       "auxiliaryAssetsSize": null,
       "children": {},
       "childAssets": {}
@@ -610,7 +636,7 @@
     {
       "id": 658,
       "files": [
-        "webpack-runtime-62d4c59659ad53237be8.js"
+        "webpack-runtime-4b8643513bce4cf2e4b2.js"
       ]
     },
     {
@@ -622,7 +648,7 @@
     {
       "id": 678,
       "files": [
-        "component---src-pages-index-js-070cf859aa8e2e472fe5.js"
+        "component---src-pages-index-js-429429611aacce2722e7.js"
       ]
     },
     {
@@ -658,7 +684,7 @@
     {
       "id": 532,
       "files": [
-        "styles.5bae246c08abd11ac9e8.css"
+        "styles.3074b9f9ca6a5af48084.css"
       ]
     },
     {
