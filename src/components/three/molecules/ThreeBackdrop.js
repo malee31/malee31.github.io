@@ -1,6 +1,7 @@
 import React, { useMemo, useRef } from "react";
 import { createPortal, useFrame, useThree } from "@react-three/fiber";
 import { OrthographicCamera, Plane } from "@react-three/drei";
+import { animated, useSpring } from "@react-spring/three";
 import { Scene } from "three";
 
 export default function Backdrop() {
@@ -13,6 +14,11 @@ export default function Backdrop() {
 
 	const backgroundScene = useMemo(() => new Scene(), []);
 	const backgroundCamRef = useRef();
+
+	const { opacity } = useSpring({
+		from: { opacity: 0 },
+		to: { opacity: 0.95 }
+	});
 
 	useFrame(() => {
 		gl.autoClear = true;
@@ -33,12 +39,12 @@ export default function Backdrop() {
 				position={[0, 0, -100]}
 				args={[size.width, size.height]}
 			>
-				<meshBasicMaterial
+				<animated.meshBasicMaterial
 					position={[0, 0, -100]}
 					color="#F0F0F0"
 					toneMapped={false}
 					transparent={true}
-					opacity={0.95}
+					opacity={opacity}
 				/>
 			</Plane>
 		</>,
