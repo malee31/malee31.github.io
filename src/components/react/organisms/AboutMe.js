@@ -2,6 +2,7 @@ import React from "react";
 import ScreenSection from "../atoms/FullScreenSection";
 import ProfileSVG from "../../../images/profile.svg";
 import "./AboutMe.css";
+import ScrollBanner from "../atoms/ScrollBanner";
 
 export default function AboutMe() {
 	return (
@@ -14,18 +15,22 @@ export default function AboutMe() {
 				<img
 					className="about-profile-picture"
 					src={ProfileSVG}
-					alt="Profile Picture"
+					alt="Profile"
 				/>
 				<p className="about-desc">
-					I have been dedicated to programming ever since I learned that I could make the devices in my hands turn lines of text into visually appealing interactive games and websites in 6th grade.
-					Ever since then, I have been diving into the world of web development and learning multiple languages and frameworks.
+					I enjoy building interactive responsive websites and tools using various frameworks like React. I currently write most of my web projects with NodeJS alongside React frameworks like Gatsby, React Native, or NextJS but I also have some projects in Python and normal HTML/CSS/JS.
 					<br/>
+					<span className="about-desc-spacer"></span>
+					Although my language of choice is JavaScript, I am also very familiar with C, C++, Java, and Python and constantly look out for new tools, libraries, and frameworks to learn.
 					<br/>
-					I currently write most of my web projects in Nodejs with various React frameworks like Gatsby, React Native, or NextJS.
+					<span className="about-desc-spacer"></span>
+					I value turning ideas into websites that are comfortable to interact using the right tools for each job and creating clean, well-documented code.
 					<br/>
-					Although my language of choice is JavaScript, I am also very familiar with C, C++, Java, and Python.
 				</p>
 			</div>
+			<ScrollBanner to="#github" className="about-desc-scroll-banner">
+				▼
+			</ScrollBanner>
 		</ScreenSection>
 	);
 }

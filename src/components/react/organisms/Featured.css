@@ -9,5 +9,5 @@
 	grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
 	column-count: auto;
 	grid-gap: .1rem;
-	padding: .2rem min(1%, 2rem);
+	padding: .2rem min(2%, 2rem);
 }

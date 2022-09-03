@@ -20,8 +20,20 @@
 
 .about-desc {
 	width: min(100%, 800px);
-	font-size: min(1.4rem, 3vw);
+	font-size: max(min(1.4rem, 2.7vw), .9rem);
 	text-align: justify;
+	line-height: 120%;
+	overflow: auto;
+}
+
+.about-desc-spacer {
+	display: block;
+	width: 100%;
+	padding: .25rem 0;
+}
+
+.about-desc-scroll-banner {
+	font-size: 1.5rem;
 }
 
 @media screen and (max-width: 900px) {
