@@ -1,6 +1,6 @@
 {
   "name": "build-javascript",
-  "hash": "44bbd13657006dd7e0c7",
+  "hash": "73cdd94e258d5f437d1a",
   "publicPath": "/home/",
   "outputPath": "/home/runner/work/home/home/public",
   "assetsByChunkName": {
@@ -8,19 +8,19 @@
       "polyfill-a3c92de79839ad9be01c.js"
     ],
     "app": [
-      "app-13e1843196cf5f6112a6.js"
+      "app-23c64b4fd216cd15baec.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-0a57015949c5e12accf2.js"
+      "webpack-runtime-2e81577f75afdcb9ec0c.js"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-54a2a560ff415376f4e8.js"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-3d0f7718ad577053b960.js"
+      "component---src-pages-index-js-8be395ef3c755d6b1cca.js"
     ],
     "components-react-organisms-Featured": [
-      "components-react-organisms-Featured-031b0e59c80211986fea.js"
+      "components-react-organisms-Featured-2ce3e70e4fd4a19c311d.js"
     ],
     "three-organisms-ThreeSplash": [
       "three-organisms-ThreeSplash-b4aec85347236b0ca32c.js"
@@ -29,7 +29,7 @@
       "framework-ed4e196f6f2e8101c6bd.js"
     ],
     "styles": [
-      "styles.edeba64f9cfec9c80e0e.css"
+      "styles.d778d8a484839325e8b5.css"
     ],
     "fb7d5399": [
       "fb7d5399-9ba37a1c4023efe6f767.js"
@@ -175,19 +175,19 @@
     },
     {
       "type": "asset",
-      "name": "app-13e1843196cf5f6112a6.js",
-      "size": 90778,
+      "name": "app-23c64b4fd216cd15baec.js",
+      "size": 90806,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "13e1843196cf5f6112a6",
+        "contenthash": "23c64b4fd216cd15baec",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "license": "app-13e1843196cf5f6112a6.js.LICENSE.txt",
-          "sourceMap": "app-13e1843196cf5f6112a6.js.map"
+          "license": "app-23c64b4fd216cd15baec.js.LICENSE.txt",
+          "sourceMap": "app-23c64b4fd216cd15baec.js.map"
         }
       },
       "chunkNames": [
@@ -232,18 +232,18 @@
     },
     {
       "type": "asset",
-      "name": "component---src-pages-index-js-3d0f7718ad577053b960.js",
-      "size": 52398,
+      "name": "component---src-pages-index-js-8be395ef3c755d6b1cca.js",
+      "size": 52431,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "3d0f7718ad577053b960",
+        "contenthash": "8be395ef3c755d6b1cca",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "component---src-pages-index-js-3d0f7718ad577053b960.js.map"
+          "sourceMap": "component---src-pages-index-js-8be395ef3c755d6b1cca.js.map"
         }
       },
       "chunkNames": [
@@ -304,14 +304,14 @@
     },
     {
       "type": "asset",
-      "name": "styles.edeba64f9cfec9c80e0e.css",
-      "size": 15186,
+      "name": "styles.d778d8a484839325e8b5.css",
+      "size": 15189,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "edeba64f9cfec9c80e0e",
+        "contenthash": "d778d8a484839325e8b5",
         "minimized": true
       },
       "chunkNames": [
@@ -329,18 +329,18 @@
     },
     {
       "type": "asset",
-      "name": "components-react-organisms-Featured-031b0e59c80211986fea.js",
-      "size": 15048,
+      "name": "components-react-organisms-Featured-2ce3e70e4fd4a19c311d.js",
+      "size": 15036,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "031b0e59c80211986fea",
+        "contenthash": "2ce3e70e4fd4a19c311d",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "components-react-organisms-Featured-031b0e59c80211986fea.js.map"
+          "sourceMap": "components-react-organisms-Featured-2ce3e70e4fd4a19c311d.js.map"
         }
       },
       "chunkNames": [
@@ -357,19 +357,19 @@
     },
     {
       "type": "asset",
-      "name": "344-d164e32dd1d5839d27e4.js",
+      "name": "223-cd530a21a028b1fd1ece.js",
       "size": 10700,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "d164e32dd1d5839d27e4",
+        "contenthash": "cd530a21a028b1fd1ece",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "license": "344-d164e32dd1d5839d27e4.js.LICENSE.txt",
-          "sourceMap": "344-d164e32dd1d5839d27e4.js.map"
+          "license": "223-cd530a21a028b1fd1ece.js.LICENSE.txt",
+          "sourceMap": "223-cd530a21a028b1fd1ece.js.map"
         }
       },
       "chunkNames": [],
@@ -378,24 +378,24 @@
       "auxiliaryChunkIdHints": [],
       "filteredRelated": 2,
       "chunks": [
-        344
+        223
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
-      "name": "webpack-runtime-0a57015949c5e12accf2.js",
+      "name": "webpack-runtime-2e81577f75afdcb9ec0c.js",
       "size": 5110,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "0a57015949c5e12accf2",
+        "contenthash": "2e81577f75afdcb9ec0c",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "webpack-runtime-0a57015949c5e12accf2.js.map"
+          "sourceMap": "webpack-runtime-2e81577f75afdcb9ec0c.js.map"
         }
       },
       "chunkNames": [
@@ -474,7 +474,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-0a57015949c5e12accf2.js"
+          "name": "webpack-runtime-2e81577f75afdcb9ec0c.js"
         },
         {
           "name": "polyfill-a3c92de79839ad9be01c.js"
@@ -496,13 +496,13 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-0a57015949c5e12accf2.js"
+          "name": "webpack-runtime-2e81577f75afdcb9ec0c.js"
         },
         {
           "name": "framework-ed4e196f6f2e8101c6bd.js"
         },
         {
-          "name": "app-13e1843196cf5f6112a6.js"
+          "name": "app-23c64b4fd216cd15baec.js"
         }
       ],
       "filteredAssets": 0,
@@ -537,10 +537,10 @@
       ],
       "assets": [
         {
-          "name": "styles.edeba64f9cfec9c80e0e.css"
+          "name": "styles.d778d8a484839325e8b5.css"
         },
         {
-          "name": "component---src-pages-index-js-3d0f7718ad577053b960.js"
+          "name": "component---src-pages-index-js-8be395ef3c755d6b1cca.js"
         }
       ],
       "filteredAssets": 0,
@@ -558,10 +558,10 @@
       ],
       "assets": [
         {
-          "name": "styles.edeba64f9cfec9c80e0e.css"
+          "name": "styles.d778d8a484839325e8b5.css"
         },
         {
-          "name": "components-react-organisms-Featured-031b0e59c80211986fea.js"
+          "name": "components-react-organisms-Featured-2ce3e70e4fd4a19c311d.js"
         }
       ],
       "filteredAssets": 0,
@@ -608,13 +608,13 @@
     {
       "id": 143,
       "files": [
-        "app-13e1843196cf5f6112a6.js"
+        "app-23c64b4fd216cd15baec.js"
       ]
     },
     {
       "id": 658,
       "files": [
-        "webpack-runtime-0a57015949c5e12accf2.js"
+        "webpack-runtime-2e81577f75afdcb9ec0c.js"
       ]
     },
     {
@@ -626,13 +626,13 @@
     {
       "id": 678,
       "files": [
-        "component---src-pages-index-js-3d0f7718ad577053b960.js"
+        "component---src-pages-index-js-8be395ef3c755d6b1cca.js"
       ]
     },
     {
       "id": 155,
       "files": [
-        "components-react-organisms-Featured-031b0e59c80211986fea.js"
+        "components-react-organisms-Featured-2ce3e70e4fd4a19c311d.js"
       ]
     },
     {
@@ -642,9 +642,9 @@
       ]
     },
     {
-      "id": 344,
+      "id": 223,
       "files": [
-        "344-d164e32dd1d5839d27e4.js"
+        "223-cd530a21a028b1fd1ece.js"
       ]
     },
     {
@@ -662,7 +662,7 @@
     {
       "id": 532,
       "files": [
-        "styles.edeba64f9cfec9c80e0e.css"
+        "styles.d778d8a484839325e8b5.css"
       ]
     },
     {
