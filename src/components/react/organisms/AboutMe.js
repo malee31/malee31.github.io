@@ -28,7 +28,7 @@ export default function AboutMe() {
 					<br/>
 				</p>
 			</div>
-			<ScrollBanner to="#github" className="about-desc-scroll-banner">
+			<ScrollBanner to="#featured-projects" className="about-desc-scroll-banner">
 				▼
 			</ScrollBanner>
 		</ScreenSection>

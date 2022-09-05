@@ -1,5 +1,5 @@
 #nav-underlay {
-	background-color: #AAAAAAAA;
+	background-color: #EEEEEE77;
 	width: 100%;
 	height: 100%;
 	position: fixed;
@@ -37,7 +37,7 @@
 	width: 100%;
 	height: 100%;
 	border-radius: .2rem;
-	background-color: white;
+	background-color: #FFFFFF;
 	transition: opacity .25s, transform .5s, top .25s;
 }
 
@@ -86,7 +86,7 @@
 nav {
 	width: var(--nav-width);
 	height: 100vh;
-	background-color: #0D1716;
+	background-color: #FCFCFC;
 	overflow: hidden;
 	position: fixed;
 	top: 0;
@@ -118,15 +118,15 @@ nav a {
 	align-items: flex-start;
 	justify-content: center;
 	direction: ltr;
-	color: #BEB2A4;
+	color: #32363B;
 	text-align: center;
 	font-size: 1.5rem;
 	transition: border-radius .3s;
 }
 
 nav a:hover {
-	color: #222222;
-	background-color: #F7EFE4;
+	color: #011026;
+	background-color: #51ABFF;
 	border-radius: 5px;
 }
 

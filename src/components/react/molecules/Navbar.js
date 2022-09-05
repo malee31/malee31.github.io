@@ -4,7 +4,7 @@ import "./Navbar.css";
 const NAV_LINKS = [
 	{ label: "Home", href: "#home" },
 	{ label: "About Me", href: "#about" },
-	{ label: "Featured Projects", href: "#github" }
+	{ label: "Featured Projects", href: "#featured-projects" }
 ];
 
 export default function Navbar() {

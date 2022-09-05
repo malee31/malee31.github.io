@@ -19,7 +19,7 @@ export default function Home() {
 			<Splash/>
 			<main>
 				<AboutMe/>
-				<section id="github">
+				<section id="featured-projects">
 					<Featured/>
 				</section>
 			</main>
