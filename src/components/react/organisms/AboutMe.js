@@ -24,7 +24,7 @@ export default function AboutMe() {
 					Although my language of choice is JavaScript, I am also very familiar with C, C++, Java, and Python and constantly look out for new tools, libraries, and frameworks to learn.
 					<br/>
 					<span className="about-desc-spacer"></span>
-					I value turning ideas into websites that are comfortable to interact using the right tools for each job and creating clean, well-documented code.
+					I value turning ideas into websites that are comfortable to interact with, using the right tools for each job, and creating clean, well-documented code.
 					<br/>
 				</p>
 			</div>
