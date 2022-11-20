@@ -24,6 +24,10 @@
 	border-radius: .75rem;
 }
 
+.no-js-repo-card-input {
+
+}
+
 .repo-card-front {
 	z-index: 1;
 	transition: filter .25s;
@@ -40,6 +44,17 @@
 	text-align: center;
 	transform: scale(0);
 	transition: transform .25s;
+}
+
+.repo-card-back-no-js {
+	/* Gives React 1 second to load in and unflip the cards by default */
+	animation: keep-hidden 1s linear;
+}
+
+@keyframes keep-hidden {
+	0% {
+		transform: scale(0);
+	}
 }
 
 .repo-card-container-force-flip .repo-card-back {

@@ -5,7 +5,9 @@
   "description": "home",
   "author": "Marvin Lee",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "developer",
+    "portfolio"
   ],
   "scripts": {
     "develop": "gatsby develop",
