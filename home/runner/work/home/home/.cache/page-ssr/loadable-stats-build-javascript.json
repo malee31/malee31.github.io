@@ -1,6 +1,6 @@
 {
   "name": "build-javascript",
-  "hash": "b13c641ac9da0ba09f78",
+  "hash": "bdf493ff908f95b8fa2b",
   "publicPath": "/home/",
   "outputPath": "/home/runner/work/home/home/public",
   "assetsByChunkName": {
@@ -8,19 +8,19 @@
       "polyfill-a3c92de79839ad9be01c.js"
     ],
     "app": [
-      "app-23c64b4fd216cd15baec.js"
+      "app-17951297a1edf23f52d9.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-89b037c5baf6da697f36.js"
+      "webpack-runtime-69f16e32552a9720479c.js"
     ],
     "component---src-pages-404-js": [
-      "component---src-pages-404-js-54a2a560ff415376f4e8.js"
+      "component---src-pages-404-js-b4f425ef851f0e01d1ca.js"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-dabed6ee042286b11476.js"
     ],
     "components-react-organisms-Featured": [
-      "components-react-organisms-Featured-2ce3e70e4fd4a19c311d.js"
+      "components-react-organisms-Featured-e5871243610d2c0c48dc.js"
     ],
     "three-organisms-ThreeSplash": [
       "three-organisms-ThreeSplash-b4aec85347236b0ca32c.js"
@@ -29,7 +29,7 @@
       "framework-ed4e196f6f2e8101c6bd.js"
     ],
     "styles": [
-      "styles.d778d8a484839325e8b5.css"
+      "styles.0c089eee4d31f95415a8.css"
     ],
     "fb7d5399": [
       "fb7d5399-9ba37a1c4023efe6f767.js"
@@ -153,6 +153,35 @@
     },
     {
       "type": "asset",
+      "name": "app-17951297a1edf23f52d9.js",
+      "size": 92546,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "contenthash": "17951297a1edf23f52d9",
+        "javascriptModule": false,
+        "minimized": true,
+        "related": {
+          "license": "app-17951297a1edf23f52d9.js.LICENSE.txt",
+          "sourceMap": "app-17951297a1edf23f52d9.js.map"
+        }
+      },
+      "chunkNames": [
+        "app"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 2,
+      "chunks": [
+        143
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
       "name": "static/marvin-portfolio-38787bd818412d7c6b77b9b8da304c74.png",
       "size": 91849,
       "emitted": false,
@@ -172,35 +201,6 @@
       "auxiliaryChunks": [
         678
       ]
-    },
-    {
-      "type": "asset",
-      "name": "app-23c64b4fd216cd15baec.js",
-      "size": 90806,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "immutable": true,
-        "contenthash": "23c64b4fd216cd15baec",
-        "javascriptModule": false,
-        "minimized": true,
-        "related": {
-          "license": "app-23c64b4fd216cd15baec.js.LICENSE.txt",
-          "sourceMap": "app-23c64b4fd216cd15baec.js.map"
-        }
-      },
-      "chunkNames": [
-        "app"
-      ],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 2,
-      "chunks": [
-        143
-      ],
-      "auxiliaryChunks": []
     },
     {
       "type": "asset",
@@ -282,6 +282,31 @@
     },
     {
       "type": "asset",
+      "name": "styles.0c089eee4d31f95415a8.css",
+      "size": 15607,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "contenthash": "0c089eee4d31f95415a8",
+        "minimized": true
+      },
+      "chunkNames": [
+        "styles"
+      ],
+      "chunkIdHints": [
+        "styles"
+      ],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        532
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
       "name": "static/favicon-dc02d15046a4b38795810eb3bd3a74cd.ico",
       "size": 15406,
       "emitted": false,
@@ -304,43 +329,18 @@
     },
     {
       "type": "asset",
-      "name": "styles.d778d8a484839325e8b5.css",
-      "size": 15189,
+      "name": "components-react-organisms-Featured-e5871243610d2c0c48dc.js",
+      "size": 15170,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "d778d8a484839325e8b5",
-        "minimized": true
-      },
-      "chunkNames": [
-        "styles"
-      ],
-      "chunkIdHints": [
-        "styles"
-      ],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "chunks": [
-        532
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "components-react-organisms-Featured-2ce3e70e4fd4a19c311d.js",
-      "size": 15036,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "immutable": true,
-        "contenthash": "2ce3e70e4fd4a19c311d",
+        "contenthash": "e5871243610d2c0c48dc",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "components-react-organisms-Featured-2ce3e70e4fd4a19c311d.js.map"
+          "sourceMap": "components-react-organisms-Featured-e5871243610d2c0c48dc.js.map"
         }
       },
       "chunkNames": [
@@ -384,18 +384,18 @@
     },
     {
       "type": "asset",
-      "name": "webpack-runtime-89b037c5baf6da697f36.js",
+      "name": "webpack-runtime-69f16e32552a9720479c.js",
       "size": 5110,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "89b037c5baf6da697f36",
+        "contenthash": "69f16e32552a9720479c",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "webpack-runtime-89b037c5baf6da697f36.js.map"
+          "sourceMap": "webpack-runtime-69f16e32552a9720479c.js.map"
         }
       },
       "chunkNames": [
@@ -438,18 +438,18 @@
     },
     {
       "type": "asset",
-      "name": "component---src-pages-404-js-54a2a560ff415376f4e8.js",
+      "name": "component---src-pages-404-js-b4f425ef851f0e01d1ca.js",
       "size": 811,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "54a2a560ff415376f4e8",
+        "contenthash": "b4f425ef851f0e01d1ca",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "component---src-pages-404-js-54a2a560ff415376f4e8.js.map"
+          "sourceMap": "component---src-pages-404-js-b4f425ef851f0e01d1ca.js.map"
         }
       },
       "chunkNames": [
@@ -474,7 +474,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-89b037c5baf6da697f36.js"
+          "name": "webpack-runtime-69f16e32552a9720479c.js"
         },
         {
           "name": "polyfill-a3c92de79839ad9be01c.js"
@@ -496,13 +496,13 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-89b037c5baf6da697f36.js"
+          "name": "webpack-runtime-69f16e32552a9720479c.js"
         },
         {
           "name": "framework-ed4e196f6f2e8101c6bd.js"
         },
         {
-          "name": "app-23c64b4fd216cd15baec.js"
+          "name": "app-17951297a1edf23f52d9.js"
         }
       ],
       "filteredAssets": 0,
@@ -519,7 +519,7 @@
       ],
       "assets": [
         {
-          "name": "component---src-pages-404-js-54a2a560ff415376f4e8.js"
+          "name": "component---src-pages-404-js-b4f425ef851f0e01d1ca.js"
         }
       ],
       "filteredAssets": 0,
@@ -537,7 +537,7 @@
       ],
       "assets": [
         {
-          "name": "styles.d778d8a484839325e8b5.css"
+          "name": "styles.0c089eee4d31f95415a8.css"
         },
         {
           "name": "component---src-pages-index-js-dabed6ee042286b11476.js"
@@ -558,10 +558,10 @@
       ],
       "assets": [
         {
-          "name": "styles.d778d8a484839325e8b5.css"
+          "name": "styles.0c089eee4d31f95415a8.css"
         },
         {
-          "name": "components-react-organisms-Featured-2ce3e70e4fd4a19c311d.js"
+          "name": "components-react-organisms-Featured-e5871243610d2c0c48dc.js"
         }
       ],
       "filteredAssets": 0,
@@ -608,19 +608,19 @@
     {
       "id": 143,
       "files": [
-        "app-23c64b4fd216cd15baec.js"
+        "app-17951297a1edf23f52d9.js"
       ]
     },
     {
       "id": 658,
       "files": [
-        "webpack-runtime-89b037c5baf6da697f36.js"
+        "webpack-runtime-69f16e32552a9720479c.js"
       ]
     },
     {
       "id": 883,
       "files": [
-        "component---src-pages-404-js-54a2a560ff415376f4e8.js"
+        "component---src-pages-404-js-b4f425ef851f0e01d1ca.js"
       ]
     },
     {
@@ -632,7 +632,7 @@
     {
       "id": 155,
       "files": [
-        "components-react-organisms-Featured-2ce3e70e4fd4a19c311d.js"
+        "components-react-organisms-Featured-e5871243610d2c0c48dc.js"
       ]
     },
     {
@@ -662,7 +662,7 @@
     {
       "id": 532,
       "files": [
-        "styles.d778d8a484839325e8b5.css"
+        "styles.0c089eee4d31f95415a8.css"
       ]
     },
     {
