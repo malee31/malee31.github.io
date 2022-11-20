@@ -14,21 +14,19 @@ export default function RepoCard(props) {
 		className = "",
 		...extraProps
 	} = props;
-	const [flipped, setFlipped] = useState(true);
-	const [noJSAnimation, setNoJSAnimation] = useState(true);
+	const [flipped, setFlipped] = useState(false);
+	// For viewing without Javascript. Still not the best solution for SEO
+	const [allowFocusFlip, setAllowFocusFlip] = useState(true);
 	const toggleFlip = () => setFlipped(!flipped);
 
-	// For the No Javascript Enabled experience
-	// CSS Animation gives a second for JS to load and run this effect so that cards default face down
-	// IS a race condition. If it fails to complete on time, a flash of the reveal/hide is shown
+	// Disable focus flip if Javascript is enabled
 	useEffect(() => {
-		setNoJSAnimation(false);
-		setFlipped(false);
+		// setAllowFocusFlip(false);
 	}, []);
 
 	return (
 		<div
-			className={`repo-card-container ${className} ${flipped ? "repo-card-container-force-flip" : ""}`}
+			className={`repo-card-container ${allowFocusFlip ? "repo-card-container-focus-flip-enabled" : ""} ${className} ${flipped ? "repo-card-container-force-flip" : ""}`}
 			role="menuitem"
 			tabIndex="0"
 			onClick={toggleFlip}
@@ -39,12 +37,12 @@ export default function RepoCard(props) {
 			}}
 			{...extraProps}
 		>
-			<div className="repo-card repo-card-front" aria-hidden={flipped}>
+			<div className="repo-card repo-card-front" aria-hidden={flipped || allowFocusFlip}>
 				<GatsbyImage className="featured-card-img" alt={`${title} Demo Image`} image={image}/>
 			</div>
 			<div
-				className={`repo-card column-center repo-card-back ${noJSAnimation ? "repo-card-back-no-js" : ""}`}
-				aria-hidden={!flipped}
+				className="repo-card column-center repo-card-back"
+				aria-hidden={!flipped && !allowFocusFlip}
 			>
 				<h3
 					className="repo-card-title"
@@ -59,8 +57,8 @@ export default function RepoCard(props) {
 					className="repo-card-links"
 					style={{ backgroundColor: backgroundColor, color: textColor }}
 				>
-					{repoLink && <a href={repoLink} tabIndex={flipped ? 0 : -1} style={{ color: textColor }}>Open in GitHub</a>}
-					{demoLink && <a href={demoLink} tabIndex={flipped ? 0 : -1} style={{ color: textColor }}>Try Demo</a>}
+					{repoLink && <a href={repoLink} tabIndex={(flipped || allowFocusFlip) ? 0 : -1} style={{ color: textColor }}>Open in GitHub</a>}
+					{demoLink && <a href={demoLink} tabIndex={(flipped || allowFocusFlip) ? 0 : -1} style={{ color: textColor }}>Try Demo</a>}
 				</div>
 			</div>
 		</div>

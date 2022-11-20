@@ -33,6 +33,8 @@
 	transition: filter .25s;
 }
 
+.repo-card-container-focus-flip-enabled:focus .repo-card-front,
+.repo-card-container-focus-flip-enabled:focus-within .repo-card-front,
 .repo-card-container-force-flip .repo-card-front {
 	filter: contrast(.25) brightness(0.25) grayscale(1) brightness(8);
 }
@@ -46,17 +48,14 @@
 	transition: transform .25s;
 }
 
-.repo-card-back-no-js {
-	/* Gives React 1 second to load in and unflip the cards by default */
-	animation: keep-hidden 1s linear;
-}
-
 @keyframes keep-hidden {
 	0% {
 		transform: scale(0);
 	}
 }
 
+.repo-card-container-focus-flip-enabled:focus .repo-card-back,
+.repo-card-container-focus-flip-enabled:focus-within .repo-card-back,
 .repo-card-container-force-flip .repo-card-back {
 	transform: none;
 }
