@@ -1,6 +1,6 @@
 {
   "name": "build-javascript",
-  "hash": "bdf493ff908f95b8fa2b",
+  "hash": "27961720a3407177b64d",
   "publicPath": "/home/",
   "outputPath": "/home/runner/work/home/home/public",
   "assetsByChunkName": {
@@ -11,7 +11,7 @@
       "app-17951297a1edf23f52d9.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-69f16e32552a9720479c.js"
+      "webpack-runtime-94a9fc4d3ce16ef5a776.js"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-b4f425ef851f0e01d1ca.js"
@@ -20,7 +20,7 @@
       "component---src-pages-index-js-dabed6ee042286b11476.js"
     ],
     "components-react-organisms-Featured": [
-      "components-react-organisms-Featured-e5871243610d2c0c48dc.js"
+      "components-react-organisms-Featured-477269b40bb2136e2d3f.js"
     ],
     "three-organisms-ThreeSplash": [
       "three-organisms-ThreeSplash-b4aec85347236b0ca32c.js"
@@ -329,18 +329,18 @@
     },
     {
       "type": "asset",
-      "name": "components-react-organisms-Featured-e5871243610d2c0c48dc.js",
-      "size": 15170,
+      "name": "components-react-organisms-Featured-477269b40bb2136e2d3f.js",
+      "size": 15175,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "e5871243610d2c0c48dc",
+        "contenthash": "477269b40bb2136e2d3f",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "components-react-organisms-Featured-e5871243610d2c0c48dc.js.map"
+          "sourceMap": "components-react-organisms-Featured-477269b40bb2136e2d3f.js.map"
         }
       },
       "chunkNames": [
@@ -384,18 +384,18 @@
     },
     {
       "type": "asset",
-      "name": "webpack-runtime-69f16e32552a9720479c.js",
+      "name": "webpack-runtime-94a9fc4d3ce16ef5a776.js",
       "size": 5110,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "69f16e32552a9720479c",
+        "contenthash": "94a9fc4d3ce16ef5a776",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "webpack-runtime-69f16e32552a9720479c.js.map"
+          "sourceMap": "webpack-runtime-94a9fc4d3ce16ef5a776.js.map"
         }
       },
       "chunkNames": [
@@ -474,7 +474,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-69f16e32552a9720479c.js"
+          "name": "webpack-runtime-94a9fc4d3ce16ef5a776.js"
         },
         {
           "name": "polyfill-a3c92de79839ad9be01c.js"
@@ -496,7 +496,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-69f16e32552a9720479c.js"
+          "name": "webpack-runtime-94a9fc4d3ce16ef5a776.js"
         },
         {
           "name": "framework-ed4e196f6f2e8101c6bd.js"
@@ -561,7 +561,7 @@
           "name": "styles.0c089eee4d31f95415a8.css"
         },
         {
-          "name": "components-react-organisms-Featured-e5871243610d2c0c48dc.js"
+          "name": "components-react-organisms-Featured-477269b40bb2136e2d3f.js"
         }
       ],
       "filteredAssets": 0,
@@ -614,7 +614,7 @@
     {
       "id": 658,
       "files": [
-        "webpack-runtime-69f16e32552a9720479c.js"
+        "webpack-runtime-94a9fc4d3ce16ef5a776.js"
       ]
     },
     {
@@ -632,7 +632,7 @@
     {
       "id": 155,
       "files": [
-        "components-react-organisms-Featured-e5871243610d2c0c48dc.js"
+        "components-react-organisms-Featured-477269b40bb2136e2d3f.js"
       ]
     },
     {
