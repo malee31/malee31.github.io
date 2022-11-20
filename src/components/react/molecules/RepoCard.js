@@ -21,7 +21,7 @@ export default function RepoCard(props) {
 
 	// Disable focus flip if Javascript is enabled
 	useEffect(() => {
-		// setAllowFocusFlip(false);
+		setAllowFocusFlip(false);
 	}, []);
 
 	return (
