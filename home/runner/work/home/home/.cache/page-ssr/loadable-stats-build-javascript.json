@@ -1,6 +1,6 @@
 {
   "name": "build-javascript",
-  "hash": "27961720a3407177b64d",
+  "hash": "0816a73d5783af22dff8",
   "publicPath": "/home/",
   "outputPath": "/home/runner/work/home/home/public",
   "assetsByChunkName": {
@@ -11,7 +11,7 @@
       "app-17951297a1edf23f52d9.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-94a9fc4d3ce16ef5a776.js"
+      "webpack-runtime-ba567cbb0642e5ac789f.js"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-b4f425ef851f0e01d1ca.js"
@@ -29,7 +29,7 @@
       "framework-ed4e196f6f2e8101c6bd.js"
     ],
     "styles": [
-      "styles.0c089eee4d31f95415a8.css"
+      "styles.ff257dbb07c93aa4626d.css"
     ],
     "fb7d5399": [
       "fb7d5399-9ba37a1c4023efe6f767.js"
@@ -282,14 +282,14 @@
     },
     {
       "type": "asset",
-      "name": "styles.0c089eee4d31f95415a8.css",
-      "size": 15607,
+      "name": "styles.ff257dbb07c93aa4626d.css",
+      "size": 15798,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "0c089eee4d31f95415a8",
+        "contenthash": "ff257dbb07c93aa4626d",
         "minimized": true
       },
       "chunkNames": [
@@ -384,18 +384,18 @@
     },
     {
       "type": "asset",
-      "name": "webpack-runtime-94a9fc4d3ce16ef5a776.js",
+      "name": "webpack-runtime-ba567cbb0642e5ac789f.js",
       "size": 5110,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "94a9fc4d3ce16ef5a776",
+        "contenthash": "ba567cbb0642e5ac789f",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "webpack-runtime-94a9fc4d3ce16ef5a776.js.map"
+          "sourceMap": "webpack-runtime-ba567cbb0642e5ac789f.js.map"
         }
       },
       "chunkNames": [
@@ -474,7 +474,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-94a9fc4d3ce16ef5a776.js"
+          "name": "webpack-runtime-ba567cbb0642e5ac789f.js"
         },
         {
           "name": "polyfill-a3c92de79839ad9be01c.js"
@@ -496,7 +496,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-94a9fc4d3ce16ef5a776.js"
+          "name": "webpack-runtime-ba567cbb0642e5ac789f.js"
         },
         {
           "name": "framework-ed4e196f6f2e8101c6bd.js"
@@ -537,7 +537,7 @@
       ],
       "assets": [
         {
-          "name": "styles.0c089eee4d31f95415a8.css"
+          "name": "styles.ff257dbb07c93aa4626d.css"
         },
         {
           "name": "component---src-pages-index-js-dabed6ee042286b11476.js"
@@ -558,7 +558,7 @@
       ],
       "assets": [
         {
-          "name": "styles.0c089eee4d31f95415a8.css"
+          "name": "styles.ff257dbb07c93aa4626d.css"
         },
         {
           "name": "components-react-organisms-Featured-477269b40bb2136e2d3f.js"
@@ -614,7 +614,7 @@
     {
       "id": 658,
       "files": [
-        "webpack-runtime-94a9fc4d3ce16ef5a776.js"
+        "webpack-runtime-ba567cbb0642e5ac789f.js"
       ]
     },
     {
@@ -662,7 +662,7 @@
     {
       "id": 532,
       "files": [
-        "styles.0c089eee4d31f95415a8.css"
+        "styles.ff257dbb07c93aa4626d.css"
       ]
     },
     {
