@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import mediaImage from "../../../images/marvin-portfolio.png";
 import appleFavicon from "../../../images/favicons/apple-touch-icon.png";
 import favicon from "../../../images/favicons/favicon.ico";
@@ -10,9 +9,8 @@ import favicon512 from "../../../images/favicons/android-chrome-512x512.png";
 
 export default function Seo() {
 	return (
-		<Helmet>
+		<>
 			<title>Marvin Lee | Developer Portfolio</title>
-			<html lang="en"/>
 			<meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
 			<meta name="robots" content="index"/>
@@ -40,6 +38,6 @@ export default function Seo() {
 			<link rel="icon" type="image/png" href={favicon192} sizes="192x192"/>
 			<link rel="icon" type="image/png" href={favicon512} sizes="512x512"/>
 			<link rel="icon" type="image/png" href={favicon}/>
-		</Helmet>
+		</>
 	);
 }

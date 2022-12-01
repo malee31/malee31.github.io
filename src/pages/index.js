@@ -11,6 +11,8 @@ const Featured = loadable(() =>
 	import("../components/react/organisms/Featured")
 );
 
+export const Head = Seo;
+
 export default function Home() {
 	return (
 		<>
