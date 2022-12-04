@@ -12,8 +12,10 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build --prefix-paths",
-    "serve": "gatsby serve --prefix-paths",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "build-prefix": "gatsby build --prefix-paths",
+    "serve-prefix": "gatsby serve --prefix-paths",
     "clean": "gatsby clean"
   },
   "dependencies": {
