@@ -1,14 +1,14 @@
 {
   "name": "build-javascript",
-  "hash": "5346d859b1a86f857347",
-  "publicPath": "/home/",
+  "hash": "28aade4a8376cb7298a3",
+  "publicPath": "/",
   "outputPath": "/home/runner/work/home/home/public",
   "assetsByChunkName": {
     "app": [
-      "app-c32b305a5b8963327d62.js"
+      "app-fa895761e07112d50958.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-cd3ef928518b4cf5a9ef.js"
+      "webpack-runtime-8305058f8546fecda58d.js"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-1d080c44652d674de8f1.js"
@@ -26,7 +26,7 @@
       "framework-38e6da2339d948a46b53.js"
     ],
     "styles": [
-      "styles.6dfff1ec65e43cb1d5bb.css"
+      "styles.4d9dc24cfd7e3bd8594d.css"
     ],
     "fb7d5399": [
       "fb7d5399-ce715db1e3509104663c.js"
@@ -172,19 +172,19 @@
     },
     {
       "type": "asset",
-      "name": "app-c32b305a5b8963327d62.js",
-      "size": 77342,
+      "name": "app-fa895761e07112d50958.js",
+      "size": 77267,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "c32b305a5b8963327d62",
+        "contenthash": "fa895761e07112d50958",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "license": "app-c32b305a5b8963327d62.js.LICENSE.txt",
-          "sourceMap": "app-c32b305a5b8963327d62.js.map"
+          "license": "app-fa895761e07112d50958.js.LICENSE.txt",
+          "sourceMap": "app-fa895761e07112d50958.js.map"
         }
       },
       "chunkNames": [
@@ -301,14 +301,14 @@
     },
     {
       "type": "asset",
-      "name": "styles.6dfff1ec65e43cb1d5bb.css",
-      "size": 14640,
+      "name": "styles.4d9dc24cfd7e3bd8594d.css",
+      "size": 14635,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "6dfff1ec65e43cb1d5bb",
+        "contenthash": "4d9dc24cfd7e3bd8594d",
         "minimized": true
       },
       "chunkNames": [
@@ -326,18 +326,18 @@
     },
     {
       "type": "asset",
-      "name": "webpack-runtime-cd3ef928518b4cf5a9ef.js",
-      "size": 4902,
+      "name": "webpack-runtime-8305058f8546fecda58d.js",
+      "size": 4897,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "cd3ef928518b4cf5a9ef",
+        "contenthash": "8305058f8546fecda58d",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "webpack-runtime-cd3ef928518b4cf5a9ef.js.map"
+          "sourceMap": "webpack-runtime-8305058f8546fecda58d.js.map"
         }
       },
       "chunkNames": [
@@ -443,13 +443,13 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-cd3ef928518b4cf5a9ef.js"
+          "name": "webpack-runtime-8305058f8546fecda58d.js"
         },
         {
           "name": "framework-38e6da2339d948a46b53.js"
         },
         {
-          "name": "app-c32b305a5b8963327d62.js"
+          "name": "app-fa895761e07112d50958.js"
         }
       ],
       "filteredAssets": 0,
@@ -484,7 +484,7 @@
       ],
       "assets": [
         {
-          "name": "styles.6dfff1ec65e43cb1d5bb.css"
+          "name": "styles.4d9dc24cfd7e3bd8594d.css"
         },
         {
           "name": "component---src-pages-index-js-405d5b7d15124d54a19b.js"
@@ -505,7 +505,7 @@
       ],
       "assets": [
         {
-          "name": "styles.6dfff1ec65e43cb1d5bb.css"
+          "name": "styles.4d9dc24cfd7e3bd8594d.css"
         },
         {
           "name": "components-react-organisms-Featured-ba40e82b2800fa1fb517.js"
@@ -549,13 +549,13 @@
     {
       "id": 143,
       "files": [
-        "app-c32b305a5b8963327d62.js"
+        "app-fa895761e07112d50958.js"
       ]
     },
     {
       "id": 658,
       "files": [
-        "webpack-runtime-cd3ef928518b4cf5a9ef.js"
+        "webpack-runtime-8305058f8546fecda58d.js"
       ]
     },
     {
@@ -603,7 +603,7 @@
     {
       "id": 532,
       "files": [
-        "styles.6dfff1ec65e43cb1d5bb.css"
+        "styles.4d9dc24cfd7e3bd8594d.css"
       ]
     },
     {
