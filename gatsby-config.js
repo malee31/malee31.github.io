@@ -1,11 +1,25 @@
 module.exports = {
-	pathPrefix: "/home",
+	// pathPrefix: "/home",
 	siteMetadata: {
-		title: "Home",
-		siteUrl: "https://malee31.github.io/home"
+		title: "Marvin Lee | Developer Portfolio",
+		siteUrl: "https://designedbymarvin.com"
 	},
 	plugins: [
 		"gatsby-plugin-image",
+		{
+			resolve: 'gatsby-plugin-robots-txt',
+			options: {
+				host: 'https://designedbymarvin.com',
+				policy: [
+					{
+						userAgent: '*', allow: '/'
+					},
+					{
+						userAgent: '*', disallow: '/upgrade'
+					}
+				],
+			}
+		},
 		"gatsby-plugin-sitemap",
 		{
 			resolve: "gatsby-plugin-manifest",

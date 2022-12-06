@@ -16,7 +16,7 @@ const FEATURED_DATA = [
 	},
 	{
 		title: "CardinalHours App",
-		description: "An Expo App written in React Native for logging hours into the CardinalBotics CardinalHours server. (Demo password: bob)",
+		description: "An Expo App written in React Native for logging hours into the CardinalBotics CardinalHours server. (Upgrade password: bob)",
 		repoLink: "https://github.com/malee31/ReactNativeCardinalBoticsApp",
 		demoLink: "https://malee31.github.io/ReactNativeCardinalBoticsApp",
 		imageSrc: "repositories/ReactNativeCardinalBoticsApp.png",

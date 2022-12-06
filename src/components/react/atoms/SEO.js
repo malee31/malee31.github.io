@@ -7,10 +7,10 @@ import favicon32 from "../../../images/favicons/favicon-32x32.png";
 import favicon192 from "../../../images/favicons/android-chrome-192x192.png";
 import favicon512 from "../../../images/favicons/android-chrome-512x512.png";
 
-export default function Seo() {
+export default function Seo({siteTitle}) {
 	return (
 		<>
-			<title>Marvin Lee | Developer Portfolio</title>
+			<title>{siteTitle || "Marvin Lee | Developer Portfolio"}</title>
 			<meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
 			<meta name="robots" content="index"/>

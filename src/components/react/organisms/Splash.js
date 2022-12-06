@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ScreenSection from "../atoms/FullScreenSection";
-import SplashTextLayer from "./SplashTextLayer";
+import SplashTextLayer from "../molecules/SplashTextLayer";
 import ScrollBanner from "../atoms/ScrollBanner";
 import loadable from "@loadable/component";
 import "./Splash.css";
