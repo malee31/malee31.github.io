@@ -84,19 +84,21 @@
 		margin-right: 0;
 		background-color: #F7FAFD99;
 		user-select: none;
-		/* Unfortunately prevents scrolling */
+		/* Unfortunately prevents scrolling on touchscreen */
 		/* pointer-events: none; */
 	}
 	.splash-overlay-visual {
 		width: 100%;
 		height: 100%;
 		position: absolute;
+		top: 0;
+		left: 0;
 	}
 }
 
-/* TODO: No Mouse, No Canvas Interaction */
-@media only screen and (pointer: none) {
+/* TODO: Yes Mouse, Yes Canvas Interaction */
+@media only screen and (pointer: fine) {
 	.splash-overlay-content {
-		 pointer-events:  all;
+		 pointer-events:  none;
 	}
 }

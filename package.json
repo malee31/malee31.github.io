@@ -19,14 +19,12 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@loadable/component": "^5.15.2",
     "@react-spring/three": "^9.5.2",
     "@react-three/drei": "^9.22.7",
     "@react-three/fiber": "^8.3.1",
     "gatsby": "^5.1.0",
     "gatsby-plugin-google-gtag": "^5.2.0",
     "gatsby-plugin-image": "^3.2.0",
-    "gatsby-plugin-loadable-components-ssr": "^4.3.2",
     "gatsby-plugin-manifest": "^5.2.0",
     "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-plugin-sharp": "~5.0.0",

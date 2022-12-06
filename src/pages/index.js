@@ -1,19 +1,15 @@
 import React from "react";
 import "../styles.css";
-import Navbar from "../components/react/molecules/Navbar";
-import Footer from "../components/react/molecules/Footer.js";
 import Seo from "../components/react/atoms/SEO";
-import AboutMe from "../components/react/organisms/AboutMe";
-import loadable from "@loadable/component";
+import Navbar from "../components/react/molecules/Navbar";
 import Splash from "../components/react/organisms/Splash";
-
-const Featured = loadable(() =>
-	import("../components/react/organisms/Featured")
-);
+import AboutMe from "../components/react/organisms/AboutMe";
+import Featured from "../components/react/organisms/Featured";
+import Footer from "../components/react/molecules/Footer.js";
 
 export const Head = Seo;
 
-export default function Upgrade() {
+export default function Home() {
 	return (
 		<>
 			<Navbar/>

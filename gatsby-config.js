@@ -43,7 +43,6 @@ module.exports = {
 			},
 			__key: "images"
 		},
-		"gatsby-plugin-loadable-components-ssr",
 		{
 			resolve: "gatsby-plugin-google-gtag",
 			options: {
