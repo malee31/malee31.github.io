@@ -11,11 +11,12 @@ export default function ScreenSection(props) {
 	const {
 		className = "",
 		children,
+		natural,
 		...extraProps
 	} = props;
 
 	return (
-		<section className={`screen-section column-center ${className}`} {...extraProps}>
+		<section className={`screen-section column-center ${natural ? "screen-section-natural" : ""} ${className}`} {...extraProps}>
 			{children}
 		</section>
 	);

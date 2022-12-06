@@ -1,8 +1,13 @@
 .screen-section {
 	position: relative;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	margin: 0;
 	padding: 0;
 	border: 0;
+}
+
+/* Uses 100% instead of vw */
+.screen-section-natural {
+	height: 100%;
 }

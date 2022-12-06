@@ -15,7 +15,7 @@
 
 .about-profile-picture {
 	shape-outside: url("../../../images/profile.svg");
-	width: 30%;
+	max-height: 50%;
 	min-width: min(100%, 300px);
 }
 
@@ -30,7 +30,7 @@
 .about-desc-spacer {
 	display: block;
 	width: 100%;
-	padding: .25rem 0;
+	padding: .5rem 0;
 }
 
 .about-desc-scroll-banner {
