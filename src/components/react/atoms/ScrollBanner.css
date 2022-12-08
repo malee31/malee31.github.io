@@ -1,12 +1,13 @@
 .scroll-banner {
 	position: absolute;
+	left: 0;
 	bottom: 0;
+	width: 100%;
+	min-height: min(10vw, 5rem);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
-	min-height: min(10vw, 5rem);
 	z-index: 1;
 }
 

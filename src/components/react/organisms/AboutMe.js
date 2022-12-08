@@ -8,7 +8,7 @@ export default function AboutMe() {
 	return (
 		<ScreenSection
 			id="about"
-			className="column-align about-container"
+			className="column-center about-container"
 		>
 			<h1 className="about-heading">About Me</h1>
 			<div className="about-content">
