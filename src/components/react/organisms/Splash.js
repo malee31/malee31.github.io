@@ -7,7 +7,7 @@ const ThreeSplash = React.lazy(() => import("../../three/organisms/ThreeSplash")
 
 export default function SplashV2() {
 	return (
-		<ScreenSection id="splash_v2" natural={true} className="column-center column-align">
+		<ScreenSection id="home" natural={true} className="column-center column-align">
 			<SplashOverlay>
 				<Suspense fallback={null}>
 					<ThreeSplash fallback={null}/>
