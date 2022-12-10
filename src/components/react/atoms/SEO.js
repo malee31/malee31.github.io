@@ -7,7 +7,7 @@ import favicon32 from "../../../images/favicons/favicon-32x32.png";
 import favicon192 from "../../../images/favicons/android-chrome-192x192.png";
 import favicon512 from "../../../images/favicons/android-chrome-512x512.png";
 
-export default function Seo({siteTitle}) {
+export default function Seo({ siteTitle }) {
 	return (
 		<>
 			<title>{siteTitle || "Marvin Lee | Developer Portfolio"}</title>
@@ -16,21 +16,25 @@ export default function Seo({siteTitle}) {
 			<meta name="robots" content="index"/>
 
 			<meta property="og:type" content="website"/>
-			<meta name="keywords" content="Marvin Lee Portfolio Site, Full Stack Developer"/>
+			<meta property="twitter:card" content="summary_large_image"/>
+
+			<meta name="keywords" content="Marvin Lee Portfolio, Full Stack Developer"/>
 			<meta name="description" content="Marvin Lee | Full Stack Developer Portfolio"/>
 			<meta name="og:description" content="Marvin Lee | Full Stack Developer Portfolio"/>
 			<meta name="twitter:description" content="Marvin Lee | Full Stack Developer Portfolio"/>
 			<meta itemProp="description" content="Marvin Lee | Full Stack Developer Portfolio"/>
+
 			<meta itemProp="name" content="Marvin Lee | Developer Portfolio"/>
 			<meta name="og:title" content="Marvin Lee | Developer Portfolio"/>
 			<meta name="twitter:title" content="Marvin Lee | Developer Portfolio"/>
-			<meta name="og:url" content="https://malee31.github.io/home"/>
-			<meta name="twitter:url" content="https://malee31.github.io/home"/>
+
+			<meta name="og:url" content="https://designedbymarvin.com"/>
+			<meta name="twitter:url" content="https://designedbymarvin.com"/>
+
 			<meta property="og:image" content={mediaImage}/>
 			<meta property="twitter:image" content={mediaImage}/>
 			<meta property="og:image:alt" content="Marvin | Full Stack Developer"/>
-			<meta property="twitter:image:alt" content="Marvin | Full Stack Developer"/>
-			<meta property="twitter:card" content="twitter:card"/>
+			<meta property="twitter:image:alt" content="Marvin Lee | Full Stack Developer"/>
 
 			<link rel="apple-touch-icon" type="image/png" href={appleFavicon} sizes="180x180"/>
 			<link rel="icon" type="image/png" href={favicon16} sizes="16x16"/>
