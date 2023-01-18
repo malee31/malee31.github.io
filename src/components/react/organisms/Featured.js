@@ -61,7 +61,7 @@ const FEATURED_DATA = [
 		title: "EduConnect",
 		description: "A chatroom created using WebSockets and Google Authentication that allows teachers to answer questions from students in real time!",
 		repoLink: "https://github.com/malee31/EduConnect",
-		demoLink: "https://educonnect-hyphen-hacks.herokuapp.com/chatroom/chatroom.html",
+		demoLink: "https://educonnect.onrender.com/chatroom/chatroom.html",
 		imageSrc: "repositories/EduConnect.png",
 		backgroundColor: "#5175E8",
 		textColor: "#FFFFFF"
@@ -70,7 +70,7 @@ const FEATURED_DATA = [
 		title: "Custom Form Maker",
 		description: "Build custom forms that forward data to a spreadsheet using the Google Sheets NodeJS API",
 		repoLink: "https://github.com/malee31/Custom-Form-Maker",
-		demoLink: "https://custom-google-form.herokuapp.com/",
+		demoLink: "https://custom-form-maker.onrender.com/",
 		imageSrc: "repositories/CustomFormMaker.png",
 		backgroundColor: "#1786F1",
 		textColor: "#FFFFFF"
