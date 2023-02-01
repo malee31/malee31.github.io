@@ -6,6 +6,15 @@ import "./Featured.css";
 
 const FEATURED_DATA = [
 	{
+		title: "OrderUp",
+		description: "Present customers a menu of items for customers to order from anywhere and chefs to cook and deliver!",
+		repoLink: "https://github.com/malee31/OrderUp",
+		demoLink: "https://orderup-demo.onrender.com/",
+		imageSrc: "repositories/OrderUp.png",
+		backgroundColor: "#FDBA74",
+		textColor: "#121212"
+	},
+	{
 		title: "Pantry Cabinet",
 		description: "[WIP] A site for displaying what is available in your pantry and how many of each item you have",
 		repoLink: "https://github.com/malee31/the-pantry-cabinet",
