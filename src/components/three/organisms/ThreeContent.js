@@ -4,13 +4,13 @@ import ThreeLighting from "../molecules/ThreeLighting";
 import ThreeFigure from "../molecules/ThreeFigure";
 import Backdrop from "../molecules/ThreeBackdrop";
 
-export default function ThreeContent() {
+export default function ThreeContent({ hideSubstitute }) {
 	return (
 		<>
 			<PerspectiveCamera makeDefault={true} position={[0, 0, 50]}/>
 			<Backdrop/>
 			<ThreeLighting/>
-			<ThreeFigure/>
+			<ThreeFigure hideSubstitute={hideSubstitute}/>
 		</>
 	);
 }

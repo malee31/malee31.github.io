@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
-import { Box, TrackballControls, PerspectiveCamera } from "@react-three/drei";
+import { Box, PerspectiveCamera, TrackballControls } from "@react-three/drei";
 import GrowingBox from "../atoms/ThreeGrowingBox";
 import { animated, useSpring } from "@react-spring/three";
 
-export default function ThreeFigure() {
+export default function ThreeFigure({ hideSubstitute }) {
 	const camRef = useRef();
 	const groupRef = useRef();
 
@@ -49,7 +49,11 @@ export default function ThreeFigure() {
 					position={[0, 0, 0]}
 					args={[10, 9.95, 10]}
 				>
-					<meshPhongMaterial color="#EEEEEE" wireframe={false}/>
+					<meshPhongMaterial
+						color="#EEEEEE"
+						wireframe={false}
+						onBeforeCompile={hideSubstitute}
+					/>
 				</Box>
 				<GrowingBox
 					color="#067DDC"

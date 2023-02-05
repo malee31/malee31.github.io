@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import ScreenSection from "../atoms/FullScreenSection";
 import ScrollBanner from "../atoms/ScrollBanner";
 import CubeTrace from "../../../images/cube-trace.svg";
@@ -9,9 +9,9 @@ const ThreeSplash = React.lazy(() => import("../../three/organisms/ThreeSplash")
 // Hard-coded inline positioning for the first frame of the splash (traced)
 function SubstituteSplash() {
 	return (
-		<div style={{ position: "absolute", width: "100%", height: "100%" }}>
+		<div style={{ position: "absolute", width: "100%", height: "100%", pointerEvents: "none" }}>
 			<img
-				style={{ position: "relative", left: "-6px", width: "316px", height: "100%" }}
+				className="splash-overlay-substitute"
 				src={CubeTrace}
 				alt="Cube"
 				role="presentation"
@@ -21,11 +21,19 @@ function SubstituteSplash() {
 }
 
 export default function SplashV2() {
+	const [hideSubstitute, setHideSubstitute] = useState(false);
+
 	return (
 		<ScreenSection id="home" natural={true} className="column-center column-align">
 			<SplashOverlay>
-				<Suspense fallback={<SubstituteSplash/>}>
-					<ThreeSplash fallback={null}/>
+				{!hideSubstitute && <SubstituteSplash/>}
+				<Suspense fallback={null}>
+					<ThreeSplash
+						fallback={null}
+						hideSubstitute={() => {
+							if(!hideSubstitute) setHideSubstitute(true)
+						}}
+					/>
 				</Suspense>
 			</SplashOverlay>
 			<ScrollBanner to="#about">

@@ -55,6 +55,13 @@
 	width: max(400px, 40%);
 }
 
+.splash-overlay-substitute {
+	position: relative;
+	left: -6px;
+	width: 340px;
+	height: 100%;
+}
+
 .splash-overlay-content > * {
 	margin: 0;
 }
@@ -98,6 +105,13 @@
 		position: absolute;
 		top: 0;
 		left: 0;
+	}
+
+	.splash-overlay-substitute {
+		position: relative;
+		left: -4px;
+		width: 310px;
+		height: 100%;
 	}
 }
 
