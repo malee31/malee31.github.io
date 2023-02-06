@@ -49,10 +49,18 @@ function SplashOverlay({ children }) {
 			<div className="splash-overlay-content">
 				<p className="splash-mini-intro">Developed and </p>
 				<h1 className="splash-mini-title">Designed by Marvin</h1>
-				<p className="splash-mini-subtitle">A Full Stack Developer with some UI/UX knowledge</p>
-				<p className="splash-mini-text">
-
+				<p className="splash-mini-subtitle">
+					A Full Stack Developer that enjoys building high-quality products and intuitive user experiences
 				</p>
+				<a
+					href="#featured-projects"
+					className="splash-cta-button"
+				>
+					<span className="splash-cta-text">
+						<span className="splash-cta-text-words">See my projects</span>
+						<span className="splash-cta-text-arrow"> &#x21B4;</span>
+					</span>
+				</a>
 			</div>
 			<div className="splash-overlay-visual">
 				{children}

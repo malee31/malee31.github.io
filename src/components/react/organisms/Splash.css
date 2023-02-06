@@ -38,6 +38,7 @@
 	background-color: #F7FAFD;
 	flex: 1 1 60%;
 	padding: 4rem 4rem 8rem;
+	user-select: none;
 	text-align: left;
 	z-index: 1;
 }
@@ -68,20 +69,75 @@
 
 .splash-mini-intro {
 	font-size: 1.25rem;
+	font-style: italic;
 }
 
 .splash-mini-title {
 	font-size: 3rem;
-	margin: .5rem 0 1rem 0;
+	margin: 4px 0 8px 0;
 	text-align: left;
 }
 
 .splash-mini-subtitle {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
+	font-style: italic;
+	padding-bottom: 8px;
+	color: #606060;
+	line-height: 1.5;
 }
 
-.splash-mini-text {
-	font-size: 1.2rem;
+.splash-cta-button {
+	position: relative;
+	display: block;
+	padding: 4px 2px;
+	border-radius: 4px;
+	border: none;
+	color: #606060;
+}
+
+.splash-cta-text {
+	position: relative;
+	font-size: 1.25rem;
+	padding: 4px 0;
+	transition: color .1s;
+}
+
+.splash-cta-text-words {
+	position: relative;
+	top: 0;
+	left: 0;
+	transition: left .1s;
+}
+
+.splash-cta-text-arrow {
+	position: relative;
+	transition: left .1s;
+	font-size: 1.5rem;
+	top: 0;
+	left: 0;
+}
+
+.splash-cta-button:hover .splash-cta-text-words {
+	left: 4px;
+}
+
+.splash-cta-button:hover .splash-cta-text-arrow {
+	left: 8px;
+}
+
+.splash-cta-text:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	transition: height .05s, bottom .05s;
+	background-color: #0075EA;
+}
+
+.splash-cta-text:hover:before {
+	height: 2px;
 }
 
 /* Note: Non-standard breakpoint used for splash (Because it looks better) */
@@ -89,8 +145,10 @@
 	.splash-overlay-content {
 		width: 100%;
 		margin-right: 0;
+		padding: 3rem 2rem;
 		background-color: #F7FAFD99;
 		user-select: none;
+		clip-path: none;
 		/* Previously adjusting colors to preserve opacity when printing. Now hiding the animation instead */
 		/* color-adjust: exact; */
 		/* -webkit-print-color-adjust: exact; */
@@ -132,5 +190,8 @@
 @media only screen and (pointer: fine) {
 	.splash-overlay-content {
 		pointer-events: none;
+	}
+	.splash-overlay-content .splash-cta-button {
+		pointer-events: all;
 	}
 }
