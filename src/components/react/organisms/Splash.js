@@ -50,7 +50,7 @@ function SplashOverlay({ children }) {
 				<p className="splash-mini-intro">Developed and </p>
 				<h1 className="splash-mini-title">Designed by Marvin</h1>
 				<p className="splash-mini-subtitle">
-					A Full Stack Developer that enjoys building high-quality products and intuitive user experiences
+					A Full Stack Developer who enjoys building high-quality products and intuitive user experiences
 				</p>
 				<a
 					href="#featured-projects"
