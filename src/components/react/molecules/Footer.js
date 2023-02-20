@@ -13,7 +13,7 @@ export default function Footer() {
 				<a href="https://github.com/malee31" className="logoLink">
 					<img src={GitHubIcon} alt="Github"/>
 				</a>
-				<a href="https://linkedin.com/in/marvin-lee~" className="logoLink">
+				<a href="https://linkedin.com/in/-marvin" className="logoLink">
 					<img src={LinkedInIcon} alt="LinkedIn"/>
 				</a>
 			</div>
