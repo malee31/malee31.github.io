@@ -1,13 +1,16 @@
 import React, { useRef } from "react";
 import { Box, PerspectiveCamera, TrackballControls } from "@react-three/drei";
 import GrowingBox from "../atoms/ThreeGrowingBox";
-import { animated, easings, useSpring } from "@react-spring/three";
+import { animated, easings, useChain, useSpring, useSpringRef } from "@react-spring/three";
 
 export default function ThreeFigure({ hideSubstitute }) {
 	const camRef = useRef();
 	const transitionTime = 20000;
 
+	const accelerateRef = useSpringRef();
+	const velocityRef = useSpringRef();
 	const accelerate = useSpring({
+		ref: accelerateRef,
 		from: {
 			rotateX: Math.PI / 6,
 			rotateY: Math.PI / 6,
@@ -18,11 +21,14 @@ export default function ThreeFigure({ hideSubstitute }) {
 		},
 		config: {
 			duration: transitionTime,
-			easing: easings.easeInSine
+			easing: t => {
+				return easings.easeInSine(t);
+			}
 		},
 		loop: false
 	});
 	const velocity = useSpring({
+		ref: velocityRef,
 		from: {
 			rotateX: 0,
 			rotateY: 0,
@@ -34,10 +40,10 @@ export default function ThreeFigure({ hideSubstitute }) {
 		config: {
 			duration: 20000,
 		},
-		delay: transitionTime,
-		reset: true,
 		loop: true
 	});
+
+	useChain([accelerateRef, velocityRef]);
 
 	return (
 		<>
