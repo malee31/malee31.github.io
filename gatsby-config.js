@@ -38,10 +38,18 @@ module.exports = {
 		{
 			resolve: "gatsby-source-filesystem",
 			options: {
-				"name": "images",
-				"path": "./src/images/"
+				name: "images",
+				path: "./src/images/"
 			},
 			__key: "images"
+		},
+		"gatsby-plugin-mdx",
+		{
+			resolve: "gatsby-source-filesystem",
+			options: {
+				name: "pages",
+				path: `${__dirname}/src/projects`,
+			},
 		},
 		{
 			resolve: "gatsby-plugin-google-gtag",
