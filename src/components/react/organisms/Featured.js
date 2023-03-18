@@ -128,7 +128,7 @@ export default function Experimental() {
 					webpOptions: {quality: 25}
 					formats: [AUTO, WEBP]
 					breakpoints: [100, 150, 200, 250, 300, 400, 600, 800, 960, 1280, 1920]
-					sizes: "(min-width: 1275px) 25vw, (min-width: 667px) 33vw, (min-width: 660px) 50vw, 100vw"
+					sizes: "(min-width: 1275px) 50vw, (min-width: 667px) 66vw, (min-width: 660px) 100vw, 100vw"
 				  )
 				}
 			  }
