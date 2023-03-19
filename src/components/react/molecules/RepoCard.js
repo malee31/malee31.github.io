@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
+import { useLocation } from "@reach/router"
 import "./RepoCard.css";
 
 export default function RepoCard(props) {
@@ -11,15 +12,26 @@ export default function RepoCard(props) {
 		demoLink,
 		backgroundColor = "#AAAAAA",
 		textColor = "#191816",
+		shortNames = [],
 		className = "",
 		...extraProps
 	} = props;
+	const location = useLocation();
 	const [flipped, setFlipped] = useState(false);
 	// For viewing without Javascript. Still not the best solution for SEO
 	const [allowFocusFlip, setAllowFocusFlip] = useState(true);
 	const toggleFlip = () => setFlipped(!flipped);
 	// To make sure flipping only occurs when focused on the card and not when focused on the buttons
 	const cardRef = useRef();
+
+	// For shortcut linking
+	useEffect(() => {
+		const projectShortName = (new URLSearchParams(location.search)).get("project");
+		if(projectShortName && shortNames.includes(projectShortName)) {
+			setFlipped(true);
+		}
+		console.log(projectShortName)
+	}, [location.search, shortNames]);
 
 	// Disable focus flip if Javascript is enabled
 	useEffect(() => {

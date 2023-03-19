@@ -12,7 +12,8 @@ const FEATURED_DATA = [
 		demoLink: "https://orderup-demo.onrender.com/",
 		imageSrc: "repositories/OrderUp.png",
 		backgroundColor: "#FDBA74",
-		textColor: "#121212"
+		textColor: "#121212",
+		shortNames: ["oa", "order-up"]
 	},
 	{
 		title: "Pantry Cabinet",
@@ -21,7 +22,8 @@ const FEATURED_DATA = [
 		demoLink: "https://pantry-cabinet.vercel.app/",
 		imageSrc: "repositories/PantryCabinet.png",
 		backgroundColor: "#BA8C63",
-		textColor: "#342918"
+		textColor: "#342918",
+		shortNames: ["pc", "pantry-cabinet"]
 	},
 	{
 		title: "CardinalHours App",
@@ -30,7 +32,8 @@ const FEATURED_DATA = [
 		demoLink: "https://malee31.github.io/ReactNativeCardinalBoticsApp",
 		imageSrc: "repositories/ReactNativeCardinalBoticsApp.png",
 		backgroundColor: "#973337",
-		textColor: "#F5F5F5"
+		textColor: "#F5F5F5",
+		shortNames: ["cha", "cardinalhours", "cardinalhours-app"]
 	},
 	{
 		title: "Asteroids Game",
@@ -39,7 +42,8 @@ const FEATURED_DATA = [
 		demoLink: "https://malee31.github.io/Processing-Java-Projects/AsteroidsGame",
 		imageSrc: "repositories/AsteroidsGame.png",
 		backgroundColor: "#262626",
-		textColor: "#D6D6D6"
+		textColor: "#D6D6D6",
+		shortNames: ["ag", "asteroids", "asteroids-game"]
 	},
 	{
 		title: "Starfield",
@@ -48,7 +52,8 @@ const FEATURED_DATA = [
 		demoLink: "https://malee31.github.io/Processing-Java-Projects/Starfield",
 		imageSrc: "repositories/Starfield.png",
 		backgroundColor: "#470B33",
-		textColor: "#EBEBEB"
+		textColor: "#EBEBEB",
+		shortNames: ["sf", "starfield"]
 	},
 	{
 		title: "Slack to Discord Bridge",
@@ -56,7 +61,8 @@ const FEATURED_DATA = [
 		repoLink: "https://github.com/malee31/Slack-to-Discord-Bridge",
 		imageSrc: "repositories/SlackToDiscordBridge.png",
 		backgroundColor: "#431F4F",
-		textColor: "#E8E8FD"
+		textColor: "#E8E8FD",
+		shortNames: ["std", "stdb", "slack-bridge", "slack-to-discord-bridge"]
 	},
 	{
 		title: "Canvas Helpers",
@@ -64,7 +70,8 @@ const FEATURED_DATA = [
 		repoLink: "https://github.com/malee31/CanvasHelpers/tree/better-study-groups",
 		imageSrc: "repositories/CanvasHelpers.png",
 		backgroundColor: "#C55B43",
-		textColor: "#FFFFFF"
+		textColor: "#FFFFFF",
+		shortNames: ["ch", "canvas-helper", "canvas-helpers"]
 	},
 	{
 		title: "EduConnect",
@@ -73,7 +80,8 @@ const FEATURED_DATA = [
 		demoLink: "https://educonnect.onrender.com/chatroom/chatroom.html",
 		imageSrc: "repositories/EduConnect.png",
 		backgroundColor: "#5175E8",
-		textColor: "#FFFFFF"
+		textColor: "#FFFFFF",
+		shortNames: ["ec", "educonnect"]
 	},
 	{
 		title: "Custom Form Maker",
@@ -82,7 +90,8 @@ const FEATURED_DATA = [
 		demoLink: "https://custom-form-maker.onrender.com/",
 		imageSrc: "repositories/CustomFormMaker.png",
 		backgroundColor: "#1786F1",
-		textColor: "#FFFFFF"
+		textColor: "#FFFFFF",
+		shortNames: ["cfm", "custom-form", "custom-form-maker"]
 	},
 	{
 		title: "Cube Color Picker",
@@ -90,7 +99,8 @@ const FEATURED_DATA = [
 		demoLink: "https://malee31.github.io/CubeColorPicker",
 		imageSrc: "repositories/CubeColorPicker.png",
 		backgroundColor: "#3D93E7",
-		textColor: "#E9EDFA"
+		textColor: "#E9EDFA",
+		shortNames: ["ccp", "cube-color-picker"]
 	},
 	{
 		title: "Halloween Discord Bot",
@@ -98,7 +108,8 @@ const FEATURED_DATA = [
 		repoLink: "https://github.com/malee31/HalloweenDiscordBot",
 		imageSrc: "repositories/HalloweenBot.png",
 		backgroundColor: "#303135",
-		textColor: "#E2E3E5"
+		textColor: "#E2E3E5",
+		shortNames: ["hdb", "halloween-discord-bot"]
 	},
 	{
 		title: "Data Visualization",
@@ -107,11 +118,12 @@ const FEATURED_DATA = [
 		demoLink: "https://malee31.github.io/Processing-Java-Projects/DataVisualization",
 		imageSrc: "repositories/DataVisualization.png",
 		backgroundColor: "#646464",
-		textColor: "#FFFFFF"
+		textColor: "#FFFFFF",
+		shortNames: ["dv", "data-visualization"]
 	}
 ];
 
-export default function Experimental() {
+export default function Featured() {
 	const data = useStaticQuery(graphql`
 		query RepoQuery {
 		  allFile(filter: {relativeDirectory: {eq: "repositories"}}) {
