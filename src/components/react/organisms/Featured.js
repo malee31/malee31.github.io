@@ -4,7 +4,7 @@ import { getImage } from "gatsby-plugin-image";
 import RepoCard from "../molecules/RepoCard";
 import "./Featured.css";
 
-const FEATURED_DATA = [
+export const FEATURED_DATA = [
 	{
 		title: "OrderUp",
 		description: "Present customers a menu of items for customers to order from anywhere and chefs to cook and deliver!",

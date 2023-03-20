@@ -18,11 +18,16 @@ export default function RepoCard(props) {
 	} = props;
 	const location = useLocation();
 	const [flipped, setFlipped] = useState(false);
-	// For viewing without Javascript. Still not the best solution for SEO
-	const [allowFocusFlip, setAllowFocusFlip] = useState(true);
 	const toggleFlip = () => setFlipped(!flipped);
 	// To make sure flipping only occurs when focused on the card and not when focused on the buttons
 	const cardRef = useRef();
+
+	// For viewing without Javascript. Still not the best solution for SEO
+	const [allowFocusFlip, setAllowFocusFlip] = useState(true);
+	// Disable focus flip if Javascript is enabled
+	useEffect(() => {
+		setAllowFocusFlip(false);
+	}, []);
 
 	// For shortcut linking
 	useEffect(() => {
@@ -30,13 +35,7 @@ export default function RepoCard(props) {
 		if(projectShortName && shortNames.includes(projectShortName)) {
 			setFlipped(true);
 		}
-		console.log(projectShortName)
 	}, [location.search, shortNames]);
-
-	// Disable focus flip if Javascript is enabled
-	useEffect(() => {
-		setAllowFocusFlip(false);
-	}, []);
 
 	return (
 		<div
