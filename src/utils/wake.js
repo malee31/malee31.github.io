@@ -9,7 +9,7 @@ export default function wake() {
 
 	// Fire and forget the request with no-ops
 	wakeURLs.map(wakeURL => {
-		return fetch(wakeURL, { method: "HEAD", mode: "no-cors" })
+		return fetch(wakeURL, { method: "HEAD", mode: "no-cors", cache: "no-store" })
 			.then(() => {})
 			.catch(() => {})
 	});
