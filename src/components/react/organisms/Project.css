@@ -1,0 +1,31 @@
+.project-zone {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: #F5F5F5;
+}
+
+.project-header {
+	width: 100%;
+	height: 240px;
+	max-height: 20vh;
+	background-color: #51ABFF;
+	position: relative;
+}
+
+.project-title {
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	bottom: 0;
+	padding: 0 1rem;
+}
+
+.project-content-box {
+	width: 100%;
+	padding: 1rem 2rem;
+}
+
+.project-content {
+	width: 100%;
+}

@@ -8,11 +8,11 @@ export const Head = () => <Seo siteTitle="Not Found"/>;
 
 export default function NotFoundPage() {
 	return (
-		<main class="http404-main">
+		<main className="http404-main">
 			<h1>There's Nothing Here!</h1>
 			<Link to="/">
 				(Go back to home)
-			</Link>.
+			</Link>
 		</main>
 	);
 }

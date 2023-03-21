@@ -1,3 +1,5 @@
+const path = require("path");
+
 exports.createPages = async ({ graphql, actions, reporter }) => {
 	const { createPage } = actions;
 
@@ -23,11 +25,12 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
 	const projectPages = result.data.allMdx.nodes;
 
+	const projectTemplate = path.resolve("./src/components/react/organisms/Project.js");
 	projectPages.forEach(node => {
 		createPage({
 			path: `projects/${node.frontmatter.slug}`,
 			// Path to MDX file for Webpack
-			component: node.internal.contentFilePath
+			component: `${projectTemplate}?__contentFilePath=${node.internal.contentFilePath}`
 		});
 	});
 };
