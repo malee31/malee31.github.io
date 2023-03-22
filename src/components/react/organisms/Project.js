@@ -1,7 +1,8 @@
 import React from "react";
+import { MDXProvider } from "@mdx-js/react";
 import Navbar from "../molecules/Navbar";
 import "./Project.css";
-import { MDXProvider } from "@mdx-js/react";
+import { graphql, useStaticQuery } from "gatsby";
 
 /**
  * Creates the basic layout for the project page
@@ -16,6 +17,33 @@ export default function Project(props) {
 		pageContext,  // Passed down by MDX
 		children
 	} = props;
+
+	const data = useStaticQuery(graphql`
+		query ProjectQuery {
+		  allFile(filter: {relativeDirectory: {eq: "repositories"}}) {
+			edges {
+			  node {
+				publicURL
+				relativePath
+				id
+				name
+				childImageSharp {
+				  gatsbyImageData(
+					placeholder: TRACED_SVG
+					tracedSVGOptions: {}
+					webpOptions: {quality: 25}
+					formats: [AUTO, WEBP]
+					breakpoints: [100, 150, 200, 250, 300, 400, 600, 800, 960, 1280, 1920]
+					sizes: "(min-width: 1275px) 50vw, (min-width: 667px) 66vw, (min-width: 660px) 100vw, 100vw"
+				  )
+				}
+			  }
+			}
+		  }
+		}
+	`);
+
+	console.log(data);
 
 	return (
 		<MDXProvider
