@@ -1,7 +1,7 @@
 const path = require("path");
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
-	const { createPage } = actions;
+	const { createPage, createRedirect } = actions;
 
 	const result = await graphql(`
     query {
@@ -32,5 +32,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 			// Path to MDX file for Webpack
 			component: `${projectTemplate}?__contentFilePath=${node.internal.contentFilePath}`
 		});
+	});
+
+	// Set up redirect from old /home URL
+	createRedirect({
+		fromPath: "/home",
+		toPath: "/"
 	});
 };

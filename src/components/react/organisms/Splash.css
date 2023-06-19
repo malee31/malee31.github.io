@@ -140,6 +140,7 @@
 	height: 2px;
 }
 
+/* For some reason mini-css plugin complains about something here */
 /* Note: Non-standard breakpoint used for splash (Because it looks better) */
 @media only screen and (max-width: 800px), only print {
 	.splash-overlay-content {

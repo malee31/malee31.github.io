@@ -7,15 +7,15 @@ module.exports = {
 	plugins: [
 		"gatsby-plugin-image",
 		{
-			resolve: 'gatsby-plugin-robots-txt',
+			resolve: "gatsby-plugin-robots-txt",
 			options: {
-				host: 'https://designedbymarvin.com',
+				host: "https://designedbymarvin.com",
 				policy: [
 					{
-						userAgent: '*', allow: '/'
+						userAgent: "*", allow: "/"
 					},
 					{
-						userAgent: '*', disallow: '/upgrade'
+						userAgent: "*", disallow: "/upgrade"
 					}
 				],
 			}
@@ -26,7 +26,7 @@ module.exports = {
 			options: {
 				"name": "Marvin Lee | Developer Portfolio",
 				"short_name": "Marvin | Developer Portfolio",
-				"start_url": "/home",
+				"start_url": "/",
 				"icon": "src/images/favicons/android-chrome-512x512.png",
 				"theme_color": "#FFFFFF",
 				"background_color": "#FFFFFF",
