@@ -29,7 +29,7 @@ export default function Project(props) {
 				name
 				childImageSharp {
 				  gatsbyImageData(
-					placeholder: TRACED_SVG
+					placeholder: BLURRED
 					tracedSVGOptions: {}
 					webpOptions: {quality: 25}
 					formats: [AUTO, WEBP]

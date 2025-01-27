@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import "../styles.css";
 import Seo from "../components/react/atoms/SEO";
 import Navbar from "../components/react/molecules/Navbar";
 import Splash from "../components/react/organisms/Splash";
@@ -12,7 +11,7 @@ export const Head = Seo;
 
 export default function Home() {
 	useEffect(() => {
-		console.log("Waking")
+		console.log("Waking");
 		wake();
 	}, []);
 

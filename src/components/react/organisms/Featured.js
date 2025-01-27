@@ -135,7 +135,7 @@ export default function Featured() {
 				name
 				childImageSharp {
 				  gatsbyImageData(
-					placeholder: TRACED_SVG
+					placeholder: BLURRED
 					tracedSVGOptions: {}
 					webpOptions: {quality: 25}
 					formats: [AUTO, WEBP]

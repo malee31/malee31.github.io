@@ -1,6 +1,6 @@
 import React from "react";
+import "../styles/global.css";
 import { Link } from "gatsby"
-import "../styles.css";
 import Seo from "../components/react/atoms/SEO";
 import "./404.css";
 

@@ -61,6 +61,7 @@
 	left: -6px;
 	width: 340px;
 	height: 100%;
+	margin: 0 auto;
 }
 
 .splash-overlay-content > * {
@@ -192,6 +193,7 @@
 	.splash-overlay-content {
 		pointer-events: none;
 	}
+
 	.splash-overlay-content .splash-cta-button {
 		pointer-events: all;
 	}

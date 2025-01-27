@@ -1,56 +1,13 @@
+/**
+ * @type {import("gatsby").GatsbyConfig}
+ */
 module.exports = {
-	// pathPrefix: "/home",
 	siteMetadata: {
 		title: "Marvin Lee | Developer Portfolio",
 		siteUrl: "https://designedbymarvin.com"
 	},
 	plugins: [
-		"gatsby-plugin-image",
-		{
-			resolve: "gatsby-plugin-robots-txt",
-			options: {
-				host: "https://designedbymarvin.com",
-				policy: [
-					{
-						userAgent: "*", allow: "/"
-					},
-					{
-						userAgent: "*", disallow: "/upgrade"
-					}
-				],
-			}
-		},
-		"gatsby-plugin-sitemap",
-		{
-			resolve: "gatsby-plugin-manifest",
-			options: {
-				"name": "Marvin Lee | Developer Portfolio",
-				"short_name": "Marvin | Developer Portfolio",
-				"start_url": "/",
-				"icon": "src/images/favicons/android-chrome-512x512.png",
-				"theme_color": "#FFFFFF",
-				"background_color": "#FFFFFF",
-				"display": "standalone"
-			}
-		},
-		"gatsby-transformer-sharp",
-		"gatsby-plugin-sharp",
-		{
-			resolve: "gatsby-source-filesystem",
-			options: {
-				name: "images",
-				path: "./src/images/"
-			},
-			__key: "images"
-		},
-		"gatsby-plugin-mdx",
-		{
-			resolve: "gatsby-source-filesystem",
-			options: {
-				name: "pages",
-				path: `${__dirname}/src/projects`,
-			},
-		},
+		"gatsby-plugin-postcss",
 		{
 			resolve: "gatsby-plugin-google-gtag",
 			options: {
@@ -67,5 +24,36 @@ module.exports = {
 				},
 			},
 		},
-	]
+		"gatsby-plugin-image",
+		"gatsby-plugin-sitemap",
+		{
+			resolve: "gatsby-plugin-manifest",
+			options: {
+				"name": "Marvin Lee | Developer Portfolio",
+				"short_name": "Marvin | Developer Portfolio",
+				"start_url": "/",
+				"icon": "src/images/favicons/android-chrome-512x512.png",
+				"theme_color": "#FFFFFF",
+				"background_color": "#FFFFFF",
+				"display": "standalone"
+			}
+		},
+		"gatsby-plugin-mdx",
+		"gatsby-plugin-sharp",
+		"gatsby-transformer-sharp",
+		{
+			resolve: "gatsby-source-filesystem",
+			options: {
+				"name": "images",
+				"path": "./src/images/"
+			},
+			__key: "images"
+		}, {
+			resolve: "gatsby-source-filesystem",
+			options: {
+				"name": "pages",
+				"path": "./src/pages/"
+			},
+			__key: "pages"
+		}]
 };

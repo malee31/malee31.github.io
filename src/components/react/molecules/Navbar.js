@@ -27,7 +27,7 @@ export default function Navbar() {
 				aria-hidden="true"
 				onClick={close}
 			/>
-			<label id="menu-icon" htmlFor="menu-toggle">
+			<label id="menu-icon" htmlFor="menu-toggle" title="Menu" aria-label="Menu">
 				<div id="menu-icon-container">
 					<div className="menu-icon-div"/>
 					<div className="menu-icon-div"/>

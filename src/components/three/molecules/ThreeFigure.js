@@ -3,7 +3,7 @@ import { Box, PerspectiveCamera, TrackballControls } from "@react-three/drei";
 import GrowingBox from "../atoms/ThreeGrowingBox";
 import { animated, easings, useChain, useSpring, useSpringRef } from "@react-spring/three";
 
-export default function ThreeFigure({ hideSubstitute }) {
+export default function ThreeFigure({ onLoad }) {
 	const camRef = useRef();
 	const transitionTime = 20000;
 
@@ -79,7 +79,7 @@ export default function ThreeFigure({ hideSubstitute }) {
 						<meshPhongMaterial
 							color="#EEEEEE"
 							wireframe={false}
-							onBeforeCompile={hideSubstitute}
+							onBeforeCompile={onLoad}
 						/>
 					</Box>
 					<GrowingBox

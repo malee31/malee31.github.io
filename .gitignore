@@ -2,7 +2,7 @@
 private/
 node_modules/
 .cache/
-public
+public/
 .env
 *.swo
 *.swp

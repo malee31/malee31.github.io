@@ -42,7 +42,7 @@ export default function GrowingBox(props) {
 			scale={[0.25, 0.3, 1]}
 			{...boxProps}
 		>
-			<meshPhongMaterial color={color} wireframe={false}/>
+			<meshPhongMaterial aoMapIntensity={1} color={color} wireframe={false}/>
 		</Box>
 	);
 }

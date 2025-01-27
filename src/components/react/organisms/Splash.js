@@ -1,10 +1,9 @@
-import React, { Suspense, useState } from "react";
+import React, { useState } from "react";
 import ScreenSection from "../atoms/FullScreenSection";
 import ScrollBanner from "../atoms/ScrollBanner";
 import CubeTrace from "../../../images/cube-trace.svg";
 import "./Splash.css";
-
-const ThreeSplash = React.lazy(() => import("../../three/organisms/ThreeSplash"));
+import ThreeSplash from "../../three/organisms/ThreeSplash";
 
 // Hard-coded inline positioning for the first frame of the splash (traced)
 function SubstituteSplash() {
@@ -27,14 +26,12 @@ export default function SplashV2() {
 		<ScreenSection id="home" natural={true} className="column-center column-align">
 			<SplashOverlay>
 				{!hideSubstitute && <SubstituteSplash/>}
-				<Suspense fallback={null}>
-					<ThreeSplash
-						fallback={null}
-						hideSubstitute={() => {
-							if(!hideSubstitute) setHideSubstitute(true)
-						}}
-					/>
-				</Suspense>
+				<ThreeSplash
+					fallback={null}
+					onLoad={() => {
+						if(!hideSubstitute) setHideSubstitute(true)
+					}}
+				/>
 			</SplashOverlay>
 			<ScrollBanner to="#about">
 				▼
@@ -54,6 +51,8 @@ function SplashOverlay({ children }) {
 				</p>
 				<a
 					href="#featured-projects"
+					aria-label="Jump to Projects"
+					title="Jump to Projects"
 					className="splash-cta-button"
 				>
 					<span className="splash-cta-text">
