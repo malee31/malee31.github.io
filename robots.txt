@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-
-User-agent: *
-Disallow: /upgrade
-Sitemap: https://designedbymarvin.com/sitemap-index.xml
-Host: https://designedbymarvin.com

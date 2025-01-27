@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkhome=self.webpackChunkhome||[]).push([[883],{429:function(e,t,n){n.r(t),n.d(t,{Head:function(){return o},default:function(){return u}});var r=n(7294),a=n(1883),c=n(2943);const o=()=>r.createElement(c.Z,{siteTitle:"Not Found"});function u(){return r.createElement("main",{className:"http404-main"},r.createElement("h1",null,"There's Nothing Here!"),r.createElement(a.Link,{to:"/"},"(Go back to home)"))}}}]);
-//# sourceMappingURL=component---src-pages-404-js-85eb24f3b42bf3ccb2f4.js.map
